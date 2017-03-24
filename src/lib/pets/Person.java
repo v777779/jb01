@@ -10,6 +10,6 @@ public class Person extends Individual {
 
     @Override
     public String toString() {
-        return name;
+        return getName();
     }
 }

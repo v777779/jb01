@@ -1,5 +1,6 @@
 package lib.pets;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,6 +18,9 @@ public class Pets {
     }
 
     public static List<Pet> getList(int size) {
+        return pets.getList(size);
+    }
+    public static ArrayList<Pet> arrayList(int size) {
         return pets.getList(size);
     }
 }
