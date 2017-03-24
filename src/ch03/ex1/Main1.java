@@ -1,7 +1,7 @@
-package ch.ex1;
+package ch03.ex1;
 
 
-import static ch.ex1.Print.print;
+import static ch03.ex1.Print.print;
 
 /**
  * Created by V1 on 03-Feb-17.

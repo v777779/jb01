@@ -1,6 +1,6 @@
-package ch.ex12;
+package ch03.ex12;
 
-import ch.ex10.Int;
+import ch03.ex10.Int;
 
 /**
  * Created by V1 on 04-Feb-17.
