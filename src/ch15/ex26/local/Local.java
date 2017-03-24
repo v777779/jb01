@@ -1,4 +1,4 @@
-package ch.ex26.local;
+package ch15.ex26.local;
 
 import lib.fruits.*;
 

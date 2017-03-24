@@ -1,7 +1,7 @@
-package ch.ex11;
+package ch15.ex11;
 
-import ch.ex11.access.Access;
-import ch.ex11.local.Local;
+import ch15.ex11.access.Access;
+import ch15.ex11.local.Local;
 
 /**
  * Created by V1 on 16.03.2017.

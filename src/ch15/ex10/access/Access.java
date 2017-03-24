@@ -1,4 +1,4 @@
-package ch.ex10.access;
+package ch15.ex10.access;
 
 import java.util.ArrayList;
 import java.util.HashMap;

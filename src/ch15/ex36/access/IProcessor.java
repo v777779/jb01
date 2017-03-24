@@ -1,4 +1,4 @@
-package ch.ex36.access;
+package ch15.ex36.access;
 
 import java.util.List;
 

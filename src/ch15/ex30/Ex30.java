@@ -1,7 +1,7 @@
-package ch.ex30;
+package ch15.ex30;
 
-import ch.ex30.access.Access;
-import ch.ex30.local.Local;
+import ch15.ex30.access.Access;
+import ch15.ex30.local.Local;
 
 /**
  * Created by V1 on 21.03.2017.

@@ -1,6 +1,6 @@
-package ch.ex39.access;
+package ch15.ex39.access;
 
-import ch.ex39.access.mixing.*;
+import ch15.ex39.access.mixing.*;
 import lib.tuples.TwoTuple;
 
 /**

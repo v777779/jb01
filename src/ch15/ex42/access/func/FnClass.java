@@ -1,7 +1,7 @@
-package ch.ex42.access.func;
+package ch15.ex42.access.func;
 
-import ch.ex42.access.Ball;
-import ch.ex42.access.Mill;
+import ch15.ex42.access.Ball;
+import ch15.ex42.access.Mill;
 
 import java.util.ArrayList;
 import java.util.Iterator;

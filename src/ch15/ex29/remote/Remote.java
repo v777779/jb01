@@ -1,6 +1,6 @@
-package ch.ex29.remote;
+package ch15.ex29.remote;
 
-import ch.ex30.local.PrimType;
+import ch15.ex30.local.PrimType;
 
 /**
  * Created by V1 on 20-Feb-17.

@@ -1,4 +1,4 @@
-package ch.ex11.access;
+package ch15.ex11.access;
 
 import java.util.List;
 import java.util.Map;

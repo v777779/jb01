@@ -1,6 +1,6 @@
-package ch.ex38.access;
+package ch15.ex38.access;
 
-import ch.ex38.access.decorator.*;
+import ch15.ex38.access.decorator.*;
 
 /**
  * Created by V1 on 18-Feb-17.

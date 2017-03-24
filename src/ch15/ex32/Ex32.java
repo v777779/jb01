@@ -1,7 +1,7 @@
-package ch.ex32;
+package ch15.ex32;
 
-import ch.ex32.access.Access;
-import ch.ex32.local.Local;
+import ch15.ex32.access.Access;
+import ch15.ex32.local.Local;
 
 /**
  * Created by V1 on 21.03.2017.

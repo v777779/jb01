@@ -1,7 +1,7 @@
-package ch.ex42.access;
+package ch15.ex42.access;
 
-import ch.ex42.access.func.Collector;
-import ch.ex42.access.func.FnClass;
+import ch15.ex42.access.func.Collector;
+import ch15.ex42.access.func.FnClass;
 
 import java.util.ArrayList;
 import java.util.List;

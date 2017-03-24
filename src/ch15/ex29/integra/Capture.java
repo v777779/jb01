@@ -1,4 +1,4 @@
-package ch.ex29.integra;
+package ch15.ex29.integra;
 
 import lib.utils.Holder;
 

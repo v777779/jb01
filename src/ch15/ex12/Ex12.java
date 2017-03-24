@@ -1,6 +1,6 @@
-package ch.ex12;
+package ch15.ex12;
 
-import ch.ex12.access.Access;
+import ch15.ex12.access.Access;
 
 /**
  * Created by V1 on 16.03.2017.

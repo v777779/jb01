@@ -1,7 +1,7 @@
-package ch.ex18;
+package ch15.ex18;
 
-import ch.ex18.access.Access;
-import ch.ex18.local.Local;
+import ch15.ex18.access.Access;
+import ch15.ex18.local.Local;
 
 /**
  * Created by V1 on 17.03.2017.

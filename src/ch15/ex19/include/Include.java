@@ -1,6 +1,6 @@
-package ch.ex19.include;
+package ch15.ex19.include;
 
-import ch.ex19.include.store.Store;
+import ch15.ex19.include.store.Store;
 
 /**
  * Created by V1 on 20-Feb-17.

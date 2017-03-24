@@ -1,9 +1,9 @@
-package ch.ex22;
+package ch15.ex22;
 
-import ch.ex22.access.Access;
-import ch.ex22.include.Include;
-import ch.ex22.integra.Integra;
-import ch.ex22.local.Local;
+import ch15.ex22.access.Access;
+import ch15.ex22.include.Include;
+import ch15.ex22.integra.Integra;
+import ch15.ex22.local.Local;
 
 /**
  * Created by V1 on 17.03.2017.

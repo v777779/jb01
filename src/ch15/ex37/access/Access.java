@@ -1,6 +1,6 @@
-package ch.ex37.access;
+package ch15.ex37.access;
 
-import ch.ex37.access.mixing.BasicMixing;
+import ch15.ex37.access.mixing.BasicMixing;
 
 /**
  * Created by V1 on 18-Feb-17.

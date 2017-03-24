@@ -1,7 +1,7 @@
-package ch.ex25.integra;
+package ch15.ex25.integra;
 
-import ch.ex25.include.GenericArray;
-import ch.ex25.include.GenericArray2;
+import ch15.ex25.include.GenericArray;
+import ch15.ex25.include.GenericArray2;
 
 /**
  * Created by V1 on 20-Feb-17.

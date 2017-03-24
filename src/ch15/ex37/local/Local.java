@@ -1,7 +1,7 @@
-package ch.ex37.local;
+package ch15.ex37.local;
 
-import ch.ex37.local.mixing.BasicMixing;
-import ch.ex37.local.mixing.TimeStamp;
+import ch15.ex37.local.mixing.BasicMixing;
+import ch15.ex37.local.mixing.TimeStamp;
 
 /**
  * Created by V1 on 18-Feb-17.

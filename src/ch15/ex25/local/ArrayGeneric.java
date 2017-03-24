@@ -1,4 +1,4 @@
-package ch.ex25.local;
+package ch15.ex25.local;
 
 /**
  * Created by V1 on 18.03.2017.

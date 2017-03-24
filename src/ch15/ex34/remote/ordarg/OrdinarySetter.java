@@ -1,6 +1,6 @@
-package ch.ex34.remote.ordarg;
+package ch15.ex34.remote.ordarg;
 
-import ch.ex34.remote.Base;
+import ch15.ex34.remote.Base;
 
 /**
  * Created by V1 on 21.03.2017.

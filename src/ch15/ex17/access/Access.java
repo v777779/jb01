@@ -1,4 +1,4 @@
-package ch.ex17.access;
+package ch15.ex17.access;
 
 import lib.utils.Range;
 
@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import static ch.ex17.access.WaterColors.*;
+import static ch15.ex17.access.WaterColors.*;
 
 /**
  * Created by V1 on 18-Feb-17.

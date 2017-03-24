@@ -1,4 +1,4 @@
-package ch.ex34.remote;
+package ch15.ex34.remote;
 
 /**
  * Created by V1 on 21.03.2017.

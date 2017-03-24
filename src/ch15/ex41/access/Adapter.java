@@ -1,7 +1,7 @@
-package ch.ex41.access;
+package ch15.ex41.access;
 
-import ch.ex41.include.AdapterC;
-import ch.ex41.include.AdapterQ;
+import ch15.ex41.include.AdapterC;
+import ch15.ex41.include.AdapterQ;
 import lib.utils.SimpleQueue;
 
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.Collection;
  * Created by V1 on 23.03.2017.
  */
 public class Adapter {
-    public static <T> ch.ex41.include.AdapterC<T> getAutoAdapterC(Collection<T> c) {
+    public static <T> ch15.ex41.include.AdapterC<T> getAutoAdapterC(Collection<T> c) {
         return new AdapterC<T>(c);
 
     }

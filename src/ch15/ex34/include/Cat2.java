@@ -1,4 +1,4 @@
-package ch.ex34.include;
+package ch15.ex34.include;
 
 import lib.pets.Cat;
 

@@ -1,4 +1,4 @@
-package ch.ex37.access.mixing;
+package ch15.ex37.access.mixing;
 
 import java.awt.*;
 import java.util.Random;

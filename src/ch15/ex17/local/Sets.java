@@ -1,4 +1,4 @@
-package ch.ex17.local;
+package ch15.ex17.local;
 
 import java.util.HashSet;
 import java.util.Set;

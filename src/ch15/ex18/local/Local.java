@@ -1,4 +1,4 @@
-package ch.ex18.local;
+package ch15.ex18.local;
 
 import lib.utils.Generators;
 

@@ -1,4 +1,4 @@
-package ch.ex38.access.decorator;
+package ch15.ex38.access.decorator;
 
 
 /**

@@ -1,6 +1,6 @@
-package ch.ex27;
+package ch15.ex27;
 
-import ch.ex27.access.Access;
+import ch15.ex27.access.Access;
 
 /**
  * Created by V1 on 20.03.2017.

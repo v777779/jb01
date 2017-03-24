@@ -1,4 +1,4 @@
-package ch.ex28.include;
+package ch15.ex28.include;
 
 import lib.fruits.*;
 

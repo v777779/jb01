@@ -1,7 +1,7 @@
-package ch.ex15.local;
+package ch15.ex15.local;
 
-import ch.ex15.local.tuples.TupleTest;
-import ch.ex15.local.tuples.TwoTuple;
+import ch15.ex15.local.tuples.TupleTest;
+import ch15.ex15.local.tuples.TwoTuple;
 
 /**
  * Created by V1 on 18-Feb-17.

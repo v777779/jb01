@@ -1,4 +1,4 @@
-package ch.ex11.local;
+package ch15.ex11.local;
 
 import java.util.*;
 

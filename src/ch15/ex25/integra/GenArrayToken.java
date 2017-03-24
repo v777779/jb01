@@ -1,4 +1,4 @@
-package ch.ex25.integra;
+package ch15.ex25.integra;
 
 import java.lang.reflect.Array;
 

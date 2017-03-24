@@ -1,4 +1,4 @@
-package ch.ex21.access;
+package ch15.ex21.access;
 
 import java.util.Map;
 import java.util.TreeMap;

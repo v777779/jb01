@@ -1,4 +1,4 @@
-package ch.ex40.access.latent;
+package ch15.ex40.access.latent;
 
 import java.util.ArrayList;
 

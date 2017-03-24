@@ -1,7 +1,7 @@
-package ch.ex38;
+package ch15.ex38;
 
-import ch.ex38.access.Access;
-import ch.ex38.local.Local;
+import ch15.ex38.access.Access;
+import ch15.ex38.local.Local;
 
 /**
  * Created by V1 on 22.03.2017.

@@ -1,4 +1,4 @@
-package ch.ex42.access;
+package ch15.ex42.access;
 
 /**
  * Created by V1 on 23.03.2017.

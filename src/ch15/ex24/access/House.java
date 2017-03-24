@@ -1,4 +1,4 @@
-package ch.ex24.access;
+package ch15.ex24.access;
 
 import lib.utils.IFactory;
 

@@ -1,4 +1,4 @@
-package ch.ex34.remote.nosbarg;
+package ch15.ex34.remote.nosbarg;
 
 /**
  * Created by V1 on 21.03.2017.

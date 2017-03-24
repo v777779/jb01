@@ -1,4 +1,4 @@
-package ch.ex40.local;
+package ch15.ex40.local;
 
 /**
  * Created by V1 on 18-Feb-17.

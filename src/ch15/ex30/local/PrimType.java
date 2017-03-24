@@ -1,4 +1,4 @@
-package ch.ex30.local;
+package ch15.ex30.local;
 
 import lib.utils.IGenerator;
 

@@ -1,4 +1,4 @@
-package ch.ex35.access;
+package ch15.ex35.access;
 
 import lib.coffee.Americano;
 import lib.coffee.Capuccino;

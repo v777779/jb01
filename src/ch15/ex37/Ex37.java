@@ -1,7 +1,7 @@
-package ch.ex37;
+package ch15.ex37;
 
-import ch.ex37.access.Access;
-import ch.ex37.local.Local;
+import ch15.ex37.access.Access;
+import ch15.ex37.local.Local;
 
 /**
  * Created by V1 on 22.03.2017.

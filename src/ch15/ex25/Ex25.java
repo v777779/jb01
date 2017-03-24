@@ -1,12 +1,12 @@
-package ch.ex25;
+package ch15.ex25;
 
-import ch.ex25.access.Access;
-import ch.ex25.include.Include;
-import ch.ex25.integra.Integra;
-import ch.ex25.local.Local;
-import ch.ex25.remote.Remote;
-import ch.ex25.thrown.Thrown;
-import ch.ex25.unit.Unit;
+import ch15.ex25.access.Access;
+import ch15.ex25.include.Include;
+import ch15.ex25.integra.Integra;
+import ch15.ex25.local.Local;
+import ch15.ex25.remote.Remote;
+import ch15.ex25.thrown.Thrown;
+import ch15.ex25.unit.Unit;
 
 /**
  * Created by V1 on 18.03.2017.

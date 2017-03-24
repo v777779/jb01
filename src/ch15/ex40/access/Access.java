@@ -1,7 +1,7 @@
-package ch.ex40.access;
+package ch15.ex40.access;
 
-import ch.ex40.access.latent.*;
-import ch.ex40.access.pets.*;
+import ch15.ex40.access.latent.*;
+import ch15.ex40.access.pets.*;
 
 
 /**

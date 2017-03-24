@@ -1,4 +1,4 @@
-package ch.ex15.local.tuples;
+package ch15.ex15.local.tuples;
 
 /**
  * Created by V1 on 14-Mar-17.

@@ -1,4 +1,4 @@
-package ch.ex20.local;
+package ch15.ex20.local;
 
 import java.util.ArrayList;
 

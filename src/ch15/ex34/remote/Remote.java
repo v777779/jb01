@@ -1,10 +1,10 @@
-package ch.ex34.remote;
+package ch15.ex34.remote;
 
-import ch.ex34.remote.nosbarg.DerivedGS;
-import ch.ex34.remote.ordarg.DerivedSetter;
-import ch.ex34.remote.sbarg.ISelfBoundSetter;
-import ch.ex34.remote.sbarg.ISetter;
-import ch.ex34.remote.sbarg.Setter;
+import ch15.ex34.remote.nosbarg.DerivedGS;
+import ch15.ex34.remote.ordarg.DerivedSetter;
+import ch15.ex34.remote.sbarg.ISelfBoundSetter;
+import ch15.ex34.remote.sbarg.ISetter;
+import ch15.ex34.remote.sbarg.Setter;
 
 /**
  * Created by V1 on 20-Feb-17.

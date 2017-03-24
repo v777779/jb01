@@ -1,4 +1,4 @@
-package ch.ex22.access;
+package ch15.ex22.access;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Parameter;

@@ -1,4 +1,4 @@
-package ch.ex28.access;
+package ch15.ex28.access;
 
 /**
  * Created by V1 on 20.03.2017.

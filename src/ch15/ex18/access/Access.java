@@ -1,4 +1,4 @@
-package ch.ex18.access;
+package ch15.ex18.access;
 
 import lib.utils.Generators;
 import lib.utils.Range;

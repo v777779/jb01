@@ -1,4 +1,4 @@
-package ch.ex25.unit;
+package ch15.ex25.unit;
 
 import java.util.ArrayList;
 import java.util.List;

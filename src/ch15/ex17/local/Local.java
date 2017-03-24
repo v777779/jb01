@@ -1,10 +1,10 @@
-package ch.ex17.local;
+package ch15.ex17.local;
 
 import java.util.EnumSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import static ch.ex17.local.WaterColors.*;
+import static ch15.ex17.local.WaterColors.*;
 
 /**
  * Created by V1 on 18-Feb-17.

@@ -1,4 +1,4 @@
-package ch.ex21.local;
+package ch15.ex21.local;
 
 import lib.pets.*;
 

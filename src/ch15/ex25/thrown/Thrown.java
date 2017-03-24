@@ -1,4 +1,4 @@
-package ch.ex25.thrown;
+package ch15.ex25.thrown;
 
 /**
  * Created by V1 on 20-Feb-17.

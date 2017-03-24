@@ -1,10 +1,10 @@
-package ch.ex34;
+package ch15.ex34;
 
-import ch.ex34.access.Access;
-import ch.ex34.include.Include;
-import ch.ex34.integra.Integra;
-import ch.ex34.local.Local;
-import ch.ex34.remote.Remote;
+import ch15.ex34.access.Access;
+import ch15.ex34.include.Include;
+import ch15.ex34.integra.Integra;
+import ch15.ex34.local.Local;
+import ch15.ex34.remote.Remote;
 
 /**
  * Created by V1 on 21.03.2017.

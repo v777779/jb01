@@ -1,7 +1,7 @@
-package ch.ex34.integra;
+package ch15.ex34.integra;
 
-import ch.ex34.integra.notsb.*;
-import ch.ex34.integra.sb.*;
+import ch15.ex34.integra.notsb.*;
+import ch15.ex34.integra.sb.*;
 
 /**
  * Created by V1 on 20-Feb-17.

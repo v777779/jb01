@@ -1,6 +1,6 @@
-package ch.ex19.access;
+package ch15.ex19.access;
 
-import ch.ex19.access.port.SeaPort;
+import ch15.ex19.access.port.SeaPort;
 
 /**
  * Created by V1 on 18-Feb-17.

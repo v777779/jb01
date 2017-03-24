@@ -1,4 +1,4 @@
-package ch.ex12.access;
+package ch15.ex12.access;
 
 import java.util.*;
 

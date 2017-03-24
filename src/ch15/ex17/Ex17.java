@@ -1,8 +1,8 @@
-package ch.ex17;
+package ch15.ex17;
 
-import ch.ex17.access.Access;
-import ch.ex17.include.Include;
-import ch.ex17.local.Local;
+import ch15.ex17.access.Access;
+import ch15.ex17.include.Include;
+import ch15.ex17.local.Local;
 
 /**
  * Created by V1 on 16.03.2017.

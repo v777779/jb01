@@ -1,7 +1,7 @@
-package ch.ex26;
+package ch15.ex26;
 
-import ch.ex26.access.Access;
-import ch.ex26.local.Local;
+import ch15.ex26.access.Access;
+import ch15.ex26.local.Local;
 
 /**
  * Created by V1 on 20.03.2017.

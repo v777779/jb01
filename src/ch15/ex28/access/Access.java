@@ -1,4 +1,4 @@
-package ch.ex28.access;
+package ch15.ex28.access;
 
 import lib.pets.Cat;
 import lib.pets.Rodent;

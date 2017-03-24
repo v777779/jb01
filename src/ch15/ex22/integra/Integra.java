@@ -1,4 +1,4 @@
-package ch.ex22.integra;
+package ch15.ex22.integra;
 
 /**
  * Created by V1 on 20-Feb-17.

@@ -1,4 +1,4 @@
-package ch.ex28.local;
+package ch15.ex28.local;
 
 import lib.fruits.Apple;
 import lib.fruits.Fruit;

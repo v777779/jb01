@@ -1,4 +1,4 @@
-package ch.ex39.local.mixing;
+package ch15.ex39.local.mixing;
 
 import lib.tuples.TwoTuple;
 

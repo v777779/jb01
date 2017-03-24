@@ -1,4 +1,4 @@
-package ch.ex30.local;
+package ch15.ex30.local;
 
 /**
  * Created by V1 on 18-Feb-17.

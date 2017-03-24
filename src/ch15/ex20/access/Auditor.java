@@ -1,4 +1,4 @@
-package ch.ex20.access;
+package ch15.ex20.access;
 
 /**
  * Created by V1 on 17.03.2017.

@@ -1,4 +1,4 @@
-package ch.ex21.remote;
+package ch15.ex21.remote;
 
 /**
  * Created by V1 on 20-Feb-17.

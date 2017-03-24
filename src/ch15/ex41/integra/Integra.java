@@ -1,4 +1,4 @@
-package ch.ex41.integra;
+package ch15.ex41.integra;
 
 /**
  * Created by V1 on 20-Feb-17.

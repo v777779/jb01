@@ -1,4 +1,4 @@
-package ch.ex40.integra;
+package ch15.ex40.integra;
 
 /**
  * Created by V1 on 22.03.2017.

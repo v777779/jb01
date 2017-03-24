@@ -1,4 +1,4 @@
-package ch.ex25.remote;
+package ch15.ex25.remote;
 
 import java.awt.*;
 

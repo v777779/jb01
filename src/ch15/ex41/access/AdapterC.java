@@ -1,6 +1,6 @@
-package ch.ex41.access;
+package ch15.ex41.access;
 
-import ch.ex41.include.IAddable;
+import ch15.ex41.include.IAddable;
 
 import java.util.Collection;
 

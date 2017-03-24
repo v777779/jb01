@@ -1,7 +1,7 @@
-package ch.ex35;
+package ch15.ex35;
 
-import ch.ex35.access.Access;
-import ch.ex35.local.Local;
+import ch15.ex35.access.Access;
+import ch15.ex35.local.Local;
 
 /**
  * Created by V1 on 21.03.2017.

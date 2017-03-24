@@ -1,4 +1,4 @@
-package ch.ex34.access;
+package ch15.ex34.access;
 
 /**
  * Created by V1 on 18-Feb-17.

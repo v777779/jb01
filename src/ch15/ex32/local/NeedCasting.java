@@ -1,4 +1,4 @@
-package ch.ex32.local;
+package ch15.ex32.local;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;

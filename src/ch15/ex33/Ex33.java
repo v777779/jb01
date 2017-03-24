@@ -1,6 +1,6 @@
-package ch.ex33;
+package ch15.ex33;
 
-import ch.ex33.access.Access;
+import ch15.ex33.access.Access;
 
 /**
  * Created by V1 on 21.03.2017.

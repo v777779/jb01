@@ -1,9 +1,9 @@
-package ch.ex40;
+package ch15.ex40;
 
-import ch.ex40.access.Access;
-import ch.ex40.include.Include;
-import ch.ex40.integra.Integra;
-import ch.ex40.local.Local;
+import ch15.ex40.access.Access;
+import ch15.ex40.include.Include;
+import ch15.ex40.integra.Integra;
+import ch15.ex40.local.Local;
 
 /**
  * Created by V1 on 22.03.2017.

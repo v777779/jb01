@@ -1,4 +1,4 @@
-package ch.ex28.remote;
+package ch15.ex28.remote;
 
 import lib.fruits.*;
 

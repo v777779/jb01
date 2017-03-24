@@ -1,4 +1,4 @@
-package ch.ex17.access;
+package ch15.ex17.access;
 
 import java.util.EnumSet;
 import java.util.HashSet;

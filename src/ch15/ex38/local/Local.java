@@ -1,6 +1,6 @@
-package ch.ex38.local;
+package ch15.ex38.local;
 
-import ch.ex38.local.decorator.*;
+import ch15.ex38.local.decorator.*;
 
 
 /**

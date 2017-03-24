@@ -1,6 +1,6 @@
 //: net/mindview/util/MapData.java
 // A Map filled with data using a generator object.
-package ch.ex40.access.pets;
+package ch15.ex40.access.pets;
 
 import lib.pets.Pair;
 import lib.utils.IGenerator;

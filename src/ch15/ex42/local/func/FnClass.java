@@ -1,4 +1,4 @@
-package ch.ex42.local.func;
+package ch15.ex42.local.func;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

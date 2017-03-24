@@ -1,4 +1,4 @@
-package ch.ex40.local;
+package ch15.ex40.local;
 
 import lib.pets.Dog;
 

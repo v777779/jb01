@@ -1,4 +1,4 @@
-package ch.ex29.local;
+package ch15.ex29.local;
 
 import java.util.HashMap;
 import java.util.Map;

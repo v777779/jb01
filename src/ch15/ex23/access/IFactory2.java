@@ -1,4 +1,4 @@
-package ch.ex23.access;
+package ch15.ex23.access;
 
 /**
  * Created by V1 on 10-Mar-17.

@@ -1,10 +1,10 @@
-package ch.ex28;
+package ch15.ex28;
 
-import ch.ex28.access.Access;
-import ch.ex28.include.Include;
-import ch.ex28.integra.Integra;
-import ch.ex28.local.Local;
-import ch.ex28.remote.Remote;
+import ch15.ex28.access.Access;
+import ch15.ex28.include.Include;
+import ch15.ex28.integra.Integra;
+import ch15.ex28.local.Local;
+import ch15.ex28.remote.Remote;
 
 /**
  * Created by V1 on 20.03.2017.

@@ -1,4 +1,4 @@
-package ch.ex41.local;
+package ch15.ex41.local;
 
 import java.util.Collection;
 

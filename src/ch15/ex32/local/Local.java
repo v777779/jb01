@@ -1,4 +1,4 @@
-package ch.ex32.local;
+package ch15.ex32.local;
 
 /**
  * Created by V1 on 18-Feb-17.

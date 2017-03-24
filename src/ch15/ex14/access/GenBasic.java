@@ -1,4 +1,4 @@
-package ch.ex14.access;
+package ch15.ex14.access;
 
 import lib.utils.IGenerator;
 

@@ -1,6 +1,6 @@
-package ch.ex17.include;
+package ch15.ex17.include;
 
-import ch.ex17.local.Sets;
+import ch15.ex17.local.Sets;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

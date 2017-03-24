@@ -1,6 +1,6 @@
-package ch.ex42.local;
+package ch15.ex42.local;
 
-import ch.ex42.local.func.FnClass;
+import ch15.ex42.local.func.FnClass;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
