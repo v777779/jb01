@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch02" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch03" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch04" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch06" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch07" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />
