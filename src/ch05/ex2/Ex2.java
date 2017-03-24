@@ -8,8 +8,8 @@ public class Ex2 {
         CString2 s = new CString2();
         CString2 c = new CString2("check");
 
-        System.out.println("Default Constructor s.s1= "+s.s1+ " s.s2= "+s.s2);
-        System.out.println("Constructor w Param c.s1= "+c.s1+ " c.s2= "+c.s2);
+        System.out.println("Default Constructor  s.s1= "+s.s1+ " s.s2=  "+s.s2);
+        System.out.println("Constructor w Param  c.s1= "+c.s1+ " c.s2= "+c.s2);
 
     }
 }
