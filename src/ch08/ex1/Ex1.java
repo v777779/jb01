@@ -25,7 +25,7 @@ public class Ex1 {
         music.play(violin);  // вызов по перегрузке
         music.play(horn);  // вызов по перегрузке
 
-        System.out.println("\nExercise 1 Polymorphism.main\n");
+        System.out.println("\nExercise 1 Polymorphism.main \n");
         Unicycle unicycle = new Unicycle();
         Bicycle bicycle = new Bicycle();
         Tricycle tricycle = new Tricycle();
