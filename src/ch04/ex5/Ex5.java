@@ -1,6 +1,6 @@
-package ch.ex5;
+package ch04.ex5;
 
-import ch.ex4.Conv;
+import ch04.ex4.Conv;
 
 /**
  * Created by V1 on 05-Feb-17.

@@ -1,4 +1,4 @@
-package hw.ex1;
+package ch04.hw1;
 
 /**
  * Created by V1 on 05-Feb-17.

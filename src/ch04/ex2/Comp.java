@@ -1,4 +1,4 @@
-package ch.ex2;
+package ch04.ex2;
 
 /**
  * Created by V1 on 04-Feb-17.
