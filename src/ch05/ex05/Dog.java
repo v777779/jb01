@@ -1,4 +1,4 @@
-package ch05.ex6;
+package ch05.ex05;
 
 /**
  * Created by V1 on 06-Feb-17.
@@ -21,12 +21,5 @@ public class Dog {
         System.out.println("bark Long  > ");
     }
 
-    void bark(long m, int k) {
-        System.out.println("bark Long Int > ");
-    }
-
-    void bark(int k, long m) {
-        System.out.println("bark Int Long > ");
-    }
 
 }

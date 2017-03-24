@@ -1,6 +1,6 @@
 package ch05.ex10;
 
-import ch05.ex8.Turbo;
+import ch05.ex08.Turbo;
 
 /**
  * Created by V1 on 06-Feb-17.
