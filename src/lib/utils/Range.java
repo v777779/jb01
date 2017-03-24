@@ -63,6 +63,28 @@ public class Range {
         return s;
     }
 
+    public static String[] randomStr(int i) {
+        final char[] chs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
+        String[] s = new String[i];
+        for (int j = 0; j < s.length; j++) {
+            s[j]="";
+            for (int k = 0; k < 5 ; k++) {
+                s[j] += chs[rnd.nextInt(chs.length)];
+            }
+//            s[j] += " "+rnd.nextInt(100);
+        }
+        return s;
+    }
+
+    public static String randomStr() {
+        final char[] chs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
+        String s = "";
+            for (int k = 0; k < 5 ; k++) {
+                s += chs[rnd.nextInt(chs.length)];
+            }
+        return s;
+    }
+
     @Override
     public String toString() {
         return "Range{}";

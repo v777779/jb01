@@ -6,11 +6,11 @@ import java.util.Iterator;
  * Created by V1 on 10-Mar-17.
  */
 public class Ball implements Iterable<Ball> {
+private static long counter = 1;
+private final long id = counter++;
 public BallSmall bs = new BallSmall();
 
     class BallSmall {
-
-
     }
 
     @Override
@@ -32,6 +32,6 @@ public BallSmall bs = new BallSmall();
 
     @Override
     public String toString() {
-        return "BadGuys{}";
+        return "Ball("+id+")";
     }
 }
