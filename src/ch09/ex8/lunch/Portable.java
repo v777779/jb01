@@ -1,0 +1,10 @@
+package ch.ex8.lunch;
+
+/**
+ * Created by V1 on 10-Feb-17.
+ */
+public class Portable extends Lunch {
+    public Portable() {
+        System.out.println("Portable.Constructor");
+    }
+}
