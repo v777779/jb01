@@ -18,7 +18,7 @@ public class Ex1 {
             System.out.printf("%04.1f ",f);
         }
         System.out.println();
-        System.out.println("\nCheck Aggreggation \n");
+        System.out.println("\nCheck Aggreggation  \n");
         Plate plate = new Plate();
         plate.show();
 
