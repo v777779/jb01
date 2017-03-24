@@ -13,7 +13,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch08" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch09" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch10" />
-      <excludeFolder url="file://$MODULE_DIR$/src/ch12a" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch11" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch12" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />
