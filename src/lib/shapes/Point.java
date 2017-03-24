@@ -8,7 +8,6 @@ import lib.utils.IFactory;
 public class Point extends Shape {
     public Point() {
     }
-
     public static class Factory implements IFactory {
         @Override
         public Point create() {
@@ -18,10 +17,6 @@ public class Point extends Shape {
 
     public void draw() {
         System.out.println("Draw.Point");
-    }
-
-    public void erase() {
-        System.out.println("Erase.Point");
     }
 
     @Override
