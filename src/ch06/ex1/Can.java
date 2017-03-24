@@ -5,7 +5,7 @@ package ch06.ex1;
  */
 class Can {
     void show() {
-        System.out.println("Show from Can2");
+        System.out.println("Show from Can2 ");
     }
 
 }
