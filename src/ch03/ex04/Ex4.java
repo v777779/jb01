@@ -1,4 +1,4 @@
-package ch03.ex4;
+package ch03.ex04;
 
 import java.util.Random;
 
