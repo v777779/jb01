@@ -1,4 +1,4 @@
-package ch.ex8.lunch;
+package ch09.ex8.lunch;
 
 /**
  * Created by V1 on 10-Feb-17.

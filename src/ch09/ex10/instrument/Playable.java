@@ -1,4 +1,4 @@
-package ch.ex10.instrument;
+package ch09.ex10.instrument;
 
 /**
  * Created by V1 on 12-Feb-17.

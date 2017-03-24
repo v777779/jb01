@@ -1,9 +1,9 @@
-package ch.ex5;
+package ch09.ex5;
 
-import ch.ex5.instrument.Instrument;
-import ch.ex5.instrument.Note;
-import ch.ex5.instrument.Trumpet;
-import ch.ex5.instrument.Wind;
+import ch09.ex5.instrument.Instrument;
+import ch09.ex5.instrument.Note;
+import ch09.ex5.instrument.Trumpet;
+import ch09.ex5.instrument.Wind;
 
 /**
  * Created by V1 on 12-Feb-17.

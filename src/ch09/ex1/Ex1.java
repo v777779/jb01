@@ -1,9 +1,9 @@
-package ch.ex1;
+package ch09.ex1;
 
-import ch.ex1.local.*;
-import ch.ex1.rodent.FieldMouse;
-import ch.ex1.rodent.GenClass;
-import ch.ex1.rodent.Rodent;
+import ch09.ex1.local.*;
+import ch09.ex1.rodent.FieldMouse;
+import ch09.ex1.rodent.GenClass;
+import ch09.ex1.rodent.Rodent;
 
 /**
  * Created by V1 on 10-Feb-17.

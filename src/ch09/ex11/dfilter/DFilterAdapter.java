@@ -1,6 +1,6 @@
-package ch.ex11.dfilter;
+package ch09.ex11.dfilter;
 
-import ch.ex11.dtext.IProcessor;
+import ch09.ex11.dtext.IProcessor;
 
 /**
  * Created by V1 on 13-Feb-17.

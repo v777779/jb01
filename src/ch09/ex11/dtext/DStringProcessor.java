@@ -1,4 +1,4 @@
-package ch.ex11.dtext;
+package ch09.ex11.dtext;
 
 /**
  * Created by V1 on 13-Feb-17.

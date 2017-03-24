@@ -1,7 +1,7 @@
-package ch.ex15;
+package ch09.ex15;
 
-import ch.ex15.access.Active;
-import ch.ex15.access.Person;
+import ch09.ex15.access.Active;
+import ch09.ex15.access.Person;
 
 /**
  * Created by V1 on 13-Feb-17.

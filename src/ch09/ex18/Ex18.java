@@ -1,15 +1,15 @@
-package ch.ex18;
+package ch09.ex18;
 
-import ch.ex18.cycle.BFactory;
-import ch.ex18.cycle.TFactory;
-import ch.ex18.cycle.UFactory;
-import ch.ex18.cycle.UserCycle;
-import ch.ex18.downstream.FieldMouse;
-import ch.ex18.downstream.Mouse;
-import ch.ex18.downstream.Rodent;
-import ch.ex18.fabric.*;
-import ch.ex18.gamer.*;
-import ch.ex18.local.A;
+import ch09.ex18.cycle.BFactory;
+import ch09.ex18.cycle.TFactory;
+import ch09.ex18.cycle.UFactory;
+import ch09.ex18.cycle.UserCycle;
+import ch09.ex18.downstream.FieldMouse;
+import ch09.ex18.downstream.Mouse;
+import ch09.ex18.downstream.Rodent;
+import ch09.ex18.fabric.*;
+import ch09.ex18.gamer.*;
+import ch09.ex18.local.A;
 
 /**
  * Created by V1 on 14-Feb-17.

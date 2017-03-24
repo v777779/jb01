@@ -1,4 +1,4 @@
-package ch.ex16.read;
+package ch09.ex16.read;
 
 import java.io.IOException;
 import java.nio.CharBuffer;

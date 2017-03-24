@@ -1,4 +1,4 @@
-package ch.ex7.rodent;
+package ch09.ex7.rodent;
 
 /**
  * Created by V1 on 09-Feb-17.

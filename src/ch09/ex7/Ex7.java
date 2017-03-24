@@ -1,8 +1,8 @@
-package ch.ex7;
+package ch09.ex7;
 
-import ch.ex7.rodent.FieldMouse;
-import ch.ex7.rodent.GenClass;
-import ch.ex7.rodent.Rodent;
+import ch09.ex7.rodent.FieldMouse;
+import ch09.ex7.rodent.GenClass;
+import ch09.ex7.rodent.Rodent;
 
 /**
  * Created by V1 on 12-Feb-17.

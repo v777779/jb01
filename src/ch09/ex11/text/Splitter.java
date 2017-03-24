@@ -1,4 +1,4 @@
-package ch.ex11.text;
+package ch09.ex11.text;
 
 import java.util.Arrays;
 

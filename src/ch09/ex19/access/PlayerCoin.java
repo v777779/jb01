@@ -1,4 +1,4 @@
-package ch.ex19.access;
+package ch09.ex19.access;
 
 import java.util.Random;
 

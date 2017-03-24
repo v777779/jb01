@@ -1,8 +1,8 @@
-package ch.ex19;
+package ch09.ex19;
 
-import ch.ex19.access.FactoryCoin;
-import ch.ex19.access.FactoryCube;
-import ch.ex19.access.PlayGame;
+import ch09.ex19.access.FactoryCoin;
+import ch09.ex19.access.FactoryCube;
+import ch09.ex19.access.PlayGame;
 
 /**
  * Created by V1 on 14-Feb-17.

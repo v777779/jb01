@@ -1,7 +1,7 @@
-package ch.ex6;
+package ch09.ex6;
 
-import ch.ex5.instrument.Wind;
-import ch.ex6.local.Violin;
+import ch09.ex5.instrument.Wind;
+import ch09.ex6.local.Violin;
 
 /**
  * Created by V1 on 12-Feb-17.

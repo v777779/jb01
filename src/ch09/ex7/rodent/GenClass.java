@@ -1,4 +1,4 @@
-package ch.ex7.rodent;
+package ch09.ex7.rodent;
 
 import java.util.Random;
 

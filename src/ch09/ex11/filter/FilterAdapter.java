@@ -1,6 +1,6 @@
-package ch.ex11.filter;
+package ch09.ex11.filter;
 
-import ch.ex11.text.Processor;
+import ch09.ex11.text.Processor;
 
 /**
  * Created by V1 on 13-Feb-17.

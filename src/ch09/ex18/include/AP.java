@@ -1,7 +1,7 @@
-package ch.ex18.include;
+package ch09.ex18.include;
 
-import ch.ex18.local.A;
-import ch.ex18.local.E;
+import ch09.ex18.local.A;
+import ch09.ex18.local.E;
 
 /**
  * Created by V1 on 14-Feb-17.

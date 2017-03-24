@@ -1,7 +1,7 @@
-package ch.ex12;
+package ch09.ex12;
 
-import ch.ex12.access.GenClass;
-import ch.ex12.access.Hero;
+import ch09.ex12.access.GenClass;
+import ch09.ex12.access.Hero;
 
 /**
  * Created by V1 on 13-Feb-17.

@@ -1,4 +1,4 @@
-package ch.ex18.fabric;
+package ch09.ex18.fabric;
 
 /**
  * Created by V1 on 14-Feb-17.

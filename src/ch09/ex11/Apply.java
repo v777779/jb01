@@ -1,7 +1,7 @@
-package ch.ex11;
+package ch09.ex11;
 
-import ch.ex11.dtext.IProcessor;
-import ch.ex11.text.Processor;
+import ch09.ex11.dtext.IProcessor;
+import ch09.ex11.text.Processor;
 
 /**
  * Created by V1 on 13-Feb-17.

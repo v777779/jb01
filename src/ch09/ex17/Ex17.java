@@ -1,7 +1,7 @@
-package ch.ex17;
+package ch09.ex17;
 
-import ch.ex17.access.InterPackage;
-import ch.ex17.access.UserClass;
+import ch09.ex17.access.InterPackage;
+import ch09.ex17.access.UserClass;
 
 /**
  * Created by V1 on 14-Feb-17.

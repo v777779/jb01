@@ -1,7 +1,7 @@
-package ch.ex9;
+package ch09.ex9;
 
-import ch.ex9.instrument.*;
-import ch.ex9.instrument.Music;
+import ch09.ex9.instrument.*;
+import ch09.ex9.instrument.Music;
 
 /**
  * Created by V1 on 12-Feb-17.

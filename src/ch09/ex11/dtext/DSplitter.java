@@ -1,4 +1,4 @@
-package ch.ex11.dtext;
+package ch09.ex11.dtext;
 
 import java.util.Arrays;
 

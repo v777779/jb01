@@ -1,9 +1,9 @@
-package ch.ex11;
+package ch09.ex11;
 
-import ch.ex11.dtext.*;
-import ch.ex11.dfilter.*;
-import ch.ex11.filter.*;
-import ch.ex11.text.*;
+import ch09.ex11.dtext.*;
+import ch09.ex11.dfilter.*;
+import ch09.ex11.filter.*;
+import ch09.ex11.text.*;
 
 import java.util.Arrays;
 

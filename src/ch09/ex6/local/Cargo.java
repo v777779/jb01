@@ -1,4 +1,4 @@
-package ch.ex6.local;
+package ch09.ex6.local;
 
 /**
  * Created by V1 on 12-Feb-17.

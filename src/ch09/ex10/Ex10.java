@@ -1,6 +1,6 @@
-package ch.ex10;
+package ch09.ex10;
 
-import ch.ex10.instrument.*;
+import ch09.ex10.instrument.*;
 
 /**
  * Created by V1 on 12-Feb-17.

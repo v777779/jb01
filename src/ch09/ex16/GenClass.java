@@ -1,4 +1,4 @@
-package ch.ex16;
+package ch09.ex16;
 
 import java.util.Scanner;
 

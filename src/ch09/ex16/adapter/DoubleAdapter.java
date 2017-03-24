@@ -1,4 +1,4 @@
-package ch.ex16.adapter;
+package ch09.ex16.adapter;
 
 import java.io.IOException;
 import java.nio.CharBuffer;

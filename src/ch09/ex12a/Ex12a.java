@@ -1,6 +1,6 @@
-package ch.ex12a;
+package ch09.ex12a;
 
-import ch.ex12a.access.Bee;
+import ch09.ex12a.access.Bee;
 
 /**
  * Created by V1 on 13-Feb-17.

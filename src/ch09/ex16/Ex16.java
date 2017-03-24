@@ -1,8 +1,8 @@
-package ch.ex16;
+package ch09.ex16;
 
-import ch.ex16.access.CharAdapter;
-import ch.ex16.adapter.DoubleAdapter;
-import ch.ex16.read.RandomWords;
+import ch09.ex16.access.CharAdapter;
+import ch09.ex16.adapter.DoubleAdapter;
+import ch09.ex16.read.RandomWords;
 
 import java.util.Scanner;
 

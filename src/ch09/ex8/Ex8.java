@@ -1,6 +1,6 @@
-package ch.ex8;
+package ch09.ex8;
 
-import ch.ex8.lunch.Sandwich;
+import ch09.ex8.lunch.Sandwich;
 
 /**
  * Created by V1 on 12-Feb-17.
