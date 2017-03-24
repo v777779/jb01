@@ -1,12 +1,10 @@
-package ch02.hw14;
+package ch02.ex06;
 /**
  * Created by V1 on 02-Feb-17.
  */
 
-import ch02.ex06.HelloDate;
-
+import java.util.Calendar;
 import java.util.Date;
-
 /** HelloWorld  comment for Class HelloWorld
  *
  * <br> <br>
@@ -75,6 +73,25 @@ private static int nclass;
         int i;
         System.out.println("Привет, сегодня: ");
         System.out.println(new Date());
+
+        Calendar calendar = Calendar.getInstance();
+        System.out.printf("Calendar: %02d:%02d:%02d %02d.%02d.%d \n",
+        calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE),calendar.get(Calendar.SECOND),
+        calendar.get(Calendar.DAY_OF_MONTH),calendar.get(Calendar.MONTH)+1, calendar.get(Calendar.YEAR));
+
+        System.out.println("Text out from PrintStream");
+
+        System.out.println("System Properties List");
+
+        System.getProperties().list(System.out);
+
+        String s = System.getProperties().toString();
+        System.out.println();
+        System.out.println("Find the name of property in the upper list ");
+        System.out.println("user name: "+System.getProperty("user.name"));
+        System.out.println("user name: "+System.getProperty("java.version"));
+        voice(1,2);
+        //        System.out.println("path     : "+System.getProperty("java.library.path"));
     }
 
 
