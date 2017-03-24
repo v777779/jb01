@@ -23,7 +23,7 @@ public class Access {
 
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 7 Multidimensional  Array Check\n");
+        System.out.println("\nExercise 7 Multidimensional Array Check\n");
 
         System.out.println("BerylliumSphere[][][]:");
         System.out.println(Arrays.deepToString(get(new int[]{3,2,2})));
