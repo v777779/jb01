@@ -1,4 +1,4 @@
-package ch04.hw2;
+package ch04.hw02;
 
 /**
  * Created by V1 on 05-Feb-17.
