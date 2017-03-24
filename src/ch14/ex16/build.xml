@@ -1,0 +1,11 @@
+<project default="compile">
+	<target name = "compile">
+	<!--mkdir dir="bin/"></mkdir-->
+    <javac srcdir="./" destdir="../../">	</javac>
+	<!--javac srcdir="./include" destdir="../../">	</javac-->
+	</target>
+	</project>
+
+<!--javac srcdir="./access/shop" destdir="./"-->
+<!--/javac-->
+	

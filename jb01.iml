@@ -15,6 +15,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch10" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch11" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch12" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch13" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch15" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch16" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />
