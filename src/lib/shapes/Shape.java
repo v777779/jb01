@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 import lib.utils.Range;
@@ -30,10 +30,12 @@ public class Shape {
         System.out.println("Shape.Draw");
     }
 
-    public void rotate() {
-
+    public void erase() {
+        System.out.println("Erase.Shape");
     }
-
+    public void rotate() {
+        System.out.println("Rotate.Shape");
+    }
     public void rotate(Shape shape) {
         if (shape instanceof Circle) {
             System.out.println("Circle is not rotated");

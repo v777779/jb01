@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -16,12 +16,16 @@ public class Circle extends Shape {
         }
     }
 
-
     public void draw() {
         System.out.println("Draw.Circle");
     }
+
     public void rotate() {
         System.out.println("Rotate.Circle");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Circle");
     }
 
     @Override

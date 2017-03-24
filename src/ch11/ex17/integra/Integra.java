@@ -1,8 +1,12 @@
 package ch11.ex17.integra;
 
-import typeinfo.pets.*;
+import lib.pets.*;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * Created by V1 on 20-Feb-17.
@@ -15,7 +19,7 @@ public class Integra {
         Map<Person, List<? extends Pet>> petPeople = new HashMap<>();  // ВНИМАНИЕ двойное применение Generic
         petPeople.put(new Person("Dawn"),
                 Arrays.asList(
-                        new Cymric("Molly"),
+                        new Cymr("Molly"),
                         new Mutt("Spot")
                 ));
         petPeople.put(new Person("Kate"),

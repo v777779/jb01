@@ -1,9 +1,6 @@
 package ch11.ex17.include;
 
-import typeinfo.pets.Cat;
-import typeinfo.pets.Dog;
-import typeinfo.pets.Hamster;
-import typeinfo.pets.Pet;
+import lib.pets.*;
 
 import java.util.HashMap;
 import java.util.Map;

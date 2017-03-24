@@ -1,8 +1,9 @@
 package ch11.ex20.access;
 
-import net.mindview.util.TextFile;
 
+import lib.utils.TextFile;
 import java.util.*;
+
 
 /**
  * Created by V1 on 18-Feb-17.

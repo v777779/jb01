@@ -1,7 +1,7 @@
 package ch11.ex32.access;
 
 import lib.utils.Range;
-import typeinfo.pets.Pet;
+import lib.pets.*;
 
 import java.util.Iterator;
 import java.util.Random;

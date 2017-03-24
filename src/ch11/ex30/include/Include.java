@@ -1,7 +1,7 @@
 package ch11.ex30.include;
 
 import lib.utils.Show;
-import typeinfo.pets.Pet;
+import lib.pets.*;
 
 /**
  * Created by V1 on 20-Feb-17.

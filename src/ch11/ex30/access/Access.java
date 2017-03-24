@@ -1,8 +1,8 @@
 package ch11.ex30.access;
 
 import lib.utils.Show;
-import typeinfo.pets.Pet;
-import typeinfo.pets.Pets;
+import lib.pets.*;
+
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -19,7 +19,7 @@ public class Access {
         Show.showCPet(pets);
         Pet[] p2 = pets.toArray();
         System.out.println("P2:"+Arrays.toString(p2));
-        Pet[] p4 = Pets.createArray(16);
+        Pet[] p4 = Pets.getArray(16);
         System.out.println("P4:"+Arrays.toString(p4));
 
         Pet[] p6 = pets.toArray(p4);

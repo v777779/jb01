@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 /**
  * Created by V1 on 02-Mar-17.

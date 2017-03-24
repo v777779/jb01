@@ -1,7 +1,6 @@
 package ch11.ex22.access;
 
-import net.mindview.util.TextFile;
-
+import lib.utils.TextFile;
 import java.util.*;
 
 /**

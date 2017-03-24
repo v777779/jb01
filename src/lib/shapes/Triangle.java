@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -8,6 +8,7 @@ import lib.utils.IFactory;
 public class Triangle extends Shape {
     public Triangle() {
     }
+
     public static class Factory implements IFactory {
         @Override
         public Triangle create() {
@@ -18,8 +19,13 @@ public class Triangle extends Shape {
     public void draw() {
         System.out.println("Draw.Triangle");
     }
+
     public void rotate() {
-          System.out.println("Rotate.Triangle");
+        System.out.println("Rotate.Triangle");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Triangle");
     }
 
     @Override

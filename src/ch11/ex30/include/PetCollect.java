@@ -1,8 +1,6 @@
 package ch11.ex30.include;
 
-import typeinfo.pets.Pet;
-import typeinfo.pets.Pets;
-
+import lib.pets.*;
 import java.util.AbstractCollection;
 import java.util.Iterator;
 
@@ -10,7 +8,7 @@ import java.util.Iterator;
  * Created by V1 on 28-Feb-17.
  */
 public class PetCollect extends AbstractCollection<Pet> {   // необходимо реализовать методы итератора
-    private Pet[] pets = Pets.createArray(8);           // создается массив
+    private Pet[] pets = Pets.getArray(8);           // создается массив
 
     @Override
     public Iterator<Pet> iterator() {

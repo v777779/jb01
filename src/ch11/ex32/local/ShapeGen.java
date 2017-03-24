@@ -1,7 +1,6 @@
 package ch11.ex32.local;
 
 import lib.shapes.*;
-
 import java.util.Iterator;
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -8,6 +8,7 @@ import lib.utils.IFactory;
 public class Rhomb extends Shape {
     public Rhomb() {
     }
+
     public static class Factory implements IFactory {
         @Override
         public Rhomb create() {
@@ -18,8 +19,13 @@ public class Rhomb extends Shape {
     public void draw() {
         System.out.println("Draw.Rhomb");
     }
+
     public void rotate() {
         System.out.println("Rotate.Rhomb");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Rhomb");
     }
 
     @Override

@@ -1,6 +1,6 @@
 package ch11.ex32.access;
 
-import typeinfo.pets.Pet;
+import lib.pets.*;
 
 /**
  * Created by V1 on 18-Feb-17.

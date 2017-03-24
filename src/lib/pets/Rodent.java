@@ -8,6 +8,7 @@ public class Rodent extends Pet {
         super();
     }
 
+    
     public Rodent(String name) {
         super(name);
     }

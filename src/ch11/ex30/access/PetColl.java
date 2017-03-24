@@ -1,6 +1,6 @@
 package ch11.ex30.access;
 
-import typeinfo.pets.Pet;
+import lib.pets.*;
 
 import java.util.Collection;
 import java.util.Iterator;

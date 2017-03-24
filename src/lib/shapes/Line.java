@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -8,6 +8,7 @@ import lib.utils.IFactory;
 public class Line extends Shape {
     public Line() {
     }
+
     public static class Factory implements IFactory {
         @Override
         public Line create() {
@@ -17,6 +18,10 @@ public class Line extends Shape {
 
     public void draw() {
         System.out.println("Draw.Line");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Line");
     }
 
     @Override

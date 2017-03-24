@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -8,6 +8,7 @@ import lib.utils.IFactory;
 public class Square extends Shape {
     public Square() {
     }
+
     public static class Factory implements IFactory {
         @Override
         public Square create() {
@@ -18,8 +19,13 @@ public class Square extends Shape {
     public void draw() {
         System.out.println("Draw.Square");
     }
+
     public void rotate() {
         System.out.println("Rotate.Square");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Square");
     }
 
     @Override

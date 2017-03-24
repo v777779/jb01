@@ -1,12 +1,8 @@
 package ch11.ex31.local;
 
 import lib.rodent.Rodent;
-import net.mindview.util.TextFile;
-
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Set;
+import lib.utils.TextFile;
+import java.util.*;
 
 /**
  * Created by V1 on 18-Feb-17.

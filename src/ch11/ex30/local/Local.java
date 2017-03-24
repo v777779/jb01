@@ -1,7 +1,7 @@
 package ch11.ex30.local;
 
 import lib.utils.Show;
-import net.mindview.util.TextFile;
+import lib.utils.TextFile;
 
 import java.util.*;
 

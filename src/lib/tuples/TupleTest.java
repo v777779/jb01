@@ -2,7 +2,7 @@ package lib.tuples;
 
 import lib.coffee.Coffee;
 import lib.coffee.CoffeeGen;
-import lib.figures.Shape;
+import lib.shapes.Shape;
 import lib.pets.Pet;
 import lib.pets.Pets;
 

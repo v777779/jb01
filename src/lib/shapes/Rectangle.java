@@ -1,4 +1,4 @@
-package lib.figures;
+package lib.shapes;
 
 import lib.utils.IFactory;
 
@@ -8,6 +8,7 @@ import lib.utils.IFactory;
 public class Rectangle extends Shape {
     public Rectangle() {
     }
+
     public static class Factory implements IFactory {
         @Override
         public Rectangle create() {
@@ -18,8 +19,13 @@ public class Rectangle extends Shape {
     public void draw() {
         System.out.println("Draw.Rectangle");
     }
+
     public void rotate() {
         System.out.println("Rotate.Rectangle");
+    }
+
+    public void erase() {
+        System.out.println("Erase.Rectangle");
     }
 
     @Override
