@@ -1,6 +1,6 @@
-package ch.ex3;
+package ch10.ex3;
 
-import ch.ex3.access.Outer;
+import ch10.ex3.access.Outer;
 
 /**
  * Created by V1 on 14-Feb-17.

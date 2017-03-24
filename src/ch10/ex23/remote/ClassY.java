@@ -1,4 +1,4 @@
-package ch.ex23.remote;
+package ch10.ex23.remote;
 
 /**
  * Created by V1 on 16-Feb-17.

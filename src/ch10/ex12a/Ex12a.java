@@ -1,6 +1,6 @@
-package ch.ex12a;
+package ch10.ex12a;
 
-import ch.ex12a.access.Tape;
+import ch10.ex12a.access.Tape;
 
 /**
  * Created by V1 on 15-Feb-17.

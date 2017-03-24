@@ -1,4 +1,4 @@
-package ch.ex16.games;
+package ch10.ex16.games;
 
 /**
  * Created by V1 on 14-Feb-17.

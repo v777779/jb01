@@ -1,6 +1,6 @@
-package ch.ex8;
+package ch10.ex8;
 
-import ch.ex7.access.Ground;
+import ch10.ex7.access.Ground;
 
 /**
  * Created by V1 on 15-Feb-17.

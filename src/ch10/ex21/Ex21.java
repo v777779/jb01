@@ -1,10 +1,10 @@
-package ch.ex21;
+package ch10.ex21;
 
-import ch.ex21.access.Ball;
-import ch.ex21.access.IBall;
-import ch.ex21.local.ClassRoom;
-import ch.ex21.local.IClassInterface;
-import ch.ex21.local.ITest;
+import ch10.ex21.access.Ball;
+import ch10.ex21.access.IBall;
+import ch10.ex21.local.ClassRoom;
+import ch10.ex21.local.IClassInterface;
+import ch10.ex21.local.ITest;
 
 /**
  * Created by V1 on 16-Feb-17.

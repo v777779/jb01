@@ -1,4 +1,4 @@
-package ch.ex26.access;
+package ch10.ex26.access;
 
 import java.util.ArrayList;
 import java.util.List;

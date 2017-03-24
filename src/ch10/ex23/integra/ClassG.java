@@ -1,4 +1,4 @@
-package ch.ex23.integra;
+package ch10.ex23.integra;
 
 /**
  * Created by V1 on 16-Feb-17.

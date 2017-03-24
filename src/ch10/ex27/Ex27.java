@@ -1,7 +1,7 @@
-package ch.ex27;
+package ch10.ex27;
 
-import ch.ex27.access.Access;
-import ch.ex27.local.Local;
+import ch10.ex27.access.Access;
+import ch10.ex27.local.Local;
 
 /**
  * Created by V1 on 17-Feb-17.

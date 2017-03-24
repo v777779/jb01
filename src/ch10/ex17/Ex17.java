@@ -1,6 +1,6 @@
-package ch.ex17;
+package ch10.ex17;
 
-import ch.ex17.game.*;
+import ch10.ex17.game.*;
 
 
 /**

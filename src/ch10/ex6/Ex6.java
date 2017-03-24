@@ -1,8 +1,8 @@
-package ch.ex6;
+package ch10.ex6;
 
-import ch.ex6.local.IContents;
-import ch.ex6.local.IDestination;
-import ch.ex6.local.Parcel4;
+import ch10.ex6.local.IContents;
+import ch10.ex6.local.IDestination;
+import ch10.ex6.local.Parcel4;
 
 /**
  * Created by V1 on 15-Feb-17.

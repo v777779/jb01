@@ -1,6 +1,6 @@
-package ch.ex6.include;
+package ch10.ex6.include;
 
-import ch.ex6.access.IAccount;
+import ch10.ex6.access.IAccount;
 
 /**
  * Created by V1 on 15-Feb-17.

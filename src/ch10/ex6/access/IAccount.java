@@ -1,4 +1,4 @@
-package ch.ex6.access;
+package ch10.ex6.access;
 
 /**
  * Created by V1 on 15-Feb-17.

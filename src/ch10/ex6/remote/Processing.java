@@ -1,7 +1,7 @@
-package ch.ex6.remote;
+package ch10.ex6.remote;
 
-import ch.ex6.access.IAccount;
-import ch.ex6.include.Fund;
+import ch10.ex6.access.IAccount;
+import ch10.ex6.include.Fund;
 
 /**
  * Created by V1 on 15-Feb-17.

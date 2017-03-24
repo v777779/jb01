@@ -1,9 +1,9 @@
-package ch.ex16;
+package ch10.ex16;
 
 
-import ch.ex16.cycle.*;
-import ch.ex16.games.*;
-import ch.ex16.local.*;
+import ch10.ex16.cycle.*;
+import ch10.ex16.games.*;
+import ch10.ex16.local.*;
 
 
 /**

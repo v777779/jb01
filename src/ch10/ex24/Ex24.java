@@ -1,7 +1,7 @@
-package ch.ex24;
+package ch10.ex24;
 
-import ch.ex24.access.ClassA2;
-import ch.ex24.access.ClassB2;
+import ch10.ex24.access.ClassA2;
+import ch10.ex24.access.ClassB2;
 
 import java.util.Random;
 

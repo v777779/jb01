@@ -1,6 +1,6 @@
-package ch.ex26;
+package ch10.ex26;
 
-import ch.ex26.access.Access;
+import ch10.ex26.access.Access;
 
 /**
  * Created by V1 on 17-Feb-17.

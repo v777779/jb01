@@ -1,4 +1,4 @@
-package ch.ex7.access;
+package ch10.ex7.access;
 
 /**
  * Created by V1 on 15-Feb-17.

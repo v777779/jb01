@@ -1,6 +1,6 @@
-package ch.ex4;
+package ch10.ex4;
 
-import ch.ex2.local.Sequence;
+import ch10.ex2.local.Sequence;
 
 /**
  * Created by V1 on 14-Feb-17.

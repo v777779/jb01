@@ -1,4 +1,4 @@
-package ch.ex12.include;
+package ch10.ex12.include;
 
 /**
  * Created by V1 on 15-Feb-17.

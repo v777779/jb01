@@ -1,8 +1,8 @@
-package ch.ex9;
+package ch10.ex9;
 
-import ch.ex9.access.IRecord;
-import ch.ex9.access.Tape;
-import ch.ex9.local.Parcel6;
+import ch10.ex9.access.IRecord;
+import ch10.ex9.access.Tape;
+import ch10.ex9.local.Parcel6;
 
 /**
  * Created by V1 on 15-Feb-17.

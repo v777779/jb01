@@ -1,4 +1,4 @@
-package ch.ex25.access;
+package ch10.ex25.access;
 
 /**
  * Created by V1 on 17-Feb-17.

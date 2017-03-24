@@ -1,11 +1,11 @@
-package ch.ex23;
+package ch10.ex23;
 
-import ch.ex23.access.ISelector;
-import ch.ex23.access.Sequence;
-import ch.ex23.include.*;
-import ch.ex23.local.*;
-import ch.ex23.remote.*;
-import ch.ex23.integra.*;
+import ch10.ex23.access.ISelector;
+import ch10.ex23.access.Sequence;
+import ch10.ex23.include.*;
+import ch10.ex23.local.*;
+import ch10.ex23.remote.*;
+import ch10.ex23.integra.*;
 
 /**
  * Created by V1 on 16-Feb-17.

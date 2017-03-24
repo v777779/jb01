@@ -1,7 +1,7 @@
-package ch.ex10;
+package ch10.ex10;
 
-import ch.ex10.access.IPlay;
-import ch.ex10.access.Play;
+import ch10.ex10.access.IPlay;
+import ch10.ex10.access.Play;
 
 /**
  * Created by V1 on 15-Feb-17.

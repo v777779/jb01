@@ -1,7 +1,7 @@
-package ch.ex15;
+package ch10.ex15;
 
-import ch.ex15.access.BuildStadium;
-import ch.ex15.access.Stadium;
+import ch10.ex15.access.BuildStadium;
+import ch10.ex15.access.Stadium;
 
 /**
  * Created by V1 on 15-Feb-17.

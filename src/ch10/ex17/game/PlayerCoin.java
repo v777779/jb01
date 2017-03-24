@@ -1,4 +1,4 @@
-package ch.ex17.game;
+package ch10.ex17.game;
 
 import java.util.Random;
 

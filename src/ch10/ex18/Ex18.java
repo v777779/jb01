@@ -1,9 +1,9 @@
-package ch.ex18;
+package ch10.ex18;
 
-import ch.ex18.local.IContents;
-import ch.ex18.local.IDestination;
-import ch.ex18.local.IEntry;
-import ch.ex18.local.Parcel11;
+import ch10.ex18.local.IContents;
+import ch10.ex18.local.IDestination;
+import ch10.ex18.local.IEntry;
+import ch10.ex18.local.Parcel11;
 
 /**
  * Created by V1 on 15-Feb-17.

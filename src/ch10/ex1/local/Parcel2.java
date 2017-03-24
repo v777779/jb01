@@ -1,4 +1,4 @@
-package ch.ex1.local;
+package ch10.ex1.local;
 
 /**
  * Created by V1 on 14-Feb-17.

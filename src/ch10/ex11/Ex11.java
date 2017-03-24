@@ -1,7 +1,7 @@
-package ch.ex11;
+package ch10.ex11;
 
-import ch.ex11.access.IBall;
-import ch.ex11.access.Sport;
+import ch10.ex11.access.IBall;
+import ch10.ex11.access.Sport;
 
 /**
  * Created by V1 on 15-Feb-17.

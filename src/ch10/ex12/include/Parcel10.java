@@ -1,4 +1,4 @@
-package ch.ex12.include;
+package ch10.ex12.include;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package ch.ex28.include;
+package ch10.ex28.include;
 
 /**
  * Created by V1 on 17-Feb-17.

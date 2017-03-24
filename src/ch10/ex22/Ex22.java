@@ -1,6 +1,6 @@
-package ch.ex22;
+package ch10.ex22;
 
-import ch.ex22.access.IHolder;
+import ch10.ex22.access.IHolder;
 
 /**
  * Created by V1 on 16-Feb-17.

@@ -1,10 +1,10 @@
-package ch.ex12;
+package ch10.ex12;
 
-import ch.ex12.include.Parcel10;
-import ch.ex12.include.Parcel7;
-import ch.ex12.include.Parcel9;
-import ch.ex12.local.CheckGarden;
-import ch.ex12.access.Ground;
+import ch10.ex12.include.Parcel10;
+import ch10.ex12.include.Parcel7;
+import ch10.ex12.include.Parcel9;
+import ch10.ex12.local.CheckGarden;
+import ch10.ex12.access.Ground;
 
 /**
  * Created by V1 on 15-Feb-17.

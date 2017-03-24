@@ -1,7 +1,7 @@
-package ch.ex19;
+package ch10.ex19;
 
-import ch.ex19.access.Cort;
-import ch.ex19.access.IPlayers;
+import ch10.ex19.access.Cort;
+import ch10.ex19.access.IPlayers;
 
 /**
  * Created by V1 on 15-Feb-17.

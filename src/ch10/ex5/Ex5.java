@@ -1,6 +1,6 @@
-package ch.ex5;
+package ch10.ex5;
 
-import ch.ex5.access.Pump;
+import ch10.ex5.access.Pump;
 
 /**
  * Created by V1 on 14-Feb-17.

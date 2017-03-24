@@ -1,4 +1,4 @@
-package ch.ex26.access;
+package ch10.ex26.access;
 
 /**
  * Created by V1 on 17-Feb-17.

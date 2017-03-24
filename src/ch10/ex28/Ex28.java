@@ -1,8 +1,8 @@
-package ch.ex28;
+package ch10.ex28;
 
-import ch.ex28.include.Include;
-import ch.ex28.local.Local;
-import ch.ex28.remote.Remote;
+import ch10.ex28.include.Include;
+import ch10.ex28.local.Local;
+import ch10.ex28.remote.Remote;
 
 /**
  * Created by V1 on 17-Feb-17.

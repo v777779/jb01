@@ -1,5 +1,5 @@
-package ch.ex23.remote;
-import ch.ex23.integra.*;
+package ch10.ex23.remote;
+import ch10.ex23.integra.*;
 
 
 /**

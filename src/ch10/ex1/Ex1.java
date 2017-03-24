@@ -1,8 +1,8 @@
-package ch.ex1;
+package ch10.ex1;
 
-import ch.ex1.access.Outer;
-import ch.ex1.local.Parcel1;
-import ch.ex1.local.Parcel2;
+import ch10.ex1.access.Outer;
+import ch10.ex1.local.Parcel1;
+import ch10.ex1.local.Parcel2;
 
 /**
  * Created by V1 on 14-Feb-17.

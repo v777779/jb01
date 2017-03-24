@@ -1,8 +1,8 @@
-package ch.ex20;
+package ch10.ex20;
 
-import ch.ex20.access.IDestination;
-import ch.ex20.access.MailOffice;
-import ch.ex20.access.PostOffice;
+import ch10.ex20.access.IDestination;
+import ch10.ex20.access.MailOffice;
+import ch10.ex20.access.PostOffice;
 
 /**
  * Created by V1 on 15-Feb-17.
