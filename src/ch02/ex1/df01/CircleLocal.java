@@ -4,7 +4,7 @@ package ch02.ex1.df01;
  * Created by V1 on 02-Feb-17.
  */
 public class CircleLocal extends Figure {
-    public      String strCPublic    = "CircleLocal Public";
+    public      String strCPublic    =  "CircleLocal Public";
     protected   String strCProtected = "CircleLocal Protected";
     private     String strCPrivate   = "CircleLocal Private";
     String      strCDefault          = "CircleLocal Default";
