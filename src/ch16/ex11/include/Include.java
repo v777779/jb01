@@ -1,5 +1,7 @@
 package ch16.ex11.include;
 
+import lib.generate.GenRnd;
+import lib.generate.GenSeq;
 import lib.utils.IGenerator;
 
 /**
