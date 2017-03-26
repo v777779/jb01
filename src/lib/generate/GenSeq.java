@@ -88,7 +88,8 @@ public class GenSeq {
 
         @Override
         public Float next() {
-            return (value +1.0F);
+            value = value + 1.0F;
+            return (value);
         }
     }
     public static class GenDouble implements IGenerator<Double> {
@@ -96,8 +97,67 @@ public class GenSeq {
 
         @Override
         public Double next() {
-            return (value+ 1.0);
+            value = value + 1.0;
+            return (value);
         }
     }
 
+
+    public static boolean[] get(boolean[] array) {
+        GenSeq.GenBool cg = new GenSeq.GenBool();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static byte[] get(byte[] array) {
+        GenSeq.GenByte cg = new GenSeq.GenByte();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static char[] get(char[] array) {
+        GenSeq.GenChar cg = new GenSeq.GenChar();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static short[] get(short[] array) {
+        GenSeq.GenShort cg = new GenSeq.GenShort();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static int[] get(int[] array) {
+        GenSeq.GenInt cg = new GenSeq.GenInt();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static long[] get(long[] array) {
+        GenSeq.GenLong cg = new GenSeq.GenLong();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+
+    public static float[] get(float[] array) {
+        GenSeq.GenFloat cg = new GenSeq.GenFloat();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
+    public static double[] get(double[] array) {
+        GenSeq.GenDouble cg = new GenSeq.GenDouble();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = cg.next();
+        }
+        return array;
+    }
 }
