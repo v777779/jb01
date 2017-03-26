@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 16 Check\n");
+        System.out.println("\nExercise 16 Generators w Step Check\n");
 
         System.out.println("\nPrimitive Test Generator:");
         int size = 6;
