@@ -1,6 +1,9 @@
 package ch16.ex17.access;
 
+import lib.generate.Gen;
+
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 /**
  * Created by V1 on 18-Feb-17.
@@ -10,14 +13,12 @@ public class Access {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 17 BigDecimal Generator Check\n");
 
-        GenBig gb  = new GenBig(10);
-        System.out.println(gb.next());
-        System.out.println(gb.next());
-        System.out.println(gb.next());
-GenBig gb2 = new GenBig();
-        System.out.println(gb2.next());
+        BigDecimal[] aBig = new BigDecimal[10];
+        aBig = Gen.getArray(aBig, new GenBig(5));
+        BigDecimal[] bBig = Gen.getArray(BigDecimal.class, new GenBig(), 10);
+        System.out.println(Arrays.toString(aBig));
+        System.out.println(Arrays.toString(bBig));
 
 
-        BigDecimal
     }
 }
