@@ -20,10 +20,13 @@ public class GenBig implements IGenerator<BigDecimal> {
     public GenBig(int step) {
         this.step = new BigDecimal(step); // сконвертировать в BigDecimal
     }
+    public GenBig(double step) {
+        this.step = new BigDecimal(step); // сконвертировать в BigDecimal
+    }
 
     @Override
     public BigDecimal next() {
-        value = value.add(step);
+        value = (value.add(step)).setScale(4,BigDecimal.ROUND_CEILING);
         return value;
     }
 }

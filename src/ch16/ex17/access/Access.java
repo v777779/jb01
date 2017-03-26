@@ -14,7 +14,7 @@ public class Access {
         System.out.println("\nExercise 17 BigDecimal Generator Check\n");
 
         BigDecimal[] aBig = new BigDecimal[10];
-        aBig = Gen.getArray(aBig, new GenBig(5));
+        aBig = Gen.getArray(aBig, new GenBig(1.532));
         BigDecimal[] bBig = Gen.getArray(BigDecimal.class, new GenBig(), 10);
         System.out.println("BigDecimal Link  aBig:"+Arrays.toString(aBig));
         System.out.println("BigDecimal Array bBig:"+Arrays.toString(bBig));
