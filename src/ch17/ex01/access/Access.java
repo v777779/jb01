@@ -6,6 +6,6 @@ package ch17.ex01.access;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise Check\n");
+        System.out.println("\nExercise 1 Check\n");
     }
 }
