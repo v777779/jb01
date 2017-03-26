@@ -7,7 +7,7 @@ public class Local {
     public static void app() {
         System.out.println();
         System.out.println("====LOCAL====");
-        System.out.println("\nCollection Different Types Check\n");
+        System.out.println("\nCollection Different Types  Check\n");
         PackOne p = new PackOne();
         p.checkCollection();
         PackTwo p2 = new PackTwo();
