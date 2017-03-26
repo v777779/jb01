@@ -8,10 +8,10 @@ import java.util.Arrays;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise Check\n");
+        System.out.println("\nExercise 18 Check\n");
         BerylliumSphere2[] aBer = new BerylliumSphere2[5];
 
-         Arrays.fill(aBer, new BerylliumSphere2());
+        Arrays.fill(aBer, new BerylliumSphere2());
         BerylliumSphere2[] bBer = new BerylliumSphere2[5];
         System.arraycopy(aBer,0,bBer,0,aBer.length);
         System.out.println("aBer:"+Arrays.toString(aBer));
