@@ -1,5 +1,7 @@
 package ch16.ex11.integra;
 
+import lib.generate.*;
+
 import java.util.Arrays;
 
 /**

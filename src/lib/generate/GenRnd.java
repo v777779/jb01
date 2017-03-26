@@ -1,6 +1,7 @@
-package ch16.ex11.integra;
+package lib.generate;
 
 import lib.utils.IGenerator;
+
 import java.util.Random;
 
 /**

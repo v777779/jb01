@@ -11,9 +11,8 @@ import lib.utils.Msg;
 import java.util.ArrayList;
 
 import static lib.utils.Print.*;
-import static lib.debug.Debug.*;
-
-//import static libtest.DebugOff.debug;   // импортируется метод debug() который работает как Off
+import static lib.debug.debugon.Debug.*;
+//import static lib.debug.debugoff.Debug.debug;   // импортируется метод debug() который работает как Off
 
 
 public class Ex1 {

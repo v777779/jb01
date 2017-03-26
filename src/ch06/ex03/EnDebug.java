@@ -1,6 +1,6 @@
 package ch06.ex03;
 
-import static lib.debug.Debug.*;
+import static lib.debug.debugon.Debug.*;
 
 /**
  * Created by V1 on 07-Feb-17.
