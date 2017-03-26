@@ -19,6 +19,10 @@ public class Local {
         Arrays.sort(array);  // сортировать по i
         System.out.println("sorted  :"+CompType.toString(array));
 
+        CompType[] array2 = Gen.getArray(new CompType[12],CompType.gen()); // пустой динамический массив и такой же метод
+        Arrays.sort(array2,new CompTypeComparator());  // сортировать по i
+        System.out.println("sorted  :"+CompType.toString(array2));
+
         System.out.println("Comparison via Comparator Interface:");
         CompType2[] bArray = Gen.getArray(new CompType2[8],CompType2.gen()); // пустой динамический массив и такой же метод
 
