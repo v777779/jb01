@@ -29,7 +29,7 @@ public class Include {
         System.out.println("\n====INCLUDE===");
         System.out.println("\nIGenerator Data for Array Check\n");
         System.out.println("Test Generators of GenSeq.SubcClasses():");
-        genTest(GenSeq.class);  // прокачать генераторы всех внутренних классов
+        genTest(GenSeq.class);  // прокачать генераторы всех внутренних  классов
 
         System.out.println("\nTest Generators of GenRnd.SubcClasses():");
         genTest(GenRnd.class);  // прокачать генераторы Random всех внутренних классов
