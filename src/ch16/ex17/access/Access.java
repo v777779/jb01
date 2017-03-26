@@ -16,8 +16,8 @@ public class Access {
         BigDecimal[] aBig = new BigDecimal[10];
         aBig = Gen.getArray(aBig, new GenBig(5));
         BigDecimal[] bBig = Gen.getArray(BigDecimal.class, new GenBig(), 10);
-        System.out.println(Arrays.toString(aBig));
-        System.out.println(Arrays.toString(bBig));
+        System.out.println("BigDecimal Link  aBig:"+Arrays.toString(aBig));
+        System.out.println("BigDecimal Array bBig:"+Arrays.toString(bBig));
 
 
     }
