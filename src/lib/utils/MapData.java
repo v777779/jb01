@@ -20,20 +20,20 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
             put(genK.next(), genV.next()); // два разных генератора
         }
     }
-    // генератор ключей
+    // генератор ключей и значение
     public MapData(IGenerator<K> genK, V value, int size) {
         for (int i = 0; i < size; i++) {
             put(genK.next(), value);        // генератор ключей и значение
         }
     }
 
-    // два генератора
+    // итератор и генератор
     public MapData(Iterable<K> genK, IGenerator<V> genV) {
         for (K key : genK) {
             put(key, genV.next());          // два разных генератора
         }
     }
-    // генератор ключей
+    // итератор и значение
     public MapData(Iterable<K> genK, V value) {
         for (K key : genK) {
             put(key, value);                // генератор ключей и значение
