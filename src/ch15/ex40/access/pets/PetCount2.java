@@ -1,5 +1,7 @@
 package ch15.ex40.access.pets;
 
+import lib.utils.MapData;
+
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +13,7 @@ public class PetCount2 extends LinkedHashMap<Class<? extends Pet>, Integer> { //
 
 
     public PetCount2() {
-        super(MapData.map(PetNameL.alltypes, 0));   // создать пустую карту с расширением до размера
+        super(MapData.get(PetNameL.alltypes, 0));   // создать пустую карту с расширением до размера
     }
 
     private void count(Pet pet) {               // так класс наследует
