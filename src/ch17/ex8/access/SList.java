@@ -68,11 +68,20 @@ public class SList<T> {
         }
         @Override
         public void remove() {       // удалить по умолчанию первый элемент
+            Link linkPrev = first;
+            Link link = first;
             if (size <= 0) {
                 throw new RuntimeException();
             }
+
+            ISListIterator<T> lit = new Iter(); // новый итератор
+            while (lit.hasNext()) { // открутить весь итератор
+                linkPrev = link;
+                link = lit.next();
+            }
             size--;
-            first = first.getNext();           // забыли первый элемент
+            last = linkPrev;           // забыли последний элемент
+            last.setNext(null);        // забыли ссылку о нем
         }
         @Override
         public void remove(T arg) {  // удалить выбранный элемент
