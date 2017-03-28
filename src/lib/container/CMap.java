@@ -8,8 +8,7 @@ public class CMap {
             //Africa
             {"ALGERIA", "Algiers"}, {"ANGOLA", "Luanda"},
             {"BENIN", "Porto-Novo"}, {"BOTSWANA", "Gaberone"},
-            {"BULGARIA", "Sofia"}, {"BURKINA FASO", "Ouagadougou"},
-            {"BURUNDI", "Bujumbura"},
+            {"BURKINA FASO", "Ouagadougou"},{"BURUNDI", "Bujumbura"},
             {"CAMEROON", "Yaounde"}, {"CAPE VERDE", "Praia"},
             {"CENTRAL AFRICAN REPUBLIC", "Bangui"},
             {"CHAD", "N'djamena"}, {"COMOROS", "Moroni"},
@@ -82,7 +81,8 @@ public class CMap {
 // Европа
             {"ALBANIA", "Tirana"}, {"ANDORRA", "Andorra la Vella"},
             {"AUSTRIA", "Vienna"}, {"BELGIUM", "Brussels"},
-            {"BOSNIA", "-"}, {"HERZEGOVINA", "Sarajevo"},
+            {"BOSNIA", "-"},{"BULGARIA", "Sofia"},
+            {"HERZEGOVINA", "Sarajevo"},
             {"CROATIA", "Zagreb"}, {"CZECH REPUBLIC", "Prague"},
             {"DENMARK", "Copenhagen"}, {"ESTONIA", "Tallinn"},
             {"FINLAND", "Helsinki"}, {"FRANCE", "Paris"},
