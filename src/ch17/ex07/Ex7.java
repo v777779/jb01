@@ -1,7 +1,7 @@
-package ch17.ex7;
+package ch17.ex07;
 
-import ch17.ex7.access.Access;
-import ch17.ex7.local.Local;
+import ch17.ex07.access.Access;
+import ch17.ex07.local.Local;
 
 /**
  * Created by V1 on 3/28/2017.

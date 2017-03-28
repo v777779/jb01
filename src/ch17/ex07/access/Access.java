@@ -1,4 +1,4 @@
-package ch17.ex7.access;
+package ch17.ex07.access;
 
 import lib.container.Countries;
 

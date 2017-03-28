@@ -1,4 +1,4 @@
-package ch17.ex7.local;
+package ch17.ex07.local;
 
 import java.util.ArrayList;
 import java.util.Arrays;

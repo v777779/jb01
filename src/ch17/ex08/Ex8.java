@@ -1,6 +1,6 @@
-package ch17.ex8;
+package ch17.ex08;
 
-import ch17.ex8.access.Access;
+import ch17.ex08.access.Access;
 
 /**
  * Created by V1 on 3/28/2017.

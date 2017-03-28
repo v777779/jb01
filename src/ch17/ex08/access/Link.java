@@ -1,4 +1,4 @@
-package ch17.ex8.access;
+package ch17.ex08.access;
 
 /**
  * Created by V1 on 28-Mar-17.
