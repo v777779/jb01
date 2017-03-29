@@ -1,6 +1,7 @@
 package ch17.ex11;
 
 import ch17.ex11.access.Access;
+import ch17.ex11.include.Include;
 import ch17.ex11.local.Local;
 
 /**
@@ -9,6 +10,7 @@ import ch17.ex11.local.Local;
 public class Ex11 {
     public static void main(String[] args) {
         Local.app();
+        Include.app();
         Access.app();
 
     }

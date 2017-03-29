@@ -17,4 +17,5 @@ public class Gen { // Array IGenerator
         return new GenList<T>(gen, array.length).toArray(array); // заполнить массив через коллекцию
     }
 
+
 }
