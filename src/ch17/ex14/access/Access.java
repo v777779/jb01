@@ -1,8 +1,10 @@
 package ch17.ex14.access;
 
+
 import lib.maps.Maps;
 
-import java.util.*;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * Created by V1 on 18-Feb-17.
