@@ -1,6 +1,6 @@
 package ch17.ex05.access;
 
-import ch17.ex05.CIntMap;
+import ch17.ex05.CIntMapEx;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -13,7 +13,7 @@ public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 5 AbstractMap Check\n");
-        Map<Integer,String> cMap = new CIntMap(25);
+        Map<Integer,String> cMap = new CIntMapEx(25);
         System.out.println(cMap);
 
         Set<Map.Entry<Integer,String>> entries = cMap.entrySet();

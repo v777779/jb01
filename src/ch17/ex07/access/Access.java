@@ -1,6 +1,6 @@
 package ch17.ex07.access;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

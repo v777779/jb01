@@ -1,7 +1,7 @@
 package ch17.ex06.local;
 
-import lib.container.CMap;
-import lib.container.Countries;
+import lib.maps.CMap;
+import lib.maps.Countries;
 
 import java.util.*;
 

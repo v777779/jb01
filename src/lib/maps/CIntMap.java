@@ -1,4 +1,4 @@
-package lib.container;
+package lib.maps;
 
 import java.util.AbstractMap;
 import java.util.LinkedHashSet;
@@ -51,7 +51,6 @@ public class CIntMap extends AbstractMap<Integer, String> {
         for (int i = 0; i < size; i++) {
             entries.add(new Entry(i));  // добавляет  Entry() объект
         }
-
         return entries;
     }
 }

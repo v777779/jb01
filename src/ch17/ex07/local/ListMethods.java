@@ -1,6 +1,6 @@
 package ch17.ex07.local;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.Iterator;
 import java.util.LinkedList;
