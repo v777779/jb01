@@ -26,15 +26,29 @@ public class Access {
         List<String> list = new TextFile("src/ch17/ex10/access/SortedLinked.java", "\\W+");
 // my  version
         System.out.println("Home Version:");
-        SimpleMap<String, Integer> map = new SimpleMap<>(0); // autosize and count
+        SimpleMap2<String, Integer> map2 = new SimpleMap2<>(0); // autosize and count
+        for (String s : list) {
+            if (map2.get(s) == null) {
+                map2.put(s, 1);
+            } else {
+                map2.put(s, map2.get(s) + 1);
+            }
+
+        }
+        System.out.println(replace(map2.toString()));
+
+// official  version
+        System.out.println("\nOfficial Version:");
+
+        SimpleMap<String, Integer> map = new SimpleMap<>(list.size()); // autosize and count
         for (String s : list) {
             if (map.get(s) == null) {
                 map.put(s, 1);
             } else {
                 map.put(s, map.get(s) + 1);
             }
-
         }
         System.out.println(replace(map.toString()));
+
     }
 }

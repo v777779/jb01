@@ -5,32 +5,23 @@ package ch17.ex13.access;
  */
 public class SimpleMap<K, V> {  // самодельная карта Map
     private Object[][] pairs;
-    private int index;
+    private int index;  // размер реально заполненной части
 
     public SimpleMap(int length) {
         pairs = new Object[length][2];
     }
 
     public void put(K key, V value) {
-        if (get(key) == null) {
-            Object[][] temp = new Object[index + 1][2];
-            for (int i = 0; i < index; i++) {
-                temp[i][0] = pairs[i][0];
-                temp[i][1] = pairs[i][1];
-            }
-            pairs = temp; // передали новый массив на 1 больше
-            if (index >= pairs.length) {
-                throw new RuntimeException();
-            }
-            pairs[index++] = new Object[]{key, value};
-        } else {  // значение уже есть в базе
-            for (int i = 0; i < index; i++) {
-                if (key.equals(pairs[i][0])) {
-                    pairs[i][1] = value;
-                    break;
-                }
+        for (int i = 0; i < index; i++) {
+            if (key.equals(pairs[i][0])) {
+                pairs[i] = new Object[]{key,value};
+                return;
             }
         }
+        if (index >= pairs.length) {
+            throw new RuntimeException();
+        }
+        pairs[index++] = new Object[]{key, value};
     }
 
     public V get(K key) {
@@ -42,7 +33,7 @@ public class SimpleMap<K, V> {  // самодельная карта Map
         return null; // ничего не найдено
     }
 
-    @Override
+   @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < index ; i++) {

@@ -1,27 +1,35 @@
-package ch17.ex12.include;
+package ch17.ex13.access;
 
 /**
  * Created by V1 on 29-Mar-17.
  */
-public class SimpleMap<K, V> {  // самодельная карта Map
+public class SimpleMap2<K, V> {  // самодельная карта Map
     private Object[][] pairs;
     private int index;
 
-    public SimpleMap(int length) {
+    public SimpleMap2(int length) {
         pairs = new Object[length][2];
     }
 
     public void put(K key, V value) {
-        for (int i = 0; i < index; i++) {
-            if (key.equals(pairs[i][0])) {
-                pairs[i] = new Object[]{key,value};
-                return;
+        if (get(key) == null) {
+            Object[][] temp = new Object[index + 1][2];
+            for (int i = 0; i < index; i++) {
+                temp[i] = pairs[i];
+            }
+            pairs = temp; // передали новый массив на 1 больше
+            if (index >= pairs.length) {
+                throw new RuntimeException();
+            }
+            pairs[index++] = new Object[]{key, value};
+        } else {  // значение уже есть в базе
+            for (int i = 0; i < index; i++) {
+                if (key.equals(pairs[i][0])) {
+                    pairs[i][1] = value;
+                    break;
+                }
             }
         }
-        if (index >= pairs.length) {
-            throw new RuntimeException();
-        }
-        pairs[index++] = new Object[]{key, value};
     }
 
     public V get(K key) {
