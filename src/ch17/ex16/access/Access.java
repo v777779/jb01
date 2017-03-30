@@ -1,5 +1,6 @@
 package ch17.ex16.access;
 
+import lib.maps.CMapInt;
 import lib.maps.Maps;
 
 import java.util.HashMap;
@@ -10,10 +11,17 @@ import java.util.HashMap;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 16 SlowMap Check\n");
+        System.out.println("\nExercise 16 SlowMap3 Check\n");
 
         Maps.check(new HashMap<>());
-        Maps.check(new SlowMap<>());
+        SlowMap3<Integer,String> sMap = new SlowMap3<>();
+        sMap.putAll(new CMapInt(25));
+        System.out.println(sMap.keySet());
+        System.out.println(sMap);
+        System.out.println(sMap.values());
+        Maps.check(new SlowMap3<>());
+
+
 
     }
 }

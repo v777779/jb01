@@ -1,13 +1,13 @@
 package ch17.ex16.access;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class MSet<K, V> extends HashSet<K> {
+public class MSet<K, V> extends LinkedHashSet<K> {
     private List<K> keys;
     private List<V> values;
 

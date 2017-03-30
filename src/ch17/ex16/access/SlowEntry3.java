@@ -5,11 +5,11 @@ import java.util.Map;
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class SlowEntry<K, V> implements Map.Entry<K, V> {
+public class SlowEntry3<K, V> implements Map.Entry<K, V> {
     private K key;
     private V value;
 
-    public SlowEntry(K key, V value) {
+    public SlowEntry3(K key, V value) {
         this.key = key;
         this.value = value;
     }
@@ -40,10 +40,10 @@ public class SlowEntry<K, V> implements Map.Entry<K, V> {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof SlowEntry)) {
+        if (!(obj instanceof SlowEntry3)) {
             return false;
         }
-        SlowEntry se = (SlowEntry) obj;
+        SlowEntry3 se = (SlowEntry3) obj;
         boolean keys, values;
         if (key == null) {
             keys = (se.getKey() == null);

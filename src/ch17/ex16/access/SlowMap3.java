@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class SlowMap<K, V> extends AbstractMap<K, V> {
+public class SlowMap3<K, V> extends AbstractMap<K, V> {
 
     private List<K> keys = new ArrayList<>();
     private List<V> values = new ArrayList<>();
@@ -58,18 +58,17 @@ public class SlowMap<K, V> extends AbstractMap<K, V> {
     @Override
     public Set<K> keySet() {
         Set<K> ks = new MSet<>(super.keySet(),keys,values);
-
         return ks;
     }
 
     @Override
     public Set<Entry<K, V>> entrySet() {
-        Set<Entry<K, V>> hSet = new HashSet<>();
+        Set<Entry<K, V>> hSet = new LinkedHashSet<>();
         Iterator<K> ik = keys.iterator();
         Iterator<V> iv = values.iterator();
 
         while (ik.hasNext()) {
-            hSet.add(new SlowEntry<K, V>(ik.next(), iv.next()));
+            hSet.add(new SlowEntry3<K, V>(ik.next(), iv.next()));
         }
 
         return hSet;
