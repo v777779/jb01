@@ -8,11 +8,11 @@ import java.util.Set;
 /**
  * Created by V1 on 3/27/2017.
  */
-public class CIntMap extends AbstractMap<Integer, String> {
+public class CMapInt extends AbstractMap<Integer, String> {
     private int size;
     private static String[] strings = "A B C D E F G H I J K L M N O P Q R S T U V W ZX Y Z".split(" ");
 
-    public CIntMap(int size) {
+    public CMapInt(int size) {
         if (size < 0) {
             this.size = 0;      // сделать размер = 0}
         } else {

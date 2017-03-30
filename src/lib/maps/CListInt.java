@@ -5,11 +5,11 @@ import java.util.AbstractList;
 /**
  * Created by V1 on 3/27/2017.
  */
-public class CIntList extends AbstractList<Integer>{
+public class CListInt extends AbstractList<Integer>{
     private int size;
     private int coeff[] = {1,5,7,9,15};
 
-    public CIntList(int size) {
+    public CListInt(int size) {
         if(size < 0)    this.size = 0;
         else            this.size = size;
     }
