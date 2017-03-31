@@ -52,8 +52,13 @@ public class SlowMap2A<K, V> extends AbstractMap<K, V> {
 
         @Override
         public boolean remove(Object o) {
-
-            return super.remove(o);
+            if (contains(o)) {
+                int index = keys.indexOf(o);
+                keys.remove(index);
+                values.remove(index);
+                return true;
+            }
+            return false;
         } // remove
 
         @Override
