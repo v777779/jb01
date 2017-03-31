@@ -35,15 +35,12 @@ public class SimpleHashMapC<K, V> extends AbstractMap<K, V> {
                 oldValue = iPair.getValue();    // старое значение запомнили
                 iPair.setValue(value);          // задали новое значение
                 found = true;                   // нашли элемент в HashMap
+                System.out.printf("collision old:%-25s new:%-25s\n",pair,iPair);
                 break;
             }
         }
         if (!found) {  // не нашли
             buckets[index].add(pair);           // добавили в общую карту
-        }
-        if (found && oldValue.equals(value)) {
-            System.out.println("collision old:"+oldValue+"  new:"+value);
-
         }
 
         return oldValue;
@@ -68,7 +65,7 @@ public class SimpleHashMapC<K, V> extends AbstractMap<K, V> {
 
     @Override
     public Set<Entry<K, V>> entrySet() {  // тупо заполняем массив карты
-        Set<Entry<K,V>> set = new HashSet<>();
+        Set<Entry<K, V>> set = new HashSet<>();
         for (LinkedList<MapEntry<K, V>> bucket : buckets) {  // открутить все списки
             if (bucket == null) {
                 continue;
