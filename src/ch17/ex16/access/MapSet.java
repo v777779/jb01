@@ -7,31 +7,38 @@ import java.util.List;
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class MSet<K, V> extends LinkedHashSet<K> {
+public class MapSet<K, V> extends LinkedHashSet<K> {
     private List<K> keys;
     private List<V> values;
 
-    public MSet(List<K> keys, List<V> values) {
+    public MapSet(List<K> keys, List<V> values) {
         this.keys = keys;
         this.values = values;
     }
 
-    public MSet(Collection<? extends K> c, List<K> keys, List<V> values) {
+    public MapSet(Collection<? extends K> c, List<K> keys, List<V> values) {
         super(c);
         this.keys = keys;
         this.values = values;
     }
 
     @Override
+    public boolean remove(Object o) {
+        boolean flag = false;
+        if (keys.contains(o)) {
+            int index = keys.indexOf(o);
+            values.remove(index);
+            keys.remove(index);
+            flag = true;
+        }
+        return flag;
+    }
+
+    @Override
     public boolean removeAll(Collection<?> c) {  // по ключу
         boolean flag = false;
         for (Object o : c) {
-            if (keys.contains(o)) {
-                int index = keys.indexOf(o);
-                values.remove(index);
-                keys.remove(index);
-                flag = true;
-            }
+          flag |=  remove(o);
         }
 
         return flag;

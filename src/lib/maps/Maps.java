@@ -28,11 +28,14 @@ public class Maps {
         map.remove(key);
         System.out.println("First key removed:");
         printKeys(map);
+        map.keySet().remove(5);
+        System.out.println("keyset().remove(5):");
+        printKeys(map);
         map.clear();
-        System.out.println("isEmpty()        :" + map.isEmpty());
+        System.out.println("isEmpty()           :" + map.isEmpty());
         map.putAll(new CMapInt(25));
         map.keySet().removeAll(map.keySet()); // удаление через keyset
-        System.out.println("isEmpty() after removal via keyset() :" + map.isEmpty());
+        System.out.println("keyset().removeAll():" + map.isEmpty());
         System.out.println();
 
 

@@ -1,11 +1,11 @@
-package lib.maps;
+package ch17.ex15.thrown;
 
 import java.util.*;
 
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class SlowMap2<K, V> extends AbstractMap<K, V> {
+public class SlowMapE<K, V> extends AbstractMap<K, V> {
 
     private List<K> keys = new ArrayList<>();
     private List<V> values = new ArrayList<>();

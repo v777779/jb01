@@ -1,11 +1,13 @@
 package ch17.ex16.access;
 
+import lib.maps.MapEntry;
+
 import java.util.*;
 
 /**
  * Created by V1 on 30-Mar-17.
  */
-public class SlowMap3<K, V> extends AbstractMap<K, V> {
+public class SlowMapA<K, V> extends AbstractMap<K, V> {
 
     private List<K> keys = new ArrayList<>();
     private List<V> values = new ArrayList<>();
@@ -57,21 +59,21 @@ public class SlowMap3<K, V> extends AbstractMap<K, V> {
 
     @Override
     public Set<K> keySet() {
-        Set<K> ks = new MSet<>(super.keySet(),keys,values);
+        Set<K> ks = new MapSet<>(super.keySet(),keys,values);
         return ks;
     }
 
     @Override
     public Set<Entry<K, V>> entrySet() {
-        Set<Entry<K, V>> hSet = new LinkedHashSet<>();
+        Set<Entry<K, V>> mSet = new MapSet(keys,values);
         Iterator<K> ik = keys.iterator();
         Iterator<V> iv = values.iterator();
 
         while (ik.hasNext()) {
-            hSet.add(new SlowEntry3<K, V>(ik.next(), iv.next()));
+            mSet.add(new MapEntry<K, V>(ik.next(), iv.next()));
         }
 
-        return hSet;
+        return mSet;
 
     }
 

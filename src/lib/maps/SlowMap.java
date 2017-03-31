@@ -37,7 +37,7 @@ public class SlowMap<K, V> extends AbstractMap<K, V> {
         Iterator<V> iv = values.iterator();
 
         while (ik.hasNext()) {
-            hSet.add(new SlowEntry<K, V>(ik.next(), iv.next()));
+            hSet.add(new MapEntry<K, V>(ik.next(), iv.next()));
         }
 
         return hSet;

@@ -1,6 +1,6 @@
 package ch17.ex15.access;
 
-import lib.maps.SlowMap2;
+import ch17.ex15.thrown.SlowMapE;
 import lib.utils.TextFile;
 
 import java.util.List;
@@ -11,11 +11,11 @@ import java.util.List;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 15 SlowMap3 Check\n");
+        System.out.println("\nExercise 15 SlowMap2A Check\n");
 
         List<String> list = new TextFile("src/ch17/ex15/access/Test.java", "\\W+");
 
-        SlowMap2<String,Integer> sMap = new SlowMap2<>();
+        SlowMapE<String,Integer> sMap = new SlowMapE<>();
         for (String s : list) {
             if (sMap.get(s) == null) {
                 sMap.put(s, 1);

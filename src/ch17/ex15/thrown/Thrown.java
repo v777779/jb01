@@ -2,7 +2,6 @@ package ch17.ex15.thrown;
 
 import lib.maps.Countries;
 import lib.maps.SlowMap;
-import lib.maps.SlowMap2;
 
 /**
  * Created by V1 on 20-Feb-17.
@@ -20,7 +19,7 @@ public class Thrown {
         System.out.println(sMap.entrySet());
 
         System.out.println("\nInternal Entry Class:");
-        SlowMap2<String, String> sMap2 = new SlowMap2<>();
+        SlowMapE<String, String> sMap2 = new SlowMapE<>();
         sMap2.putAll(Countries.capitals(15)); // проинициализировать
         System.out.println(sMap2);
         System.out.println(sMap2.get("CAMEROON"));
