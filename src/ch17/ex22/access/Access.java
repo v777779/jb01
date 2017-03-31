@@ -9,7 +9,7 @@ import lib.utils.Print;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 22 Methods for SimpleHashMap Check\n");
+        System.out.println("\nExercise 22 Methods for SimpleHashMapL Check\n");
         SimpleHashMap<String,String> sMap = new SimpleHashMap<>();
         sMap.putAll(Countries.capitals(25));
         System.out.println(Print.r(sMap.toString()));

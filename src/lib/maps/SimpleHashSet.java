@@ -1,4 +1,4 @@
-package ch17.ex24.access;
+package lib.maps;
 
 import java.util.*;
 

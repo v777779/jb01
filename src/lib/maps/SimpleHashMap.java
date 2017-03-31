@@ -79,7 +79,7 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
         V oldValue = null;
         int index = Math.abs(key.hashCode()) % SIZE; // hachCode() реализуется в классе хранения обрезается по SIZE
         if (buckets[index] == null) {  // не заполнен
-            buckets[index] = new LinkedList<>();  // тип можно не задавать
+            return null;                // значит значения нету выходим
         }
         LinkedList<MapEntry<K, V>> bucket = buckets[index];      // получаем список под данный hashCode
         boolean found = false;

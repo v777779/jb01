@@ -1,5 +1,6 @@
 package ch17.ex24.access;
 
+import lib.maps.SimpleHashSet;
 import lib.sets.Sets;
 
 /**
@@ -9,8 +10,8 @@ public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 24 Check\n");
-        Sets.checkInt(new SimpleHashSet<>());
 
+        Sets.checkInt(new SimpleHashSet<>());
         Sets.checkStr(new SimpleHashSet<>());
 
 
