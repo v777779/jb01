@@ -11,7 +11,7 @@ import java.util.List;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 19 Count Words w SimpleHashMapC Check\n");
+        System.out.println("\nExercise 19 Count Words w SimpleHashMapD Check\n");
 
         List<String> list = new TextFile("src/ch17/ex19/access/Test.java", "\\W+");
         SimpleHashMap<String, Integer> map = new SimpleHashMap<>();
