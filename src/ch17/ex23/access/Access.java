@@ -1,6 +1,7 @@
 package ch17.ex23.access;
 
 import lib.maps.Countries;
+import lib.maps.SimpleHashMap;
 import lib.utils.Print;
 
 /**
@@ -37,7 +38,6 @@ public class Access {
         sMap.clear();
         System.out.println("clear():"+sMap.isEmpty());
         System.out.println("size:"+sMap.size());
-
 
     }
 }
