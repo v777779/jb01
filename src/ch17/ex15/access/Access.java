@@ -11,7 +11,7 @@ import java.util.List;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 15 SlowMap2A Check\n");
+        System.out.println("\nExercise 15 SlowMap2 Check\n");
 
         List<String> list = new TextFile("src/ch17/ex15/access/Test.java", "\\W+");
 

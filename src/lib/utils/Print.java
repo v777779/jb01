@@ -44,7 +44,7 @@ public class Print {
 
     public static String r(String s) {
         StringBuilder sb = new StringBuilder();
-        String[] ss = s.replaceAll("[\\{\\[\\]\\} ]","").split("[,{}]");
+        String[] ss = s.replaceAll("[\\{\\[\\]\\}]","").split("[{}]|\\, ");
         sb.append("[\n");
         for (int i = 0; i < ss.length ; i++) {
             sb.append(String.format("%-32s",ss[i]));
