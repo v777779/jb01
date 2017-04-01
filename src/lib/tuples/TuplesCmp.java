@@ -1,6 +1,4 @@
-package ch17.ex28.access.tuples;
-
-import lib.tuples.TwoTuple;
+package lib.tuples;
 
 /**
  * Created by V1 on 01-Apr-17.

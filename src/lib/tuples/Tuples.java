@@ -1,4 +1,4 @@
-package ch17.ex28.access.tuples;
+package lib.tuples;
 
 /**
  * Created by V1 on 14-Mar-17.

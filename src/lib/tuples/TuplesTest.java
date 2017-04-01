@@ -1,4 +1,4 @@
-package ch17.ex28.access.tuples;
+package lib.tuples;
 
 import lib.coffee.Coffee;
 import lib.coffee.CoffeeGen;
