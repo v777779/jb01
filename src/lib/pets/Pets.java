@@ -20,6 +20,9 @@ public class Pets {
     public static List<Pet> getList(int size) {
         return pets.getList(size);
     }
+    public static List<Pet> getList() {
+        return pets.getList();
+    }
 
     public static ArrayList<Pet> arrayList(int size) {
         return pets.getList(size);

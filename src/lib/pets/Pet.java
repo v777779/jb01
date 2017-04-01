@@ -12,8 +12,8 @@ public class Pet extends Individual {
         super(name);
     }
 
-    @Override
-    public String toString() {
-        return "<"+this.getClass().getSimpleName()+">";
-    }
+//    @Override
+//    public String toString() {
+//        return "<"+this.getClass().getSimpleName()+">";
+//    }
 }

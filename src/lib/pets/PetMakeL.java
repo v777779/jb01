@@ -2,10 +2,7 @@ package lib.pets;
 
 import lib.utils.IFactory;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 
 /**
@@ -45,6 +42,20 @@ public class PetMakeL {
         ArrayList<Pet> list = new ArrayList<>();
         Collections.addAll(list, getArray(size));
 
+        return list;
+    }
+
+    public List<Pet> getList() {
+        List<Pet> list = new ArrayList<>();
+        list.add(new Rat("Fuzzy"));
+        list.add(new Rat("Fizzy"));
+        list.add(new Rat("Freckly"));
+        list.add(new Cat("Stanford aka Stinky el Negro"));
+        list.add(new Cat("Pinkola"));
+        list.add(new Cat("Shackleton"));
+        list.add(new Cat("Elsie May"));
+        list.add(new Cymr("Molly"));
+        list.add(new Pug("Louie aka Louis Snorkelstein Dupree"));
         return list;
     }
 }
