@@ -43,9 +43,9 @@ public class CountedString2 {
             return false;
         return s != null ? s.equals(that.s) : that.s == null;
 
-//        if ((o instanceof CountedString2) &&
-//                s.equals(((CountedString2) o).s) &&
-//                id == ((CountedString2) o).id) {
+//        if ((o instanceof CountedString3) &&
+//                s.equals(((CountedString3) o).s) &&
+//                id == ((CountedString3) o).id) {
 //            return true;
 //        }
 //        return false;

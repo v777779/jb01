@@ -1,4 +1,4 @@
-package ch17.ex26.local;
+package ch17.ex27.access;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.List;
 /**
  * Created by V1 on 01-Apr-17.
  */
-public class CountedString {
+public class CountedString3 {
     private static List<String> list = new ArrayList();
     private String s;
     private int id = 0;
 
-    public CountedString(String s) {
+    public CountedString3(String s) {
         this.s = s;
         list.add(s);
         for (String s1 : list) {  // на каждый экземпляр проверяет
@@ -25,7 +25,6 @@ public class CountedString {
     public int hashCode() {
         int result = 17; // формируем hashCode() для объекта String
         result = result * 37 + s.hashCode();  // поле s отработали
-        result = result * 37 + id;            // поле id отработали
         return result;
     }
 
@@ -33,9 +32,9 @@ public class CountedString {
     public boolean equals(Object o) {
         if (this == o)
             return true;
-        if (!(o instanceof CountedString))
+        if (!(o instanceof CountedString3))
             return false;
-        CountedString that = (CountedString) o;
+        CountedString3 that = (CountedString3) o;
         if (id != that.id)
             return false;
         return s != null ? s.equals(that.s) : that.s == null;

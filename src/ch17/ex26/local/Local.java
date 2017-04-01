@@ -15,7 +15,7 @@ public class Local {
         System.out.println(strings[0].hashCode());
         System.out.println(strings[1].hashCode());
 
-        System.out.println("\nCountedString2 hashCode() Map:");
+        System.out.println("\nCountedString3 hashCode() Map:");
         Map<CountedString, Integer> map = new HashMap<>();
         CountedString[] cs = new CountedString[5];
         for (int i = 0; i < cs.length; i++) {
