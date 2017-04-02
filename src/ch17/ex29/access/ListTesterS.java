@@ -29,7 +29,7 @@ public class ListTesterS extends Tester<List<String>> {
 
     // Override не работает т.к. это статический метод класса
     public static void run(List<String> list, List<Test<List<String>>> tests) {
-        System.out.println("run of ListTester <String>");
+        System.out.println("run of ListSort <String>");
         new ListTesterS(list, tests).timedTests();
     }
 
