@@ -16,4 +16,13 @@ public class GenList<T> extends ArrayList<T> {
     public static <T> GenList<T> get(IGenerator<T> gen, int size) {
         return new GenList<T>(gen,size);
     }
+
+    public GenList(int size) {
+        IGenerator<Integer> gen = new GenRnd.GenInt(100);
+        for (int i = 0; i < size; i++) {
+            add((T)gen.next()); // add to ArrayList
+        }
+    }
+
+
 }
