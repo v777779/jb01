@@ -22,23 +22,25 @@ public class Access {
     }
 
     public static void testList(List<String> list) {
-        System.out.println(list.getClass().getSimpleName()+":");
+        System.out.println(list.getClass().getSimpleName() + ":");
         printHeader("add   : ");
 
         for (TestParam param : Tester.defaultParams) {
             int loops = param.loops;
             int size = param.size;
+            long start = 0;
             long duration = 0;
-            long start = System.nanoTime();
-// полоса замера
             for (int i = 0; i < param.loops; i++) {
                 list.clear();
+                start = System.nanoTime();
+// полоса замера
                 for (int j = 0; j < param.size; j++) {
                     list.add("Hello");
                 }
-            }
 // полоса замера
-            duration = (System.nanoTime() - start) / (loops * size);
+                duration += (System.nanoTime() - start);
+            }
+            duration = duration / (loops * size);
             System.out.printf("%-8d", duration);
         }
         System.out.println();
@@ -47,9 +49,8 @@ public class Access {
         for (TestParam param : Tester.defaultParams) {
             int loops = param.loops;
             int size = param.size;
+            long start = 0;
             long duration = 0;
-            long start = System.nanoTime();
-// полоса замера
             for (int i = 0; i < param.loops; i++) {
                 list.clear();
                 size = param.size;
@@ -59,12 +60,14 @@ public class Access {
                 }
                 list.addAll(Countries.names(size));
                 size = param.size;
+                start = System.nanoTime();
+// полоса замера
                 for (int j = 0; j < size; j++) {
                     list.remove(0);
                 }
-            }
 // полоса замера
-            duration = System.nanoTime() - start;
+                duration += System.nanoTime() - start;
+            }
             duration = duration / (loops * size);
             System.out.printf("%-8d", duration);
         }
@@ -73,23 +76,26 @@ public class Access {
     }
 
     public static void testArray(ContString list) {
-        System.out.println(list.getClass().getSimpleName()+":");
+        System.out.println(list.getClass().getSimpleName() + ":");
         printHeader("add   : ");
 
         for (TestParam param : Tester.defaultParams) {
             int loops = param.loops;
             int size = param.size;
             long duration = 0;
-            long start = System.nanoTime();
-// полоса замера
+            long start = 0;
             for (int i = 0; i < param.loops; i++) {
                 list.clear();
+                start = System.nanoTime();
+// полоса замера
                 for (int j = 0; j < param.size; j++) {
                     list.add("Hello");
                 }
-            }
 // полоса замера
-            duration = (System.nanoTime() - start) / (loops * size);
+                duration += (System.nanoTime() - start);
+            }
+
+            duration = duration / (loops * size);
             System.out.printf("%-8d", duration);
         }
         System.out.println();
@@ -98,9 +104,8 @@ public class Access {
         for (TestParam param : Tester.defaultParams) {
             int loops = param.loops;
             int size = param.size;
+            long start = 0;
             long duration = 0;
-            long start = System.nanoTime();
-// полоса замера
             for (int i = 0; i < param.loops; i++) {
                 size = param.size;
                 list.clear();
@@ -110,12 +115,14 @@ public class Access {
                 }
                 list.addAll(Countries.names(size));
                 size = param.size;
+                start = System.nanoTime();
+// полоса замера
                 for (int j = 0; j < size; j++) {
                     list.remove();
                 }
-            }
 // полоса замера
-            duration = System.nanoTime() - start;
+                duration += System.nanoTime() - start;
+            }
             duration = duration / (loops * size);
             System.out.printf("%-8d", duration);
         }

@@ -24,7 +24,7 @@ public class ContString implements Iterable<ContString> {
 
     public void add(String s) {
         if (index >= strings.length) {
-            String[] temp = new String[index + 10];
+            String[] temp = new String[index + (strings.length/5 > 0? strings.length/5:10) ];
             for (int i = 0; i < strings.length; i++) {
                 temp[i] = strings[i];
             }
@@ -37,7 +37,7 @@ public class ContString implements Iterable<ContString> {
         if (index > 0) {
             index--;
         }
-        strings[index] = null;  // забываем
+//        strings[index] = null;  // забываем  не нужно ничего писать
     }
 
     public void addAll(Collection<String> c) {
