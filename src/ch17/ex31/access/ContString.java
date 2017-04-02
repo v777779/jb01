@@ -11,6 +11,10 @@ public class ContString implements Iterable<ContString> {
     private String[] strings;
     private int index;
 
+    public ContString() {
+        this.strings = new String[10];
+        index = 0;
+    }
     public ContString(int size) {
         this.strings = new String[size];
         index = 0;

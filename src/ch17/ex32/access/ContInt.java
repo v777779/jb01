@@ -11,6 +11,11 @@ public class ContInt implements Iterable<ContInt> {
     private int[] ints;
     private int index;
 
+    public ContInt() {
+        this.ints = new int[10];
+        index = 0;
+    }
+
     public ContInt(int size) {
         this.ints = new int[size];
         index = 0;
@@ -22,27 +27,40 @@ public class ContInt implements Iterable<ContInt> {
     }
 
 
-    public void add(int intVal) {
+    public void add(int val) {
         if (index >= ints.length) {
-            int[] temp = new int[index + 10];
+            int[] temp = new int[index + (ints.length/5 > 0? ints.length/5:10) ];
             for (int i = 0; i < ints.length; i++) {
                 temp[i] = ints[i];
             }
             ints = temp;
         }
-        ints[index++] = intVal;  // индекс всегда указывает на новую  пустую ячейку
+        ints[index++] = val;  // индекс всегда указывает на новую  пустую ячейку
+    }
+
+    public void set(int index, int value) {
+        if (index >= 0 && index < this.index ) {    // индекс в пределах
+            ints[index] = value;                          // инкрементировать ячейку
+        }
+    }
+
+    public int get(int index) {
+        if (index >= 0 && index < this.index ) {    // индекс в пределах
+            return ints[index];                     // выдать ячейку
+        }
+        throw new RuntimeException("Out of Boundes");
     }
 
     public void remove() {
         if (index > 0) {
             index--;
         }
-//        ints[index] = 0;  // забываем
+//        ints[index] = null;  // забываем  не нужно ничего писать
     }
 
     public void addAll(Collection<Integer> c) {
-        for (Integer intVal : c) {
-            add(intVal);
+        for (int s : c) {
+            add(s);
         }
     }
 
