@@ -1,6 +1,7 @@
 package ch17.ex34.include;
 
 import lib.tests.SetCheck;
+import lib.tests.SetCheckS;
 import lib.tests.Tester;
 
 import java.util.HashSet;

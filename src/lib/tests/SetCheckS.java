@@ -1,7 +1,4 @@
-package ch17.ex34.include;
-
-import lib.tests.Test;
-import lib.tests.TestParam;
+package lib.tests;
 
 import java.util.*;
 
