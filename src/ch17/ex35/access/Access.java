@@ -12,7 +12,7 @@ import java.util.TreeMap;
 public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
-        System.out.println("\nExercise 35 SlowMap Test Check\n");
+        System.out.println("\nExercise 35 SlowMapEntry Test Check\n");
 
         Tester.run(new TreeMap<>(), MapCheck.tests);
         Tester.run(new SlowMap<>(), MapCheck.tests);
