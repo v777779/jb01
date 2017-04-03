@@ -88,12 +88,12 @@ public class Tester<C> { // класс тестировщик
     }
 
     public static <C> void run(C container, List<Test<C>> tests, TestParam[] paramList) {  // создать класс тестировщик и запустить метод
-        System.out.println("run of Tester 2");
+//        System.out.println("run of Tester 2");
         new Tester<C>(container,tests, paramList).timedTests();
     }
 
     public static <C> void run(C container, List<Test<C>> tests) {  // создать класс тестировщик и запустить метод
-        System.out.println("run of Tester");
+//        System.out.println("run of Tester");
         new Tester<C>(container,tests).timedTests();
     }
 

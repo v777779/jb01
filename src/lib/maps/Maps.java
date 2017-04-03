@@ -18,8 +18,8 @@ public class Maps {
     public static void check(Map<Integer, String> map) {
         System.out.println(map.getClass().getSimpleName()+":");
 
-        map.putAll(new CMapInt(25));    // CMapInt эмулятор map с заполненными данными
-        map.putAll(new CMapInt(25));    // CMapInt эмулятор map с заполненными данными
+        map.putAll(new CMapInt(25));    // GenMap эмулятор map с заполненными данными
+        map.putAll(new CMapInt(25));    // GenMap эмулятор map с заполненными данными
         printKeys(map);
         System.out.println("Values:");
         System.out.println(map.values());

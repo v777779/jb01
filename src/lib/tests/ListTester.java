@@ -22,7 +22,7 @@ public class ListTester extends Tester<List<Integer>> {
 
     // Override не работает т.к. это статический метод класса
     public static void run(List<Integer> list, List<Test<List<Integer>>> tests) {
-        System.out.println("run of ListTesterS");
+//        System.out.println("run of ListTesterS");
         new ListTester(list, tests).timedTests();
     }
 
