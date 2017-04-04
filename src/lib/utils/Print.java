@@ -55,5 +55,13 @@ public class Print {
         sb.append(']');
         return sb.toString();
     }
-
+    public static String pBits(byte value) {
+        return String.format("%8s", Integer.toBinaryString(value & 0xFF)).replaceAll(" ", "0");
+    }
+    public static String pBits(short value) {
+        return String.format("%16s", Integer.toBinaryString(value & 0xFFFF)).replaceAll(" ", "0");
+    }
+    public static String pBits(int value) {
+        return String.format("%32s", Integer.toBinaryString(value & 0xFFFFFFFF)).replaceAll(" ", "0");
+    }
 }

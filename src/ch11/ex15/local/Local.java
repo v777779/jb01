@@ -1,5 +1,7 @@
 package ch11.ex15.local;
 
+import lib.utils.SimpleStack;
+
 import java.util.Stack;
 
 /**

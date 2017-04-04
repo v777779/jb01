@@ -15,7 +15,7 @@ public class Individual implements Comparable<Individual> {
         this.name = name;
     }
 
-    public long getIg() {
+    public long getId() {
         return id;
     }
 

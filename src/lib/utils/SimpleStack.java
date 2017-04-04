@@ -1,4 +1,4 @@
-package ch11.ex15.local;
+package lib.utils;
 
 import java.util.LinkedList;
 
