@@ -1,11 +1,11 @@
 package ch17.ex01.access;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.*;
 
 /**
- * Created by V1 on 18-Feb-17.
+ * Created by V1 on 8-Feb-17.
  */
 public class Access {
     public static List<String[]> fill(List<String[]> list, int size) {

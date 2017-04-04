@@ -1,6 +1,6 @@
 package ch17.ex02.access;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.Map;
 import java.util.Set;

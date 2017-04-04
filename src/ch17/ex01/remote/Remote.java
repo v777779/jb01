@@ -1,6 +1,6 @@
 package ch17.ex01.remote;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.*;
 

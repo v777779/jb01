@@ -1,6 +1,6 @@
 package ch17.ex03.access;
 
-import lib.container.Countries;
+import lib.maps.Countries;
 
 import java.util.*;
 
