@@ -1,9 +1,7 @@
-package ch18.ex02.access;
+package ch18.ex03.access;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Pattern;
 
 /**
@@ -11,6 +9,7 @@ import java.util.regex.Pattern;
  */
 public class SortedDirList {
     private List<String> list = new ArrayList();
+    private Map<String,Long> map = new HashMap<>();
     private final int MAX_LEVEL = 8; // прокачиваем 8 уровней максимум
     private int level = 0; // уровень прокачки каталогов
     private String path;
@@ -22,15 +21,31 @@ public class SortedDirList {
         Collections.sort(list);   // отсортировать результат
     }
 
+    private void addFile(File file) {
+        list.add(file.getPath());
+        map.put(file.getPath(),file.length());
+    }
+
     public List<String> filter(List<String> list, String regex) {  // реализация интерфейса
         Pattern pattern = Pattern.compile(regex);   // скомпилировали regex
         List<String> filteredList = new ArrayList<>();
         for (String s : list) {
-            if (pattern.matcher(s).matches()|| regex ==  "") {
+            if (pattern.matcher(s).matches()) {
                 filteredList.add(s);
             }
         }
         return filteredList;
+    }
+
+    public Map<String,Long> filter(Map<String,Long> map, String regex) {  // реализация интерфейса
+        Pattern pattern = Pattern.compile(regex);   // скомпилировали regex
+        Map<String,Long> filteredMap = new HashMap<>();
+        for (String s : map.keySet()) {
+            if (pattern.matcher(s).matches() || regex ==  "") { // regex=="" пропускает все
+                filteredMap.put(s,map.get(s));
+            }
+        }
+        return filteredMap;
     }
 
     private void readPath(File path) {  // каталоги не пускать иначе выдают Exception
@@ -40,7 +55,7 @@ public class SortedDirList {
             return;
         }
         if (!path.isDirectory()) {
-            list.add(path.getPath());
+            addFile(path);
             level--;
             return;
         }
@@ -53,7 +68,7 @@ public class SortedDirList {
             if (file.isDirectory()) {
                 readPath(file);
             } else {
-                list.add(file.getPath());
+                addFile(file);
             }
         }
         level--; // выходим когда отработали все
@@ -65,6 +80,9 @@ public class SortedDirList {
 
     public List<String> list(String regex) {
         return filter(list, regex); // искать каталоги по patternlist;
+    }
+    public Map<String,Long> map(String regex) {
+        return filter(map, regex); // искать каталоги по patternlist;
     }
 
 }
