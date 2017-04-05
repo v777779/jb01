@@ -7,5 +7,6 @@ public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise Check\n");
+        FileViewer.getDir(new String[]{""});
     }
 }

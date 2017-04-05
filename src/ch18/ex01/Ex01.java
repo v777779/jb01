@@ -8,7 +8,7 @@ import ch18.ex01.local.Local;
  */
 public class Ex01 {
     public static void main(String[] args) {
-        Local.app();
+        Local.app(args);
         Access.app();
 
     }
