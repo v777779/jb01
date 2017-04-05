@@ -35,7 +35,7 @@ public class FileViewer {
             );
         }//if_else
         if (strings == null || strings.length == 0) {
-            System.out.println("Path not found");
+            System.out.println("Path not found or dir empty :"+path);
             level--;
             return;
         }
@@ -47,8 +47,10 @@ public class FileViewer {
                 readPath(path2, regex); // рекурсивный вызов
             } else {
                 count++;
-                String fileList = TextFile.read(path2.toString());
-                System.out.printf("%-25s : %s\n", s, fileList.substring(0, 75).replaceAll("\n", " ")); // просто пока вывести имя
+                String fileString = TextFile.read(path2.toString());
+                if (fileString.contains("args[0]")) {
+                    System.out.printf("%-27s : %s\n", s, fileString.substring(0, 75).replaceAll("\n", " ")); // просто пока вывести имя
+                }
             }
 
         }
@@ -57,7 +59,7 @@ public class FileViewer {
 
 
     public static void getDir(String[] args) {
-        File path = new File("./src/ch02"); // путь до каталога
+        File path = new File("./src"); // путь до каталога
         readPath(path, args[0]);
         System.out.println("files:" + count);
     }
