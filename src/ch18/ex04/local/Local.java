@@ -10,7 +10,7 @@ import java.io.File;
 public class Local {
     public static void app() {
         System.out.println("\n====LOCAL===");
-        System.out.println("\nCatalog Methods Check\n");
+        System.out.println("\nCatalog2 Methods Check\n");
 
         System.out.println("Simple Demo:");
         System.out.println(Catalog.walk("./src/ch18"));
@@ -35,7 +35,7 @@ public class Local {
 
 
 
-        //Catalog.walk("./src","T.*"));
+        //Catalog2.walk("./src","T.*"));
 
     }
 }

@@ -7,7 +7,7 @@ import java.io.IOException;
  * Created by V1 on 06-Apr-17.
  */
 public class ProcessFiles {
-    private IStrategy strategy; // обработчик файлов  IStrategy.process(File)
+    private IStrategy strategy; // обработчик файлов  IStrategy2.process(File)
     private String ext;
 
     public ProcessFiles(IStrategy strategy, String ext) {
