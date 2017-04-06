@@ -24,5 +24,11 @@ public class GenList<T> extends ArrayList<T> {
         }
     }
 
+    public GenList(int size, int mod) {
+        IGenerator<Integer> gen = new GenRnd.GenInt(mod);
+        for (int i = 0; i < size; i++) {
+            add((T)gen.next()); // add to ArrayList
+        }
+    }
 
 }

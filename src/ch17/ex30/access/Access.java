@@ -61,5 +61,7 @@ public class Access {
         Tester.fieldWidth = 12;
         ListSort.run(new ArrayList<Integer>(), ListCheck.tests.subList(testSize-3,testSize)); // последние два теста
 
+
+        System.out.println("\nOfficial solution:");
     }
 }

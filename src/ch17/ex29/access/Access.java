@@ -25,7 +25,7 @@ public class Access {
         qTest.setHeadLine("Queue<String> Tests");
         qTest.timedTests();
 
-        System.out.println("\nOffice solution:");
+        System.out.println("\nOfficial solution:");
         Tester.fieldWidth = 8; // по умолчанию
         ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
         ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
