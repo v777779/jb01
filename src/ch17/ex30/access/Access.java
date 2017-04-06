@@ -63,5 +63,9 @@ public class Access {
 
 
         System.out.println("\nOfficial solution:");
+        Tester.fieldWidth = 12;
+        TestParam [] testParams = TestParam.array(1000,1000);
+        ListSortOffice.run(new ArrayList<Integer>(), ListCheckOffice.tests,testParams); // последние два теста
+
     }
 }
