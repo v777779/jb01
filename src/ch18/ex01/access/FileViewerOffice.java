@@ -18,16 +18,16 @@ public class FileViewerOffice {
 
     public static void readPath(File path, String args[]) {  // каталоги не пускать иначе выдают Exception
         level++;
-        if (level > 8) {
+        if (level > 8 || args.length < 3) {
             level--;
             return;
         }
         String[] strings;
-        if (args == null || args.length < 2) {
+        if (args == null || args[1] == "") {
             strings = path.list(); // получить список каталогов
         } else {
             strings = path.list(new FilenameFilter() {
-                                    private Pattern pattern = Pattern.compile(args[0]);   // работает только с final arg
+                                    private Pattern pattern = Pattern.compile(args[1]);   // работает только с final arg
 
                                     @Override
                                     public boolean accept(File dir, String name) {
@@ -37,7 +37,7 @@ public class FileViewerOffice {
             );
         }//if_else
         if (strings == null || strings.length == 0) {
-            System.out.println("Path not found or dir empty :"+path);
+            System.out.println("File not found or dir empty :" + path);
             level--;
             return;
         }
@@ -48,21 +48,25 @@ public class FileViewerOffice {
             if (path2.isDirectory()) {
                 readPath(path2, args); // рекурсивный вызов
             } else {
-                count++;
-                Set<String> setString = new HashSet<>(new TextFile(path2.toString(),"\\W+")); // набор слов
-                if (setString.contains(args[1])) {
-                    System.out.printf("%-27s : %s\n", s); // просто вывести имя если есть слово
+                Set<String> setString = new HashSet<>(new TextFile(path2.toString(), "\\W+")); // набор слов
+                if (setString.contains(args[2])) {
+                    System.out.printf("%-20s\n", path2.getPath()); // просто вывести имя если есть слово
+                    count++;
                 }
             }
-
         }
         level--; // выходим когда отработали все
     }
 
 
     public static void getDir(String[] args) {
-        File path = new File("./src"); // путь до каталога
-        readPath(path, args);
+        if (args == null || args.length < 3) {
+            System.out.println("Input parameters: args[] = <path>, <regex>, <search string>");
+            return;
+        }
+
+        File path = new File(args[0]); // путь до каталога
+        readPath(path, args); // repack args
         System.out.println("files:" + count);
     }
 
