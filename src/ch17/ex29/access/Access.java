@@ -25,6 +25,14 @@ public class Access {
         qTest.setHeadLine("Queue<String> Tests");
         qTest.timedTests();
 
+        System.out.println("\nOffice solution:");
+        Tester.fieldWidth = 8; // по умолчанию
+        ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
+        ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
+        Tester.fieldWidth = 12; // для очередей
+        qTest = new Tester<LinkedList<String>>(new LinkedList<>(),QueueCheckS.tests);
+        qTest.setHeadLine("Queue<String> Tests");
+        qTest.timedTests();
 
     }
 }
