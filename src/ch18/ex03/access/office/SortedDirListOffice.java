@@ -1,14 +1,17 @@
-package ch18.ex02.access.office;
+package ch18.ex03.access.office;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**
  * Created by V1 on 05-Apr-17.
  */
 public class SortedDirListOffice {
+    private List<String> list = new ArrayList();  // работает только на одном уровне
     private File path;
 
     public SortedDirListOffice() {
