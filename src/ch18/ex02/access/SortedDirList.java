@@ -19,7 +19,7 @@ public class SortedDirList {
     public SortedDirList(String path) {
         this.path = path;
         readPath(new File(path)); //  прокачать каталог
-        Collections.sort(list);   // отсортировать результат
+        Collections.sort(list,String.CASE_INSENSITIVE_ORDER);   // отсортировать результат
     }
 
     public List<String> filter(List<String> list, String regex) {  // реализация интерфейса
