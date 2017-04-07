@@ -23,8 +23,14 @@ public class Access {
             System.out.println(s);
         }
         System.out.println("\nOfficial solution:");
-        SortedDirListOffice sDir = new SortedDirListOffice("./src/ch18/ex02/access");
-        System.out.println(Arrays.toString(sDir.list(".*Li.*")));
+        String[]args = new String[] {"./src/ch18/ex02/access",".*Li.*"};
+        System.out.println("parameters: ");
+        System.out.println("          : args[0]="+args[0]);
+        System.out.println("          : args[1]="+args[1]);
+
+
+        SortedDirListOffice sDir = new SortedDirListOffice(args[0]);
+        System.out.println(Arrays.toString(sDir.list(args[1])));
 
 
 

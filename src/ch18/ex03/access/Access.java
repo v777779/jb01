@@ -1,5 +1,7 @@
 package ch18.ex03.access;
 
+import ch18.ex03.access.office.FileViewerOffice;
+
 import java.util.Map;
 
 /**
@@ -27,5 +29,14 @@ public class Access {
             size += entry.getValue();
         }
         System.out.println("Total file size:"+size);
+
+
+        System.out.println("\nOffice solution:");
+        String[]args = new String[] {"./src/ch18/ex02/access",".*Li.*"};
+        System.out.println("parameters: ");
+        System.out.println("          : args[0]="+args[0]);
+        System.out.println("          : args[1]="+args[1]);
+        FileViewerOffice.getDir(args);
+
     }
 }
