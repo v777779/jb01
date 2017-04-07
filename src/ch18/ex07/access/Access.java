@@ -1,8 +1,7 @@
 package ch18.ex07.access;
 
-import ch18.ex07.local.BufferedInputFileSet;
+import lib.files.BFileRead;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,17 +14,22 @@ public class Access {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 7 File Reader Check\n");
-        String s = "";
-        try {
-            s = BufferedInputFileSet.read("./src/ch18/ex07/local/Local.java");
-        } catch (IOException e) {
-            System.out.println("catch: IO exception");
-        }
 
+        System.out.println("Home solution:");
+        String s = BFileRead.readString("./src/ch18/ex07/local/Local.java");
         List<String> list = new LinkedList<>(Arrays.asList(s.split("\n")));
         ListIterator<String> lit = list.listIterator(list.size()); // встать на последний элемент
         while (lit.hasPrevious()) {
             System.out.println(lit.previous());
         }
+
+        System.out.println("\nOfficial solution:");
+        List<String> listOffice = new LinkedList<>(BFileRead.readList("./src/ch18/ex07/local/Local.java"));
+
+        ListIterator<String> litOffice = listOffice.listIterator(list.size()); // встать на последний элемент
+        while (litOffice.hasPrevious()) {
+            System.out.println(litOffice.previous());
+        }
+
     }
 }
