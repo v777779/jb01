@@ -1,4 +1,4 @@
-package ch17.ex31.access;
+package ch17.ex31.access.office;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -7,21 +7,21 @@ import java.util.Iterator;
 /**
  * Created by V1 on 02-Apr-17.
  */
-public class ContString implements Iterable<ContString> {
+public class ContStringOffice implements Iterable<ContStringOffice> {
     private String[] strings;
     private int index;
 
-    public ContString() {
+    public ContStringOffice() {
         this.strings = new String[10];
         index = 0;
     }
-    public ContString(int size) {
+    public ContStringOffice(int size) {
         this.strings = new String[size];
         index = 0;
     }
 
     @Override
-    public Iterator<ContString> iterator() {
+    public Iterator<ContStringOffice> iterator() {
         return null;
     }
     public void add(String s) {
@@ -40,6 +40,13 @@ public class ContString implements Iterable<ContString> {
             index--;
         }
 //        strings[index] = null;  // забываем  не нужно ничего писать
+    }
+
+    public String get(int index) {
+        if (index >= 0 && index <= this.index) {
+            return strings[index];
+        }
+        return ""; // вернуть пустую строку
     }
 
     public void addAll(Collection<String> c) {
