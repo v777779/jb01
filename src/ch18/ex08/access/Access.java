@@ -21,8 +21,7 @@ public class Access {
             args = new String[]{"./src/ch18/ex08/access/Access.java"};
         }
         List<String> list = new LinkedList<>(BFileRead.readList(args[0]));
-        ListIterator<String> lit = list.listIterator(list.size());
-        while (lit.hasPrevious()) {
+        for ( ListIterator<String> lit = list.listIterator(list.size());lit.hasPrevious();) {
             System.out.println(lit.previous());
         }
 
