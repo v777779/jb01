@@ -1,5 +1,7 @@
 package ch17.ex29.access;
 
+import ch17.ex29.access.office.ListCheckSOffice;
+import ch17.ex29.access.office.QueueCheckS;
 import lib.tests.TestParam;
 import lib.tests.Tester;
 
@@ -21,13 +23,13 @@ public class Access {
         ListTesterS.run(new LinkedList<>(),ListCheckS.tests);
 
         Tester.fieldWidth = 12; // для очередей
-        Tester<LinkedList<String>> qTest = new Tester<LinkedList<String>>(new LinkedList<>(),QueueCheckS.tests);
+        Tester<LinkedList<String>> qTest = new Tester<LinkedList<String>>(new LinkedList<>(), QueueCheckS.tests);
         qTest.setHeadLine("Queue<String> Tests");
         qTest.timedTests();
 
         System.out.println("\nOfficial solution:");
         Tester.fieldWidth = 8; // по умолчанию
-        ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
+        ListTesterS.run(new ArrayList<>(), ListCheckSOffice.tests);
         ListTesterS.run(new ArrayList<>(),ListCheckSOffice.tests);
         Tester.fieldWidth = 12; // для очередей
         qTest = new Tester<LinkedList<String>>(new LinkedList<>(),QueueCheckS.tests);

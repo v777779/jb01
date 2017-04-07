@@ -1,4 +1,4 @@
-package ch17.ex30.access;
+package ch17.ex30.access.office;
 
 import lib.generate.GenList;
 import lib.tests.Test;

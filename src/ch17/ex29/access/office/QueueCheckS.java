@@ -1,4 +1,4 @@
-package ch17.ex29.access;
+package ch17.ex29.access.office;
 
 import lib.maps.Countries;
 import lib.tests.Test;

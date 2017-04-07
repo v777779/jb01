@@ -1,4 +1,4 @@
-package ch17.ex29.access;
+package ch17.ex29.access.office;
 
 import lib.generate.GenRnd;
 import lib.maps.Countries;

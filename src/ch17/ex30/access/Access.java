@@ -1,5 +1,7 @@
 package ch17.ex30.access;
 
+import ch17.ex30.access.office.ListCheckOffice;
+import ch17.ex30.access.office.ListSortOffice;
 import lib.generate.GenList;
 import lib.tests.ListCheck;
 import lib.tests.Test;
