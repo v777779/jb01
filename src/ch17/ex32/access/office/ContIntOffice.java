@@ -1,4 +1,4 @@
-package ch17.ex32.access;
+package ch17.ex32.access.office;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -7,22 +7,22 @@ import java.util.Iterator;
 /**
  * Created by V1 on 02-Apr-17.
  */
-public class ContInt implements Iterable<ContInt> {
+public class ContIntOffice implements Iterable<ContIntOffice> {
     private int[] ints;
     private int index;
 
-    public ContInt() {
+    public ContIntOffice() {
         this.ints = new int[10];
         index = 0;
     }
 
-    public ContInt(int size) {
+    public ContIntOffice(int size) {
         this.ints = new int[size];
         index = 0;
     }
 
     @Override
-    public Iterator<ContInt> iterator() {
+    public Iterator<ContIntOffice> iterator() {
         return null;
     }
 

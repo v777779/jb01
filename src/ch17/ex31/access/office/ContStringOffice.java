@@ -46,7 +46,7 @@ public class ContStringOffice implements Iterable<ContStringOffice> {
         if (index >= 0 && index <= this.index) {
             return strings[index];
         }
-        return ""; // вернуть пустую строку
+        throw new RuntimeException("Out of Bounds");
     }
 
     public void addAll(Collection<String> c) {

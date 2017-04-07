@@ -23,9 +23,8 @@ public class Access {
         TString.testArray(new ContString());
 
         System.out.println("\nOfficial Solution:");
-
-        Tester.run(new ArrayList<String>(), ListCheckOffice.tests,TestParam.array(1,1000));
-        Tester.run(new ContStringOffice(), StringCheckOffice.tests,TestParam.array(1,1000));
+        Tester.run(new ArrayList<String>(), ListCheckOffice.tests,TestParam.array(10000,1));
+        Tester.run(new ContStringOffice(), StringCheckOffice.tests,TestParam.array(10000,1));
 
     }
 }

@@ -17,11 +17,14 @@ public class ListCheckOffice {
                       @Override
                       public int test(List<String> list, TestParam tp) {  // внешний List<Integer>
                           int loops = tp.loops;
+                          int size = tp.size;
                           for (int i = 0; i < loops; i++) {
-                              list.add(""+i);  // same Integer.toString(i)
-                              list.get(i);
+                              for (int j = 0; j < size ; j++) {
+                                  list.add(""+j);  // same Integer.toString(i)
+                                  list.get(j);
+                              }
                           }
-                          return loops;
+                          return size*loops;
                       } // test()
                   }//new Test{}
         );
