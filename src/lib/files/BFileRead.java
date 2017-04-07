@@ -26,7 +26,6 @@ public class BFileRead {
     }
 
     public static List<String> readList(String fileName)  {
-        StringBuilder sb = new StringBuilder();
         List<String> list = new ArrayList<>();
         try {
             BufferedReader in = new BufferedReader(new FileReader(fileName)); // инициализируем декоратор файлом
