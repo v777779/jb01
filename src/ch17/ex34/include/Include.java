@@ -1,7 +1,6 @@
 package ch17.ex34.include;
 
 import lib.tests.SetCheck;
-import lib.tests.SetCheckS;
 import lib.tests.Tester;
 
 import java.util.HashSet;
@@ -20,10 +19,6 @@ public class Include {
         Tester.run(new TreeSet<>(), SetCheck.tests);
         Tester.run(new HashSet<>(), SetCheck.tests);
         Tester.run(new LinkedHashSet<>(), SetCheck.tests);
-        System.out.println("\nSet<String>:");
-        Tester.run(new TreeSet<>(), SetCheckS.tests);
-        Tester.run(new HashSet<>(), SetCheckS.tests);
-        Tester.run(new LinkedHashSet<>(), SetCheckS.tests);
 
     }
 }
