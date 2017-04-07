@@ -1,5 +1,7 @@
 package ch18.ex01.access;
 
+import ch18.ex01.access.office.FileViewerOffice;
+
 /**
  * Created by V1 on 18-Feb-17.
  */
@@ -25,10 +27,16 @@ public class Access {
         FileViewerList.getDir(args);
 
         System.out.println("\nOfficial version:");
-        System.out.println("regex        : valid for local dir only");
-        System.out.println("pattern      : "+args[2]);
-
-        FileViewerOffice.getDir(args);
+        String path = "./src/ch18/ex01/access";
+        args = new String[] {"java","ORDER","FileViewerList"};
+        System.out.println("parameters: ");
+        System.out.println("          : path   ="+path);
+        System.out.println("          : args[0]="+args[0]);
+        System.out.println("          : args[1]="+args[1]);
+        System.out.println("          : args[2]="+args[2]);
+        System.out.println("Found files:");
+        System.out.println("============");
+        FileViewerOffice.getDir(path,args);
 
     }
 }
