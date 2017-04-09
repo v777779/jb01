@@ -1,4 +1,4 @@
-package ch18.ex12.classc;
+package ch18.ex12.codec;
 
 import lib.files.BufferedInputFile;
 

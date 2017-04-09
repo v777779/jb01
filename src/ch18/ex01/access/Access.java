@@ -17,12 +17,12 @@ public class Access {
         }
 
         System.out.println("Home version : search pattern args[0] : ");
-        System.out.println("regex        : valid for classa dir only");
+        System.out.println("regex        : valid for codea dir only");
         System.out.println("pattern      : args[0] ");
         FileViewer.getDir(args);
 
         System.out.println("\nHome version2:");
-        System.out.println("regex        : valid for classa dir only");
+        System.out.println("regex        : valid for codea dir only");
         System.out.println("pattern      : "+args[2]);
         FileViewerList.getDir(args);
 

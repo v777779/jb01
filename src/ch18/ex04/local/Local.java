@@ -14,19 +14,19 @@ public class Local {
 
         System.out.println("Simple Demo:");
         System.out.println(Catalog.walk("./src/ch18"));
-        System.out.println("ClassA Directory:");
-        File[] files = Catalog.local("./src/ch18/ex01/classa","[.+Lo].*");
+        System.out.println("CodeA Directory:");
+        File[] files = Catalog.local("./src/ch18/ex01/codea","[.+Lo].*");
         for (File file : files) {
             System.out.println(file);
         }
 
         System.out.println("\nDirectory Demo:");
         PPrint.print(Catalog.walk("./src/ch18/ex01").getListDirs());
-        System.out.println("\nFiles classa() with M started:");
+        System.out.println("\nFiles codea() with M started:");
         for (File file : Catalog.local("./src/lib/pets", "M.*")) {
             System.out.println(file);
         }
-        System.out.println("\nFiles classa() with M started and .java:");
+        System.out.println("\nFiles codea() with M started and .java:");
         for (File file : Catalog.local("./src/lib/pets", "M.*.java")) {
             System.out.println(file);
         }

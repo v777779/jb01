@@ -16,7 +16,7 @@ public class Access {
         System.out.println("\nExercise 7 File Reader Check\n");
 
         System.out.println("Home solution:");
-        String s = BFileRead.readString("./src/ch18/ex07/classa/ClassA.java");
+        String s = BFileRead.readString("./src/ch18/ex07/codea/CodeA.java");
         List<String> list = new LinkedList<>(Arrays.asList(s.split("\n")));
         ListIterator<String> lit = list.listIterator(list.size()); // встать на последний элемент
         while (lit.hasPrevious()) {
@@ -24,7 +24,7 @@ public class Access {
         }
 
         System.out.println("\nOfficial solution:");
-        List<String> listOffice = new LinkedList<>(BFileRead.readList("./src/ch18/ex07/classa/ClassA.java"));
+        List<String> listOffice = new LinkedList<>(BFileRead.readList("./src/ch18/ex07/codea/CodeA.java"));
 
         ListIterator<String> litOffice = listOffice.listIterator(list.size()); // встать на последний элемент
         while (litOffice.hasPrevious()) {

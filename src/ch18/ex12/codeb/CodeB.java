@@ -1,4 +1,4 @@
-package ch18.ex12.classb;
+package ch18.ex12.codeb;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -7,9 +7,9 @@ import java.io.IOException;
 /**
  * Created by V1 on 20-Feb-17.
  */
-public class ClassB {
+public class CodeB {
     public static void app() {
-        System.out.println("\n====CLASS_B===");
+        System.out.println("\n====CODE_B===");
         System.out.println("\nMemory Read Formatted DataStreamInput Check\n");
 
         System.out.println("ByteArrayInputStream from String:");
@@ -33,7 +33,7 @@ public class ClassB {
         }
 
         System.out.println("\nDataStreamInput from File:");
-        String fileName = "./src/ch18/ex12/classb/FmtMemInput.java";
+        String fileName = "./src/ch18/ex12/codeb/FmtMemInput.java";
         FmtMemInput.check(fileName);
     }
 }

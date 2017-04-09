@@ -1,4 +1,4 @@
-package ch18.ex12.classa;
+package ch18.ex12.codea;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -6,9 +6,9 @@ import java.io.StringReader;
 /**
  * Created by V1 on 18-Feb-17.
  */
-public class ClassA {
+public class CodeA {
     public static void app() {
-        System.out.println("\n====CLASS_A===");
+        System.out.println("\n====CODE_A===");
         System.out.println("\nMemory Read StringReader Check\n");
 
         System.out.println("StringReader from String:");
@@ -23,7 +23,7 @@ public class ClassA {
             throw new RuntimeException(e);
         }
         System.out.println("\nStringReader from File:");
-        MemoryInput.check("./src/ch18/ex12/classa/MemoryInput.java");
+        MemoryInput.check("./src/ch18/ex12/codea/MemoryInput.java");
 
 
     }

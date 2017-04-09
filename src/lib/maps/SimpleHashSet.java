@@ -151,7 +151,7 @@ public class SimpleHashSet<K> extends AbstractSet<K> {
 
 //======================================
 //    @Override
-//    public V put(K key, V classh) {
+//    public V put(K key, V codeg) {
 //        V oldValue = null;
 //
 //        int index = Math.abs(key.hashCode()) % SIZE; // hachCode() реализуется в классе хранения обрезается по SIZE
@@ -159,14 +159,14 @@ public class SimpleHashSet<K> extends AbstractSet<K> {
 //            buckets[index] = new LinkedList<>();  // тип можно не задавать
 //        }
 //        LinkedList<MapEntry<K, V>> bucket = buckets[index];      // получаем список под данный hashCode
-//        MapEntry<K, V> pair = new MapEntry<K, V>(key, classh);    // создать элемент хранения
+//        MapEntry<K, V> pair = new MapEntry<K, V>(key, codeg);    // создать элемент хранения
 //        boolean found = false;
 //        ListIterator<MapEntry<K, V>> lit = bucket.listIterator();
 //        while (lit.hasNext()) {
 //            MapEntry<K, V> iPair = lit.next();  // получили элемент из списка
 //            if (iPair.getKey().equals(key)) {   // нашли точно такой же элемент
 //                oldValue = iPair.getValue();    // старое значение запомнили
-//                iPair.setValue(classh);          // задали новое значение
+//                iPair.setValue(codeg);          // задали новое значение
 //                found = true;                   // нашли элемент в HashMap
 //                break;
 //            }
@@ -254,14 +254,14 @@ public class SimpleHashSet<K> extends AbstractSet<K> {
 //    }
 //
 //    @Override
-//    public boolean containsValue(Object classh) {
+//    public boolean containsValue(Object codeg) {
 //        for (LinkedList<MapEntry<K, V>> bucket : buckets) {
 //            if (bucket == null) {
 //                continue;
 //            }
 //            ListIterator<MapEntry<K, V>> lit = bucket.listIterator();
 //            while (lit.hasNext()) {
-//                if (lit.next().getValue().equals(classh)) {   // нашли точно такой же элемент
+//                if (lit.next().getValue().equals(codeg)) {   // нашли точно такой же элемент
 //                    return true;                             // возвращаем значение
 //                }
 //            }
