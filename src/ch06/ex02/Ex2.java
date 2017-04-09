@@ -1,7 +1,6 @@
 package ch06.ex02;
 
 
-import lib.utils.List;
 import lib.utils.Vector;
 
 /**
@@ -11,7 +10,7 @@ import lib.utils.Vector;
 public class Ex2 {
     public static void main(String[] args) {
         Vector v = new Vector();
-        List l = new List();
+        MyList l = new MyList();
         java.util.Vector vector = new java.util.Vector();
 
         System.out.println("Widget Check");

@@ -12,9 +12,10 @@ public class Local {
             throw new Sneeze();
         } catch (Sneeze e) {     // точная отработка сработает тут
             System.out.println("catch:"+e.getClass().getSimpleName());
-        } catch (Annoy e){      // сюда не дойдет
-            System.out.println("catch1:"+e.getClass().getSimpleName());
         }
+//        catch (Annoy e){      // сюда не дойдет
+//            System.out.println("catch1:"+e.getClass().getSimpleName());
+//        }
 // примерный перехват
         try {
             throw new Sneeze();
