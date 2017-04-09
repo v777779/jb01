@@ -12,9 +12,9 @@ public class Local {
         System.out.println("\n====LOCAL===");
         System.out.println("\nFile Input Check\n");
 
-        System.out.println("Read file Local.java:");
+        System.out.println("Read file ClassA.java:");
         try {
-            System.out.println(BufferedInputFileSet.read("./src/ch18/ex07/local/Local.java"));
+            System.out.println(BufferedInputFileSet.read("./src/ch18/ex07/classa/ClassA.java"));
         } catch (IOException e) {
             System.out.println("catch: IO exception");
         }

@@ -51,7 +51,7 @@ public class Catalog {
 //              return pattern.matcher(name).matches(); // работает точно также ???
             }
         });
-    } // local()
+    } // classa()
 
     public static File[] local(String path, final String regex) {// перегрузка
         return local(new File(path), regex);

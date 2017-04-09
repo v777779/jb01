@@ -16,7 +16,7 @@ public class Access {
             System.out.println("Usage: args[0] <filePath>");
         }
         if (args.length == 0) {
-            args = new String[]{"./src/ch18/ex09/access/Access.java"};
+            args = new String[]{"./src/ch18/ex09/exercise/Exercise.java"};
         }
         List<String> list = new LinkedList<>(BFileReadUp.readList(args[0]));
         ListIterator<String> lit = list.listIterator(list.size());

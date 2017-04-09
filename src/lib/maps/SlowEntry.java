@@ -35,7 +35,7 @@ public class SlowEntry<K, V> implements Map.Entry<K, V> {
     public int hashCode() {
         int keyHashCode = (key == null) ? 0 : key.hashCode();       // берем реализацию у ключа
         int valueHashCode = (value == null) ? 0 : value.hashCode();// берем реализацию у значения
-        return (keyHashCode ^ valueHashCode); // key XOR value
+        return (keyHashCode ^ valueHashCode); // key XOR classh
     }
 
     @Override

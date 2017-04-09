@@ -32,7 +32,7 @@ public class Access {
 
 
         System.out.println("\nOffice solution:");
-        String[]args = new String[] {"./src/ch18/ex02/access",".*Li.*"};
+        String[]args = new String[] {"./src/ch18/ex02/exercise",".*Li.*"};
         System.out.println("parameters: ");
         System.out.println("          : args[0]="+args[0]);
         System.out.println("          : args[1]="+args[1]);

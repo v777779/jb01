@@ -16,7 +16,7 @@ public class Access {
             System.out.println("Usage: args[0] <filePath> args[1] = <search word>,..");
         }
         if (args.length == 0) {
-            args = new String[]{"./src/ch18/ex10/access/Access.java", "list", "out"};
+            args = new String[]{"./src/ch18/ex10/exercise/Exercise.java", "list", "out"};
         }
 
         System.out.println("parameters: ");

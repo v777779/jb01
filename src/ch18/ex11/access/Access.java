@@ -12,7 +12,7 @@ public class Access {
         System.out.println("\nExercise 11 Check\n");
 
         HumidityControl gc = new HumidityControl();          // создали объект оранжерея
-        String fileName = "./src/ch18/ex11/access/EventsList.java";
+        String fileName = "./src/ch18/ex11/exercise/EventsList.java";
         GCFileRead.events(gc, fileName);  // прочитали и упаковали
         gc.run(); // запустили
 
