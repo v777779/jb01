@@ -1,5 +1,7 @@
 package ch18.ex12.codec;
 
+import lib.files.BFileRead;
+
 import java.io.File;
 
 /**
@@ -16,6 +18,13 @@ public class CodeC {
         new File(fileName2).delete();
         new File(fileName3).delete();
         BasicOutput.check(fileName,fileName2, fileName3);
+        System.out.println("\nWritten files:");
+        System.out.println("-----------------------------------");
+        System.out.println(BFileRead.readString(fileName2));
+        System.out.println("-----------------------------------");
+        System.out.println(BFileRead.readString(fileName3));
+
+
 
     }
 }
