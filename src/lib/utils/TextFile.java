@@ -1,82 +1,78 @@
-//: net/mindview/util/TextFile.java
-// Static functions for reading and writing text files as
-// a single string, and treating a file as an ArrayList.
 package lib.utils;
-import java.io.*;
-import java.util.*;
 
-public class TextFile extends ArrayList<String> {
-  // Read a file as a single string:
-  public static String read(String fileName) {
-    StringBuilder sb = new StringBuilder();
-    try {
-      BufferedReader in= new BufferedReader(new FileReader(
-        new File(fileName).getAbsoluteFile()));
-      try {
-        String s;
-        while((s = in.readLine()) != null) {
-          sb.append(s);
-          sb.append("\n");
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * Created by V1 on 10-Apr-17.
+ */
+public class TextFile extends ArrayList<String>{
+// данные Класса
+    public static String read(String fileName) {
+        StringBuilder sb = new StringBuilder(); // набор строки
+        try {
+            File file = new File(fileName).getAbsoluteFile();  // все таки это файл по полному абсолютному пути
+            BufferedReader in = new BufferedReader(new FileReader(file));  // по файлу открываем буфер чтение
+            try {
+                String s;
+                while ((s = in.readLine()) != null) {
+                    sb.append(s);
+                    sb.append('\n');
+                }
+            } finally {
+                in.close(); // закрыть по любому
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e); // блокируем распространение Exception
         }
-      } finally {
-        in.close();
-      }
-    } catch(IOException e) {
-      throw new RuntimeException(e);
+        return sb.toString();
     }
-    return sb.toString();
-  }
-  // Write a single file in one method call:
-  public static void write(String fileName, String text) {
-    try {
-      PrintWriter out = new PrintWriter(
-        new File(fileName).getAbsoluteFile());
-      try {
-        out.print(text);
-      } finally {
-        out.close();
-      }
-    } catch(IOException e) {
-      throw new RuntimeException(e);
+
+    public static void write(String fileName, String text) {
+        try {
+            File file = new File(fileName).getAbsoluteFile();  // все таки это файл по полному абсолютному пути
+            PrintWriter out = new PrintWriter(file); // с файлом по абсолютному пути
+            try {
+                out.print(text);
+
+            } finally {
+                out.close(); // закрыть по любому
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e); // блокируем распространение Exception
+        }
     }
-  }
-  // Read a file, split by any regular expression:
-  public TextFile(String fileName, String splitter) {
-    super(Arrays.asList(read(fileName).split(splitter)));
-    // Regular expression split() often leaves an empty
-    // String at the first position:
-    if(get(0).equals("")) remove(0);
-  }
-  // Normally read by lines:
-  public TextFile(String fileName) {
-    this(fileName, "\n");
-  }
-  public void write(String fileName) {
-    try {
-      PrintWriter out = new PrintWriter(
-        new File(fileName).getAbsoluteFile());
-      try {
-        for(String item : this)
-          out.println(item);
-      } finally {
-        out.close();
-      }
-    } catch(IOException e) {
-      throw new RuntimeException(e);
+
+// данные Объекта
+// конструкторы
+    public TextFile(String fileName, String splitter) {  // конструктор
+        super(Arrays.asList(read(fileName).split(splitter)));
+        if (get(0).equals("")) {  // заплатка
+            remove(0);
+        }
     }
-  }
-  // Simple test:
-  public static void main(String[] args) {
-    String file = read("TextFile.java");
-    write("test.txt", file);
-    TextFile text = new TextFile("test.txt");
-    text.write("test2.txt");
-    // Break into unique sorted list of words:
-    TreeSet<String> words = new TreeSet<String>(
-      new TextFile("TextFile.java", "\\W+"));
-    // Display the capitalized words:
-    System.out.println(words.headSet("a"));
-  }
-} /* Output:
-[0, ArrayList, Arrays, Break, BufferedReader, BufferedWriter, Clean, Display, File, FileReader, FileWriter, IOException, Normally, Output, PrintWriter, Read, Regular, RuntimeException, Simple, Static, String, StringBuilder, System, TextFile, Tools, TreeSet, W, Write]
-*///:~
+
+    public TextFile(String fileName) {  // конструктор
+//        super(Arrays.asList(read(fileName).split('\n'));  вместо этого вызывается предыдущий конструктор
+        this(fileName,"\n");  // предыдущий конструктор
+    }
+
+// методы
+    public void write(String fileName) {  // запись экземпляра  this.ArrayList
+        try {
+            File file = new File(fileName).getAbsoluteFile();  // все таки это файл по полному абсолютному пути
+            PrintWriter out = new PrintWriter(file); // с файлом по абсолютному пути
+            try {
+                for (String s : this) {  // это же ArrayList
+                    out.print(s);
+                }
+
+            } finally {
+                out.close(); // закрыть по любому
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e); // блокируем распространение Exception
+        }
+    }
+}
