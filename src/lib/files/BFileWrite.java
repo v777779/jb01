@@ -12,7 +12,7 @@ public class BFileWrite {
     public static void writeString(String fileName, String string) {
         try {
             PrintWriter pw = new PrintWriter(fileName);
-            pw.println(string);
+            pw.print(string);
             pw.close();
         } catch (Exception e) {
             throw new RuntimeException(e);

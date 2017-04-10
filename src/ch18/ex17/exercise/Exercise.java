@@ -10,7 +10,7 @@ import java.util.Map;
 public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise 17 Map Check\n");
+        System.out.println("\nExercise 17 TextFile and Map Check\n");
         String fileName = "./src/ch18/ex17/exercise/CharMap.java";
         Map<Character,Integer> map = CharMap.count(new TextFile(fileName,"\\W+").toString());
         int lines = 1;
