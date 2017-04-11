@@ -8,7 +8,9 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 
 /**
- * Created by V1 on 11-Apr-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 11-Apr-17.
  */
 public class BufferToText {
     private static final int BSIZE = 1024;

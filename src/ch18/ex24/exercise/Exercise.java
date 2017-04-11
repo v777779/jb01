@@ -1,0 +1,13 @@
+package ch18.ex24.exercise;
+
+/**
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vadim.v.voronov@gmail.com
+ * Created: 11-Apr-17.
+ */
+public class Exercise {
+    public static void app() {
+        System.out.println("\n====EXERCISE===");
+        System.out.println("\nExercise Check\n");
+    }
+}
