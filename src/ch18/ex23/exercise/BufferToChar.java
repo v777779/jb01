@@ -11,7 +11,7 @@ import java.nio.channels.FileChannel;
  * Created by V1 on 11-Apr-17.
  */
 public class BufferToChar {
-    private static final int BSIZE = 1024;
+    private static final int BSIZE = 250;
     private static String stringData = "FileChannel fc = Русские символы New FileOutputStream(fileWrite).getChannel()";
 
     public static void check(String fileWrite) {
@@ -26,9 +26,11 @@ public class BufferToChar {
             fc = new FileInputStream(fileWrite).getChannel(); // получить записанный файл в виде потока
             fc.read(bf);
             bf.flip();
-            System.out.println(bf.asCharBuffer().toString());
+            System.out.print(bf.asCharBuffer().toString());
+            System.out.println(bf.asCharBuffer().length());
             CharBuffer ch = bf.asCharBuffer().subSequence(0,bf.asCharBuffer().toString().indexOf("\u0000"));
-            System.out.println(ch);
+            System.out.print(ch);
+            System.out.println(ch.length());
             fc.close();
 
         } catch (IOException e) {
