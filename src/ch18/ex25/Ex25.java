@@ -13,6 +13,8 @@ public class Ex25 {
     public static void main(String[] args) {
         CodeA.app();
         CodeB.app();
+        //CodeC.app();
+        //CodeD.app();
         Exercise.app();
 
     }

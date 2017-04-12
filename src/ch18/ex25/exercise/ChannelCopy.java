@@ -1,4 +1,4 @@
-package ch18.ex23.codeb;
+package ch18.ex25.exercise;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,7 +11,7 @@ import java.nio.channels.FileChannel;
  * email: vaidim.v.voronov@gmail.com
  * Created: 11-Apr-17.
  */
-public class FIleChCopy {
+public class ChannelCopy {
 
     public static void check(String fileSrc, String fileDst) {
         final int BSIZE = 10;

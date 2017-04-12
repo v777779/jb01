@@ -10,6 +10,6 @@ public class CodeA {
         System.out.println("\n====CODE_A===");
         System.out.println("\nNIO Check\n");
 
-        FileCh.check();
+        GetChannel.check();
     }
 }

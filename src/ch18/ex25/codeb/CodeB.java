@@ -9,6 +9,6 @@ public class CodeB {
     public static void app() {
         System.out.println("\n====CODE_B===");
         System.out.println("\nCharBuffer Encoding Check\n");
-
+        UsingBuffers.check();
     }
 }

@@ -10,7 +10,7 @@ import java.nio.channels.FileChannel;
  * email: vaidim.v.voronov@gmail.com
  * Created: 11-Apr-17.
  */
-public class FileChTran {
+public class TransferTo {
     public static void check(String fileSrc, String fileDst) {
         final int BSIZE = 10;
         try {

@@ -1,4 +1,4 @@
-package ch18.ex23.codea;
+package ch18.ex25.exercise;
 
 import lib.utils.TextFile;
 
@@ -14,7 +14,7 @@ import java.nio.channels.FileChannel;
  * email: vaidim.v.voronov@gmail.com
  * Created: 10-Apr-17.
  */
-public class FileCh {
+public class GetChannel {
     private static final int BSIZE = 1024;
 
     public static void check() {
