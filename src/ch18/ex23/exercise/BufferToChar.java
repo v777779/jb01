@@ -19,18 +19,18 @@ public class BufferToChar {
     public static void check(String fileWrite) {
         try {
             FileChannel fc = new FileOutputStream(fileWrite).getChannel();
-            ByteBuffer bf = ByteBuffer.allocate(BSIZE);
+            ByteBuffer bb = ByteBuffer.allocate(BSIZE);
 // способ 3
-            bf.asCharBuffer().put(stringData);  // записать через charBuffer
-            fc.write(bf);                       // записать кодированные данные
+            bb.asCharBuffer().put(stringData);  // записать через charBuffer
+            fc.write(bb);                       // записать кодированные данные
             fc.close();
 
             fc = new FileInputStream(fileWrite).getChannel(); // получить записанный файл в виде потока
-            fc.read(bf);
-            bf.flip();
-            System.out.print(bf.asCharBuffer().toString());
-            System.out.println(bf.asCharBuffer().length());
-            CharBuffer ch = bf.asCharBuffer().subSequence(0,bf.asCharBuffer().toString().indexOf("\u0000"));
+            fc.read(bb);
+            bb.flip();
+            System.out.print(bb.asCharBuffer().toString());
+            System.out.println(bb.asCharBuffer().length());
+            CharBuffer ch = bb.asCharBuffer().subSequence(0,bb.asCharBuffer().toString().indexOf("\u0000"));
             System.out.print(ch);
             System.out.println(ch.length());
             fc.close();

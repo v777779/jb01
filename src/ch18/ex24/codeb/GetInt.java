@@ -18,8 +18,8 @@ public class GetInt {
     }
     public static void check() {
         final int BSIZE = 1024;
-        ByteBuffer bf = ByteBuffer.allocate(BSIZE);
-        IntBuffer ib = bf.asIntBuffer();
+        ByteBuffer bb = ByteBuffer.allocate(BSIZE);
+        IntBuffer ib = bb.asIntBuffer();
 
         ib.put(new int[]{1, 5, 8, 10, 12, 14, 10, 47, 29, 34, 56, 79});
         System.out.print("ib          :");

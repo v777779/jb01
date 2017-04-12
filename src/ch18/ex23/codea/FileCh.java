@@ -31,13 +31,13 @@ public class FileCh {
             fc.write((ByteBuffer.wrap(TextFile.read(fileRead2).getBytes())));  // закачали еще раз целый файл
             fc.close();
             fc = new FileInputStream(fileWrite).getChannel(); // на чтение и только
-            ByteBuffer bf =  ByteBuffer.allocate(BSIZE);
-            fc.read(bf); // прочитать в буфер 1К данных
-            bf.flip(); // подготовка к чтению
+            ByteBuffer bb =  ByteBuffer.allocate(BSIZE);
+            fc.read(bb); // прочитать в буфер 1К данных
+            bb.flip(); // подготовка к чтению
 
             System.out.println("\nRead written twice data:");
-            while (bf.hasRemaining()) {  // есть данные
-                System.out.print((char)bf.get());
+            while (bb.hasRemaining()) {  // есть данные
+                System.out.print((char)bb.get());
             }
 
 

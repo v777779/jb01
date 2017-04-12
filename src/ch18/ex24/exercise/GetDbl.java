@@ -18,8 +18,8 @@ public class GetDbl {
     }
     public static void check() {
         final int BSIZE = 1024;
-        ByteBuffer bf = ByteBuffer.allocate(BSIZE);
-        DoubleBuffer db = bf.asDoubleBuffer();
+        ByteBuffer bb = ByteBuffer.allocate(BSIZE);
+        DoubleBuffer db = bb.asDoubleBuffer();
 
         db.put(new double[]{1.23, 5.41, 8.784, 10.21, 12.34, 14.89, 10.24, 47.01, 29.325, 34.124, 56.15, 79.18});
         System.out.print("db          :");
