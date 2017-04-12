@@ -19,6 +19,10 @@ public class BFileParser {
     };
     private static String stringDateEx;
 
+    public static  void check() {
+        BFileParser.check("./src/ch18/24/Ex24.java");
+    }
+
     public static void check(String filePath) {
         String fileExName = "";
         if (filePath.endsWith(".java")) {
@@ -35,7 +39,7 @@ public class BFileParser {
     }
 
 
-    public static void replaceDate(String fileExName) {
+    private static void replaceDate(String fileExName) {
         String fileWrite = fileExName.replace(".", "_temp_.");
         new File(fileWrite).delete();
         try {
@@ -78,7 +82,7 @@ public class BFileParser {
 
     }
 
-    public static String getDate(String s) {
+    private static String getDate(String s) {
         String regex = "(\\d*[-.]\\w*[-.]\\d*)";
         Pattern p = Pattern.compile(regex);
         Matcher matcher = p.matcher(s);
@@ -89,7 +93,7 @@ public class BFileParser {
         throw new RuntimeException("Invalid Date Format" + s);
     }
 
-    public static boolean isExercise(String fileExName) {
+    private static boolean isExercise(String fileExName) {
         String regex = ".*((Code[\\p{Upper}])|(Exercise)).java";
 
         Pattern p = Pattern.compile(regex);
@@ -98,7 +102,7 @@ public class BFileParser {
     }
 
 
-    public static String getDateString(String fileExName) {
+    private static String getDateString(String fileExName) {
         String s;
         try {
             RandomAccessFile fr = new RandomAccessFile(fileExName, "r");

@@ -8,6 +8,7 @@ package ch18.ex24.exercise;
 public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise Check\n");
+        System.out.println("\nExercise 24 DoubleBuffer Check\n");
+        GetDbl.check();
     }
 }

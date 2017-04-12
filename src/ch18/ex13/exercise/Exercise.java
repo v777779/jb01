@@ -12,8 +12,8 @@ public class Exercise {
         System.out.println("\n====EXERCISE===");
         System.out.println("\nExercise 13 LineNumber Class Check\n");
 
-        String fileName = "./src/ch18/ex12/codec/CodeC.java";
-        String fileName2 = "./src/ch18/ex12/codec/P.txt";
+        String fileName = "./src/ch18/ex12/coord/CodeC.java";
+        String fileName2 = "./src/ch18/ex12/coord/P.txt";
 
         new File(fileName2).delete();
         BasicOutputModified.check(fileName,fileName2);

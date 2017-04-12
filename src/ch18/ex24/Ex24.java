@@ -1,6 +1,7 @@
 package ch18.ex24;
 
 import ch18.ex24.codea.CodeA;
+import ch18.ex24.codeb.CodeB;
 import ch18.ex24.exercise.Exercise;
 
 /**
@@ -11,6 +12,7 @@ import ch18.ex24.exercise.Exercise;
 public class Ex24 {
     public static void main(String[] args) {
         CodeA.app();
+        CodeB.app();
         Exercise.app();
 
 

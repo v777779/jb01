@@ -11,9 +11,9 @@ public class CodeC {
     public static void app() {
         System.out.println("\n====CODE_C===");
         System.out.println("\nFileWriter Check\n");
-        String fileName = "./src/ch18/ex12/codec/CodeC.java";
-        String fileName2 = "./src/ch18/ex12/codec/P.txt";
-        String fileName3 = "./src/ch18/ex12/codec/P_fm.txt";
+        String fileName = "./src/ch18/ex12/coord/CodeC.java";
+        String fileName2 = "./src/ch18/ex12/coord/P.txt";
+        String fileName3 = "./src/ch18/ex12/coord/P_fm.txt";
 
         new File(fileName2).delete();
         new File(fileName3).delete();

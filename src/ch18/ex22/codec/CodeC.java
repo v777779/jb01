@@ -9,7 +9,7 @@ public class CodeC {
         System.out.println("\nProcess Control Check\n");
 
         System.out.println("javap file:");
-        OSExec.command("javap ./out/production/jb01/ch18/ex22/codec/CodeC");
+        OSExec.command("javap ./out/production/jb01/ch18/ex22/coord/CodeC");
 
         System.out.println("\njavap version:");
         OSExec.command("javap -version");
