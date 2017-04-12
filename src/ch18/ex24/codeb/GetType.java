@@ -8,13 +8,6 @@ import java.nio.*;
  * Created: 12-Apr-17.
  */
 public class GetType {
-    private static void show(IntBuffer ib) {
-        for (ib.rewind(); ib.hasRemaining(); ) {
-            System.out.print(ib.get() + " ");
-        }
-        System.out.println();
-
-    }
     public static void check() {
         ByteBuffer bf = ByteBuffer.wrap(new byte[]{ 0, 0, 0, 0, 0, 0, 0, 'a'});
 //byte
