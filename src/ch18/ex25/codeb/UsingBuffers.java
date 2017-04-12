@@ -27,7 +27,11 @@ public class UsingBuffers {
 
         char[] charData = "UsingBuffers".toCharArray();
         ByteBuffer bb = ByteBuffer.allocate(charData.length*2); // по 2 байта на символ
-        CharBuffer cb =
+        CharBuffer cb = bb.asCharBuffer();
+        cb.put(charData); // записать данные в представление
+        System.out.println(cb);
+        System.out.println(cb.rewind());
+
     }
 
 }

@@ -1,4 +1,4 @@
-package ch18.ex04.local;
+package lib.files;
 
 import java.util.Arrays;
 import java.util.Collection;

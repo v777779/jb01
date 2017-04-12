@@ -1,6 +1,7 @@
 package ch18.ex04.local;
 
 import lib.files.Catalog;
+import lib.files.PPrint;
 
 import java.io.File;
 
@@ -13,15 +14,15 @@ public class Local {
         System.out.println("\nCatalog2 Methods Check\n");
 
         System.out.println("Simple Demo:");
-        System.out.println(Catalog.walk("./src/ch18"));
+        System.out.println(Catalog.walk("./src/ch18/ex04"));
         System.out.println("CodeA Directory:");
-        File[] files = Catalog.local("./src/ch18/ex01/codea","[.+Lo].*");
+        File[] files = Catalog.local("./src/ch18/ex04/local","[.+Lo].*");
         for (File file : files) {
             System.out.println(file);
         }
 
         System.out.println("\nDirectory Demo:");
-        PPrint.print(Catalog.walk("./src/ch18/ex01").getListDirs());
+        PPrint.print(Catalog.walk("./src/ch18/ex04").getListDirs());
         System.out.println("\nFiles codea() with M started:");
         for (File file : Catalog.local("./src/lib/pets", "M.*")) {
             System.out.println(file);
