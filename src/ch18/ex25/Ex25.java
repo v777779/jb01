@@ -19,6 +19,7 @@ public class Ex25 {
         CodeC.app();
         CodeD.app();
         Exercise.app();
-        BFileClear.app("./src/ch18/ex25");
+        BFileClear.app("./src/ch18/ex25","txt","tmp");
+
     }
 }

@@ -9,22 +9,29 @@ import java.io.File;
  */
 public class BFileClear {
     public static void app(String filePath) {
+        String[] args = {"txt", "tmp", "dat"};
+        app(filePath, args);
+    }
+
+    public static void app(String filePath, String... args) {
 
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+       System.out.println("Clear temp file started:");
         File[] files = Catalog.walk(filePath).getListFiles().toArray(new File[0]);
-        System.out.println("Clear temp file started:");
         System.gc();
         for (File file : files) {
             String path = file.getPath();
-            if (path.endsWith(".txt") || path.endsWith(".tmp") || path.endsWith(".dat")) {
-                file.delete();
+            for (String ext : args) {
+                if (path.endsWith(ext)) {
+                    file.delete();
+                    System.out.printf("%-25s: done\n", file.getName());
+                }
             }
-            System.out.printf("%-25s: done\n", file.getName());
         }
-        System.out.println("Clear done...");
+       System.out.println("Clear done...");
     }
 }

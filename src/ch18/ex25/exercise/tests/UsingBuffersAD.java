@@ -38,7 +38,7 @@ public class UsingBuffersAD {
         scrambler(cb);
         System.out.println("cb restored :" + cb.rewind());
 
-        String fileName = "./src/ch18/ex25/codeb/CharBuffer.txt";
+        String fileName = "./src/ch18/ex25/exercise/tests/CharBufferAD.txt";
         try {
             FileChannel fc = new FileOutputStream(fileName).getChannel();
             bb = ByteBuffer.allocateDirect(cb.length() * 2);
@@ -53,7 +53,7 @@ public class UsingBuffersAD {
             fc.read(bb);
             bb.flip();
             System.out.println("from file   :" + bb.asCharBuffer());
-
+            fc.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
