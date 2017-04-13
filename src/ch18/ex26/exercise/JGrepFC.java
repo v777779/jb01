@@ -11,7 +11,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by V1 on 07-Mar-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 07-Mar-17.
  */
 public class JGrepFC {
     private String fName;
@@ -37,32 +39,26 @@ public class JGrepFC {
         }
 
         for (File file : files) {
+            String s;
             try {
                 FileChannel fc = new FileInputStream(file).getChannel();
                 MappedByteBuffer mbb;
-                int index = 1; // перебор строк
-                System.out.println("Search in file:"+file.getName());
-                for (int i = 0; i < fc.size(); i += BSIZE) {
-                    long size = BSIZE;
-                    if (i + BSIZE > fc.size()) {
-                        size = fc.size() - i;
-                    }
-                    mbb = fc.map(FileChannel.MapMode.READ_ONLY, i, size); // внутри сегмента
-                    byte[] bytes = new byte[(int) size]; // новый буфер
-                    mbb.get(bytes);
-                    String s = new String(bytes, StandardCharsets.UTF_8);
-//                System.out.println(s);
-                    Pattern p = Pattern.compile(regex);
-                    Matcher m = p.matcher("");      // подготовили объект для работы со строками
-
-                    m.reset(s); // подключили строку
-                    while (m.find()) {
-                        System.out.printf("%2d: %-10s %2d\n", index++, m.group(), m.start());  // показывает позицию в строке
-                    }
-                }
+                mbb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size()); // сразу весь файл
+                byte[] bytes = new byte[(int) fc.size()]; // новый буфер размером с файл
+                mbb.get(bytes);
+                s = new String(bytes, StandardCharsets.UTF_8);
                 fc.close();
             } catch (Exception e) {
                 throw new RuntimeException(e);
+            }
+// собственно поиск, отсекли все буферы
+            System.out.println("Search in file:" + file.getName());
+            int index = 1; // перебор строк
+            Pattern p = Pattern.compile(regex);
+            Matcher m = p.matcher("");      // подготовили объект для работы со строками
+            m.reset(s); // подключили строку
+            while (m.find()) {
+                System.out.printf("%2d: %-10s %2d\n", index++, m.group(), m.start());  // показывает позицию в строке
             }
 
         }

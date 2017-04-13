@@ -2,7 +2,6 @@ package ch18.ex26;
 
 import ch18.ex26.codea.CodeA;
 import ch18.ex26.exercise.Exercise;
-import lib.files.BFileClear;
 
 /**
  * Copyright (c) 2017 Vadim Voronov
@@ -13,7 +12,7 @@ public class Ex26 {
     public static void main(String[] args) {
         CodeA.app();
         Exercise.app();
-        BFileClear.app("./src/ch18/Ex26", ".txt", "tmp");
+      //  BFileClear.app("./src/ch18/Ex26", "txt","tmp");
 
     }
 }

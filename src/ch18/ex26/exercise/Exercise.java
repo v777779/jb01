@@ -1,9 +1,11 @@
 package ch18.ex26.exercise;
 
+import ch18.ex26.exercise.office.JGrepFCOffice;
+
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 13-Apr-17.
  */
 public class Exercise {
     public static void app() {
@@ -12,8 +14,15 @@ public class Exercise {
         System.out.println("Grep search engine:");
         String regex = "\\bfile\\w+"; // вывести все слова с file*
 
+        String stdCharset = System.getProperty("file.encoding");
+        System.out.println(stdCharset);
         String fileName = "./src/ch18/ex26/exercise/";
         JGrepFC jp = new JGrepFC(fileName,regex);
         jp.find();
+
+        System.out.println("\nOfficial solution:");
+
+        JGrepFCOffice jp2 = new JGrepFCOffice(fileName,regex);
+        jp2.find();
     }
 }
