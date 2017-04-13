@@ -1,9 +1,11 @@
-package ch17.ex36.access;
+package ch17.ex36.exercise;
 
 import java.util.Map;
 
 /**
- * Created by V1 on 30-Mar-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 30-Mar-17.
  */
 public class SlowEntryCmp<K, V> implements Map.Entry<K, V>, Comparable<SlowEntryCmp<K,V>> {
     private K key;

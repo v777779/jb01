@@ -1,4 +1,4 @@
-package ch18.ex25.exercise;
+package ch18.ex25.exercise.tests;
 
 import lib.utils.TextFile;
 

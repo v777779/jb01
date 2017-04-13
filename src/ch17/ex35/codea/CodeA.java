@@ -1,4 +1,4 @@
-package ch17.ex35.local;
+package ch17.ex35.codea;
 
 import lib.tests.MapCheck;
 import lib.tests.Tester;
@@ -6,9 +6,11 @@ import lib.tests.Tester;
 import java.util.*;
 
 /**
- * Created by V1 on 18-Feb-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 03-Apr-17.
  */
-public class Local {
+public class CodeA {
     public static void app() {
         System.out.println("\n====LOCAL===");
         System.out.println("\nMap Check\n");

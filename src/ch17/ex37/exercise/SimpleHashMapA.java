@@ -1,11 +1,13 @@
-package ch17.ex37.access;
+package ch17.ex37.exercise;
 
 import lib.maps.MapEntry;
 
 import java.util.*;
 
 /**
- * Created by V1 on 31-Mar-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 31-Mar-17.
  */
 public class SimpleHashMapA<K, V> extends AbstractMap<K, V> {
     static final int SIZE = 1987;

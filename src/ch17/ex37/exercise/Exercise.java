@@ -1,4 +1,4 @@
-package ch17.ex37.access;
+package ch17.ex37.exercise;
 
 import lib.maps.SimpleHashMap;
 import lib.tests.MapCheck;
@@ -6,9 +6,11 @@ import lib.tests.TestParam;
 import lib.tests.Tester;
 
 /**
- * Created by V1 on 18-Feb-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 03-Apr-17.
  */
-public class Access {
+public class Exercise {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 37 Map Check\n");

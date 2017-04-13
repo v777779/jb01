@@ -1,7 +1,6 @@
 package ch18.ex25;
 
 import ch18.ex25.codea.CodeA;
-import ch18.ex25.codeb.CodeB;
 import ch18.ex25.exercise.Exercise;
 
 /**
@@ -12,7 +11,7 @@ import ch18.ex25.exercise.Exercise;
 public class Ex25 {
     public static void main(String[] args) {
         CodeA.app();
-        CodeB.app();
+        //CodeB.app();
         //CodeC.app();
         //CodeD.app();
         Exercise.app();

@@ -1,14 +1,16 @@
 package ch17.ex35;
 
-import ch17.ex35.access.Access;
+import ch17.ex35.exercise.Exercise;
 
 /**
- * Created by V1 on 03-Apr-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 03-Apr-17.
  */
 public class Ex35 {
     public static void main(String[] args) {
-        //Local.app();
-        Access.app();
+        //CodeA.app();
+        Exercise.app();
 
     }
 }

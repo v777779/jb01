@@ -1,6 +1,5 @@
-package ch17.ex36.access;
+package ch17.ex36.exercise;
 
-import lib.maps.SlowMap;
 import lib.tests.MapCheck;
 import lib.tests.TestParam;
 import lib.tests.Tester;
@@ -8,17 +7,16 @@ import lib.tests.Tester;
 import java.util.TreeMap;
 
 /**
- * Created by V1 on 18-Feb-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 03-Apr-17.
  */
-public class Access {
+public class Exercise {
     public static void app() {
         System.out.println("\n====ACCESS===");
         System.out.println("\nExercise 36 SlowMapEntry Check\n");
         Tester.defaultParams = TestParam.array(
-                    10, 5000, 100, 5000, 200, 500, 500, 250
-        );
-
-        SlowMapEntry<Integer,Integer> sMap = new SlowMapEntry<>();
+                    100, 5000);
 
         Tester.run(new TreeMap<>(), MapCheck.tests);
         Tester.run(new SlowMapEntry<>(), MapCheck.tests);

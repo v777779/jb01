@@ -1,13 +1,15 @@
 package ch17.ex37;
 
-import ch17.ex37.access.Access;
+import ch17.ex37.exercise.Exercise;
 
 /**
- * Created by V1 on 03-Apr-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 03-Apr-17.
  */
 public class Ex37 {
     public static void main(String[] args) {
-        Access.app();
+        Exercise.app();
 
     }
 }
