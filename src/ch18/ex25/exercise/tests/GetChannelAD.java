@@ -1,6 +1,4 @@
-package ch18.ex23.codea;
-
-import lib.utils.TextFile;
+package ch18.ex25.exercise.tests;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -14,24 +12,22 @@ import java.nio.channels.FileChannel;
  * email: vaidim.v.voronov@gmail.com
  * Created: 10-Apr-17.
  */
-public class GetChannel {
+public class GetChannelAD {
     private static final int BSIZE = 1024;
 
     public static void check() {
-        String fileRead = "./src/ch18/ex23/codea/CodeA.java";
-        String fileRead2 = "./src/ch18/ex23/Ex23.java";
-        String fileWrite = "./src/ch18/ex23/codea/CodeA.txt";
+        String fileWrite = "./src/ch18/ex25/exercise/tests/GetChannelAD.txt";
 
         try {
             FileChannel fc = new FileOutputStream(fileWrite).getChannel();
-            fc.write((ByteBuffer.wrap(TextFile.read(fileRead).getBytes())));  // закачали целый файл
+            fc.write((ByteBuffer.wrap("Some text ".getBytes())));  // закачали целый файл
             fc.close();
             fc = new RandomAccessFile(fileWrite, "rw").getChannel(); // доступ чтение запись
             fc.position(fc.size());
-            fc.write((ByteBuffer.wrap(TextFile.read(fileRead2).getBytes())));  // закачали еще раз целый файл
+            fc.write((ByteBuffer.wrap("Some more".getBytes())));  // закачали еще раз целый файл
             fc.close();
             fc = new FileInputStream(fileWrite).getChannel(); // на чтение и только
-            ByteBuffer bb = ByteBuffer.allocate(BSIZE);
+            ByteBuffer bb = ByteBuffer.allocateDirect(BSIZE);
             fc.read(bb); // прочитать в буфер 1К данных
             bb.flip(); // подготовка к чтению
 
@@ -39,8 +35,7 @@ public class GetChannel {
             while (bb.hasRemaining()) {  // есть данные
                 System.out.print((char) bb.get());
             }
-            fc.close();
-
+            fc.close();  // ВНИМАНИЕ ВАЖНО ЗАКРЫВАТЬ
 
         } catch (IOException e) {
             throw new RuntimeException(e);

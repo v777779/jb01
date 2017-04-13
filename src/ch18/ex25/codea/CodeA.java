@@ -3,7 +3,7 @@ package ch18.ex25.codea;
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 12-Apr-17.
  */
 public class CodeA {
     public static void app() {

@@ -12,7 +12,7 @@ import java.nio.charset.Charset;
  * email: vaidim.v.voronov@gmail.com
  * Created: 11-Apr-17.
  */
-public class BufferToText {
+public class BufferToTextAD {
     private static final int BSIZE = 1024;
     private static String stringData = "FileChannel fc = Русские символы new FileOutputStream(fileWrite).getChannel()";
 
@@ -22,7 +22,7 @@ public class BufferToText {
             fc.write(ByteBuffer.wrap((stringData).getBytes())); // прочитать файл в строку, получить байты
             fc.close();
             fc = new FileInputStream(fileWrite).getChannel(); // получить записанный файл в виде потока
-            ByteBuffer bb = ByteBuffer.allocate(BSIZE);
+            ByteBuffer bb = ByteBuffer.allocateDirect(BSIZE);
 // попытка вывода  asCharBuffer()
             fc.read(bb); // прочитать всю строку с гарантией
             bb.flip(); // подготовить к чтению
@@ -49,7 +49,7 @@ public class BufferToText {
             fc.close();
 // способ 3
             fc = new FileOutputStream(fileWrite).getChannel();  // write channel
-            bb = ByteBuffer.allocate(stringData.length()*2+20);    // в размер данных по 2 байта на символ
+            bb = ByteBuffer.allocateDirect(stringData.length()*2+20);    // в размер данных по 2 байта на символ
             bb.asCharBuffer().put(stringData);  // записать через charBuffer
             fc.write(bb);                       // записать кодированные данные
             fc.close();

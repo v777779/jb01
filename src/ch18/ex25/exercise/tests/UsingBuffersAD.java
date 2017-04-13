@@ -1,4 +1,4 @@
-package ch18.ex25.codeb;
+package ch18.ex25.exercise.tests;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ import java.nio.channels.FileChannel;
  * email: vadim.v.voronov@gmail.com
  * Created: 12-Apr-17.
  */
-public class UsingBuffers {
+public class UsingBuffersAD {
     private static void scrambler(CharBuffer cb) {
         while (cb.hasRemaining()) {
             cb.mark();   // пометить позицию
@@ -27,7 +27,7 @@ public class UsingBuffers {
     public static void check() {
 
         char[] charData = "UsingBuffers".toCharArray();
-        ByteBuffer bb = ByteBuffer.allocate(charData.length * 2); // по 2 байта на символ
+        ByteBuffer bb = ByteBuffer.allocateDirect(charData.length * 2); // по 2 байта на символ
         CharBuffer cb2 = bb.asCharBuffer();
         CharBuffer cb = CharBuffer.wrap(charData);
         //cb.put(charData); // записать данные в представление
@@ -41,7 +41,7 @@ public class UsingBuffers {
         String fileName = "./src/ch18/ex25/codeb/CharBuffer.txt";
         try {
             FileChannel fc = new FileOutputStream(fileName).getChannel();
-            bb = ByteBuffer.allocate(cb.length() * 2);
+            bb = ByteBuffer.allocateDirect(cb.length() * 2);
             for (cb.rewind(); cb.hasRemaining(); ) {
                 bb.putChar(cb.get());
             }
@@ -49,11 +49,11 @@ public class UsingBuffers {
             fc.write(bb);
             fc.close();
             fc = new FileInputStream(fileName).getChannel();
-            bb = ByteBuffer.allocate((int) fc.size());
+            bb = ByteBuffer.allocateDirect((int) fc.size());
             fc.read(bb);
             bb.flip();
             System.out.println("from file   :" + bb.asCharBuffer());
-            fc.close();
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

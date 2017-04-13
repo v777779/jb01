@@ -3,7 +3,7 @@ package ch18.ex25.codeb;
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 18-Feb-17.
+ * Created: 12-Apr-17.
  */
 public class CodeB {
     public static void app() {

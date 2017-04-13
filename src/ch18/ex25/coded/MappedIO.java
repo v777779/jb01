@@ -111,7 +111,9 @@ public class MappedIO {
                         ib.put(ib.get(i-1));
                     }
                     fc.close();
-                }
+                    ib = null;
+                    System.gc();
+                 }
             },
 
     };
@@ -120,7 +122,7 @@ public class MappedIO {
         for (Tester test : tests) {
             test.run();
         }
-    }
+   }
 
 
 }

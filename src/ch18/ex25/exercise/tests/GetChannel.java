@@ -1,7 +1,5 @@
 package ch18.ex25.exercise.tests;
 
-import lib.utils.TextFile;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -18,17 +16,15 @@ public class GetChannel {
     private static final int BSIZE = 1024;
 
     public static void check() {
-        String fileRead = "./src/ch18/ex23/codea/CodeA.java";
-        String fileRead2 = "./src/ch18/ex23/Ex23.java";
-        String fileWrite = "./src/ch18/ex23/codea/CodeA.txt";
+        String fileWrite = "./src/ch18/ex25/exercise/tests/GetChannel.txt";
 
         try {
             FileChannel fc = new FileOutputStream(fileWrite).getChannel();
-            fc.write((ByteBuffer.wrap(TextFile.read(fileRead).getBytes())));  // закачали целый файл
+            fc.write((ByteBuffer.wrap("Some text ".getBytes())));  // закачали целый файл
             fc.close();
             fc = new RandomAccessFile(fileWrite,"rw").getChannel(); // доступ чтение запись
             fc.position(fc.size());
-            fc.write((ByteBuffer.wrap(TextFile.read(fileRead2).getBytes())));  // закачали еще раз целый файл
+            fc.write((ByteBuffer.wrap("Some more".getBytes())));  // закачали еще раз целый файл
             fc.close();
             fc = new FileInputStream(fileWrite).getChannel(); // на чтение и только
             ByteBuffer bb =  ByteBuffer.allocate(BSIZE);
@@ -39,7 +35,7 @@ public class GetChannel {
             while (bb.hasRemaining()) {  // есть данные
                 System.out.print((char)bb.get());
             }
-
+            fc.close();
 
 
         } catch (IOException e) {
