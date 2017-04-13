@@ -20,7 +20,7 @@ public class Access {
 //      (//(.*?)$) группа  // **** \n  по минимуму
 //      "/\\*(.*?)\\*\\/ #захват многострочников /*...*/ по минимуму\n";
 
-        String fName = "src/ch13.ex17/access/Access.java";        // первое условие  чтение в файл
+        String fName = "src/ch13/ex17/access/Access.java";        // первое условие  чтение в файл
         String s = TextFile.read(fName);
         String regex = "(?m)(?s)(?x)(//(.*?)$)|/\\*(.*?)\\*\\/";
         String regex2 =

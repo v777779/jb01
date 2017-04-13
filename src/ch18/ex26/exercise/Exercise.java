@@ -10,8 +10,10 @@ public class Exercise {
         System.out.println("\n====EXERCISE===");
         System.out.println("\nExercise 26 Grep with FileChannel Check\n");
         System.out.println("Grep search engine:");
-        String regex = "\\b[Ssct]\\w+"; // вывести все слова с букв S* s* c* t*
-        JGrepFC jp = new JGrepFC("src/ch18/ex25/exercise/tests",regex);
+        String regex = "\\bfile\\w+"; // вывести все слова с file*
+
+        String fileName = "./src/ch18/ex26/exercise/";
+        JGrepFC jp = new JGrepFC(fileName,regex);
         jp.find();
     }
 }
