@@ -13,9 +13,9 @@ public class Include {
         System.out.println("\nString Format Check\n");
 
         try {
-           String s = Hex.format(BinaryFile.read("src/ch13.ex06/local/DbEx.java"));
+            String s = Hex.format(BinaryFile.read("./src/ch13/ex06/local/DbEx.java"));
             System.out.println(s);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("catch: File Error");
         }
     }
