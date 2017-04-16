@@ -7,7 +7,7 @@ import java.io.File;
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 18-Feb-17.
+ * Created: 13-Apr-17.
  */
 public class CodeB {
     public static void app(String[] args) {
