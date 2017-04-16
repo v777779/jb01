@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.zip.GZIPOutputStream;
 
 /**
  * Copyright (c) 2017 Vadim Voronov
@@ -19,7 +20,7 @@ public class BFileParser {
     };
     private static String stringDateEx;
 
-    public static  void check() {
+    public static void check() {
         BFileParser.check("./src/ch18/24/Ex24.java");
     }
 
@@ -54,7 +55,7 @@ public class BFileParser {
                     if (isExercise(fileExName) && stringDateEx != null) {
                         stringDate = stringDateEx;
                     }
-                    s = (HEADER_JAVA[2]+stringDate+".");
+                    s = (HEADER_JAVA[2] + stringDate + ".");
                     fMeet = true;
                 }
                 if (!fMeet && s.contains("* Created by V1")) {
@@ -62,9 +63,9 @@ public class BFileParser {
                     if (isExercise(fileExName) && stringDateEx != null) {
                         stringDate = stringDateEx;
                     }
-                    bw.write(HEADER_JAVA[0]+"\r\n");
-                    bw.write(HEADER_JAVA[1]+"\r\n");
-                    s = (HEADER_JAVA[2]+stringDate+".");
+                    bw.write(HEADER_JAVA[0] + "\r\n");
+                    bw.write(HEADER_JAVA[1] + "\r\n");
+                    s = (HEADER_JAVA[2] + stringDate + ".");
                     fMeet = true;
                 }
                 s = s + "\r\n";
@@ -75,6 +76,31 @@ public class BFileParser {
 
             new File(fileExName).delete();
             new File(fileWrite).renameTo(new File(fileExName));
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+// создание GZip архива
+    public static void replaceGZIP(String fileRead) {
+        String fileWrite = fileRead+".gz";
+        new File(fileWrite).delete();
+        try {
+            InputStreamReader fr = new InputStreamReader(new FileInputStream(fileRead), "utf-8");
+            BufferedReader br = new BufferedReader(fr);
+            OutputStreamWriter fw = new OutputStreamWriter(
+                    new GZIPOutputStream(new FileOutputStream(fileWrite)), "utf-8");
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            int c;
+            while ((c = br.read()) != -1) {  // A8<2>; =5 <>65B @02=OBLAO -1
+                bw.write(c);
+            }
+
+            br.close();
+            bw.close();
 
         } catch (IOException e) {
             throw new RuntimeException(e);

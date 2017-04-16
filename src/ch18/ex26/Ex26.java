@@ -12,7 +12,7 @@ public class Ex26 {
     public static void main(String[] args) {
         CodeA.app();
         Exercise.app();
-      //  BFileClear.app("./src/ch18/Ex26", "txt","tmp");
+        //BFileClear.app("./src/ch18/Ex26", "txt","tmp");
 
     }
 }

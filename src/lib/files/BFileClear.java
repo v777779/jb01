@@ -10,17 +10,20 @@ import java.io.File;
 public class BFileClear {
     public static void app(String filePath) {
         String[] args = {"txt", "tmp", "dat"};
-        app(filePath, args);
+         app(filePath, args);
     }
 
     public static void app(String filePath, String... args) {
-
+        System.out.println("Clear temp file started:");
+        if (filePath.equals("path") || filePath.equals("")) {
+            System.out.println("aborted...");
+            return;
+        }
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-       System.out.println("Clear temp file started:");
         File[] files = Catalog.walk(filePath).getListFiles().toArray(new File[0]);
         System.gc();
         for (File file : files) {
@@ -32,6 +35,6 @@ public class BFileClear {
                 }
             }
         }
-       System.out.println("Clear done...");
+       System.out.println("done...");
     }
 }
