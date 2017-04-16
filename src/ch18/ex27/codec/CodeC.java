@@ -8,7 +8,8 @@ package ch18.ex27.codec;
 public class CodeC {
     public static void app() {
         System.out.println("\n====CODE_C===");
-        System.out.println("\nZip Compress Check\n");
+        System.out.println("\nSerialize Check\n");
+        Serialize.check();
 
     }
 }

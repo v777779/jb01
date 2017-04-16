@@ -14,7 +14,7 @@ public class BFileClear {
     }
 
     public static void app(String filePath, String... args) {
-        System.out.println("Clear temp file started:");
+        System.out.println("\nClear temp file started:");
         if (filePath.equals("path") || filePath.equals("")) {
             System.out.println("aborted...");
             return;
