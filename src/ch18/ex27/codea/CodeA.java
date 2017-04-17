@@ -13,13 +13,6 @@ public class CodeA {
         System.out.println("\n====CODE_A===");
         System.out.println("\nFile Locking Check\n");
 
-        // remove to run programm   блокировка чтобы не писало файлы
-        int k = 0;
-        if (k == 0) {
-            return;
-        }
-        // remove to run programm   блокировка чтобы не писало файлы
-
         System.out.println("Simple File Lock:");
         FileLocking.check();
         System.out.println("\nMapped File Portion Lock with two Thread Objects:");
