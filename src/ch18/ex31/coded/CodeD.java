@@ -1,4 +1,4 @@
-package ch18.ex31.exercise;
+package ch18.ex31.coded;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,16 +8,16 @@ import java.util.List;
  * email: vaidim.v.voronov@gmail.com
  * Created: 17-Apr-17.
  */
-public class Exercise {
+public class CodeD {
     public static void app() {
-        System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise 31 XML ArrayList Check\n");
-        String fileName = "./src/ch18/ex31/exercise/People.xml";
+        System.out.println("\n====CODE_D===");
+        System.out.println("\nXML Person javax Version Check\n");
+        String fileName = "./src/ch18/ex31/coded/People.xml";
 
         List<Person> people = Arrays.asList(
-                new Person("Dr. Bunsen","Honeydew","ClarkDale,18"),
-                new Person("Gonzo","The Great","LakeView,21"),
-                new Person("Phillip J.","Fry","Tree Valley,15")
+                new Person("Dr. Bunsen","Honeydew"),
+                new Person("Gonzo","The Great"),
+                new Person("Phillip J.","Fry")
         );
         System.out.println(people);
         for (Person person : people) {
