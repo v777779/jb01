@@ -1,7 +1,4 @@
-package ch18.ex30.coded.shapes;
-
-import ch18.ex30.coded.RestoreCadState;
-import ch18.ex30.coded.StoreCADState;
+package ch18.ex30.coded;
 
 /**
  * Copyright (c) 2017 Vadim Voronov

@@ -3,7 +3,7 @@ package ch18.ex30;
 import ch18.ex30.codea.CodeA;
 import ch18.ex30.codeb.CodeB;
 import ch18.ex30.codec.CodeC;
-import ch18.ex30.coded.shapes.CodeD;
+import ch18.ex30.coded.CodeD;
 import ch18.ex30.exercise.Exercise;
 
 /**
