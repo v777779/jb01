@@ -47,6 +47,8 @@ public class MyWorld {
             System.out.println("animals2:"+animals2);
             System.out.println("animals3:"+animals3);
 
+            System.out.println("animals1 == animals2: "+(animals1==animals2));
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
