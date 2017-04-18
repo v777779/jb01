@@ -1,6 +1,6 @@
 package ch19.ex03.codeb;
 
-import ch19.ex03.codec.Food;
+import ch19.ex03.codec.food.Food;
 
 /**
  * Copyright (c) 2017 Vadim Voronov

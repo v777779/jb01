@@ -1,4 +1,4 @@
-package ch19.ex03.codec;
+package ch19.ex03.codec.food;
 
 /**
  * Copyright (c) 2017 Vadim Voronov

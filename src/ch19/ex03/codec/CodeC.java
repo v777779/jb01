@@ -1,5 +1,7 @@
 package ch19.ex03.codec;
 
+import ch19.ex03.codec.food.Meal;
+
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com

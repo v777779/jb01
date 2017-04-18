@@ -1,4 +1,4 @@
-package ch19.ex03.codec;
+package ch19.ex03.exercise.food;
 
 import ch19.ex03.codea.Enums;
 
@@ -11,7 +11,8 @@ public enum Course {
     APPETIZER(Food.Appetizer.class),
     MAINCOURSE(Food.MainCourse.class),
     DESSERT(Food.Dessert.class),
-    COFFEE(Food.Coffee.class);
+    COFFEE(Food.Coffee.class),
+    BREAD(Food.Bread.class);
 
     private Food[] foods;
 
