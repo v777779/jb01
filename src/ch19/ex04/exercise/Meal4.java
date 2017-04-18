@@ -1,4 +1,4 @@
-package ch19.ex03.exercise;
+package ch19.ex04.exercise;
 
 import lib.utils.Enums;
 
@@ -7,7 +7,7 @@ import lib.utils.Enums;
  * email: vadim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */
-public enum Meal3 {
+public enum Meal4 {
     APPETIZER(Food.Appetizer.class),
     MAINCOURSE(Food.MainCourse.class),
     DESSERT(Food.Dessert.class),
@@ -34,7 +34,7 @@ public enum Meal3 {
 
     private Food[] foods;
 
-    Meal3(Class<? extends Food> kind) {
+    Meal4(Class<? extends Food> kind) {
         foods = kind.getEnumConstants();
     }
     public Food randomSelection() {
@@ -42,10 +42,10 @@ public enum Meal3 {
     }
 
     public static void check() {
-        System.out.println("\nMeal3 Enum Interface Compact:");
+        System.out.println("\nMeal4 Enum Interface Compact:");
         System.out.println("-------------------");
         for (int i = 0; i < 5 ; i++) {                  // перебирает пять наборов еды
-            for (Meal3 meal : Meal3.values()) {         // перебирает все константы класса
+            for (Meal4 meal : Meal4.values()) {         // перебирает все константы класса
                 Food food = meal.randomSelection();     // для каждой свое foods[] Food.xxx.class
                 System.out.println(food);               // <aapetizer><main><dessert><coffee>
             }                                           // и так по кругу
