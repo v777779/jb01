@@ -5,7 +5,9 @@ import lib.utils.TextFile;
 import java.io.PrintWriter;
 
 /**
- * Created by V1 on 18-Feb-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 10-Apr-17.
  */
 public class CodeA {
     public static void app() {

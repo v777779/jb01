@@ -3,7 +3,9 @@ package ch18.ex22.codeb;
 import java.io.*;
 
 /**
- * Created by V1 on 10-Apr-17.
+ * Copyright (c) 2017 Vadim Voronov
+ * email: vaidim.v.voronov@gmail.com
+ * Created: 10-Apr-17.
  */
 public class RedirectStream {
     public static void check() {
