@@ -46,7 +46,7 @@ public enum Meal4 {
         System.out.println("-------------------");
         for (int i = 0; i < 5 ; i++) {                  // перебирает пять наборов еды
             for (Meal4 meal : Meal4.values()) {         // перебирает все константы класса
-                Food food = meal.randomSelection();     // для каждой свое foods[] Food.xxx.class
+                Food food = meal.randomSelection();     // для каждой свое foods[] Food3.xxx.class
                 System.out.println(food);               // <aapetizer><main><dessert><coffee>
             }                                           // и так по кругу
             System.out.println("-------------------");
