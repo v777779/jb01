@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by V1 on 10-Apr-17.
  */
-public class OSExecA {
+public class OSExecuteA {
     public static List<String> command(String command) {  // OS command to exec
         boolean err = false;
         System.out.println("Test Standard Out");
@@ -30,7 +30,7 @@ public class OSExecA {
                 err = true;
                 try {
                     if (err) {  // была ошибка
-                        throw new OSExecExceptionA("Errors executing " + command);
+                        throw new OSExecuteExceptionA("Errors executing " + command);
                     }
                 } catch (Exception e) {
                     StringWriter sw = new StringWriter(1);

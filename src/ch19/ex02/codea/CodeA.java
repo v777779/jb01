@@ -8,8 +8,7 @@ package ch19.ex02.codea;
 public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
-        System.out.println("\n Check\n");
-        //BFileParser.check("./src/ch18/ex24/Ex24.java"); // прокачать целую главу
+        System.out.println("\nEnum Methods Check\n");
 
 
     }

@@ -1,4 +1,4 @@
-package ch18.ex22.codec;
+package lib.system;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
