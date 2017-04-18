@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 /**
  * Created by V1 on 10-Apr-17.
  */
-public class OSExec {
+public class OSExecute {
     public static void command(String command) {  // OS command to exec
         boolean err = false;
         try {
@@ -32,7 +32,7 @@ public class OSExec {
         }
 
         if (err) {  // была ошибка
-            throw new OSExecException("Errors executing " + command);
+            throw new OSExecuteException("Errors executing " + command);
         }
 
     }

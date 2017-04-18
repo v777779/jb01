@@ -8,11 +8,6 @@ public class CodeC {
         System.out.println("\n====CODE_C===");
         System.out.println("\nProcess Control Check\n");
 
-        System.out.println("javap file:");
-        OSExecute.command("javap ./out/production/jb01/ch18/ex22/coord/CodeC");
-
-        System.out.println("\njavap version:");
-        OSExecute.command("javap -version");
-
+        OSExecuteDemo.check();
     }
 }

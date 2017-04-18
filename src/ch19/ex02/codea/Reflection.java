@@ -1,5 +1,7 @@
 package ch19.ex02.codea;
 
+import lib.system.OSExecute;
+
 import java.lang.reflect.Method;
 import java.util.Set;
 import java.util.TreeSet;
@@ -36,7 +38,7 @@ public class Reflection {
         System.out.println("Explore.removeAll(Enum)    :");
         exploreMethods.removeAll(enumMethods);
         System.out.println("Explore methods            :"+exploreMethods);
-        System.
+        OSExecute.command("javap ");
 
 
     }
