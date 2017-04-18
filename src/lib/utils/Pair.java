@@ -3,7 +3,7 @@ package lib.utils;
 /**
  * Created by V1 on 3/27/2017.
  */
-public class Pair<K,V> {  // Class for Map IGenerator
+public class Pair<K,V> {  // Class for Map IGeneratorS
     public final K key;    // for read only
     public final V value;  // for read only
 

@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * Created by V1 on 26.03.2017.
  */
-public class Gen { // ArrayCPP IGenerator
+public class Gen { // ArrayCPP IGeneratorS
     public static <T> T[] getArray(T[] array, IGenerator<T> gen) {
         return new GenList<T>(gen, array.length).toArray(array);  // ОБЯЗАТЕЛЬНО Экземпляр в toArray
     }

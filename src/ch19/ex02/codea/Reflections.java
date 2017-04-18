@@ -11,7 +11,7 @@ import java.util.TreeSet;
  * email: vadim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */
-public class Reflection {
+public class Reflections {
     public static Set<String> analyze(Class<?> enumClass) {
         Set<String>  tSet = new TreeSet<>();
 
@@ -34,12 +34,12 @@ public class Reflection {
     public static void check() {
         Set<String> exploreMethods = analyze( Explore.class);
         Set<String> enumMethods = analyze( Enum.class);
-        System.out.println("Explore.containsAll(Enum)? :" + exploreMethods.contains(enumMethods));
-        System.out.println("Explore.removeAll(Enum)    :");
+        System.out.println("\nExplore.containsAll(Enum)? :" + exploreMethods.containsAll(enumMethods));
+        System.out.println("\nExplore.removeAll(Enum)    :");
         exploreMethods.removeAll(enumMethods);
-        System.out.println("Explore methods            :"+exploreMethods);
-        OSExecute.command("javap ");
-
+        System.out.println("\nExplore methods            :"+exploreMethods);
+        System.out.println("\nJavap Explore:");
+        OSExecute.command("javap ./out/production/jb01/ch19/ex02/codea/Explore");
 
     }
 

@@ -11,7 +11,7 @@ public class Fibonacci implements IGenerator<Integer> {  // интерфейс �
         }
         return(fib(n-2)+fib(n-1)); // следующее число сумма двух предыдущих
     }
-    @Override  // IGenerator
+    @Override  // IGeneratorS
     public Integer next() {
         return fib(count++);
     }
