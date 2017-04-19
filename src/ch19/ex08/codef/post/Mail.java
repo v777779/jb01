@@ -70,6 +70,6 @@ public class Mail {  // обычный класс
 
     @Override
     public String toString() {
-        return "Mail " + id;
+        return "Mail2 " + id;
     }
 }

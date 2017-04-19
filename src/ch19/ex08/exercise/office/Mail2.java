@@ -1,4 +1,4 @@
-package ch19.ex08.exercise.post;
+package ch19.ex08.exercise.office;
 
 import lib.utils.Enums;
 
@@ -9,7 +9,7 @@ import java.util.Iterator;
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */
-public class Mail {  // обычный класс
+public class Mail2 {  // обычный класс
     private static long counter = 0;
     private long id = counter++;
 
@@ -23,27 +23,14 @@ public class Mail {  // обычный класс
 
     enum ReturnAddress {MISSING, OK1, OK2, OK3, OK4, OK5, OK6}
 
-    enum RegionAddress {LOCA, LOCB, LOCC, OK1, OK2, OK3}
+    enum ForwardAddress {MISSING, OK1, OK2, OK3, OK4, OK5, OK6}
 
     GeneralDelivery generalDelivery;
     Scannability scannability;
     Readability readability;
     Address address;
     ReturnAddress returnAddress;
-    RegionAddress regionAddress;
-
-    private String regDecode() {
-        switch (regionAddress) {
-            case LOCA:
-                return "LocationA";
-            case LOCB:
-                return "LocationB";
-            case LOCC:
-                return "LocationC";
-            default:
-                return "Local Office";
-        }
-    }
+    ForwardAddress forwardAddress;
 
     public String details() {
         return toString() +
@@ -51,35 +38,36 @@ public class Mail {  // обычный класс
                 ", Address Scannability:" + scannability +
                 ", Address Readability :" + readability +
                 ", Address Address :" + address +
-                ", PostOffice2 :" + regDecode()+
-                ", Return Address :" + returnAddress;
+                ", Return Address :" + returnAddress +
+                ", Forward Address :" + forwardAddress;
+
     }
 
-    public static Mail randomMail() {
-        Mail m = new Mail();
+    public static Mail2 randomMail() {
+        Mail2 m = new Mail2();
         m.generalDelivery = Enums.random(GeneralDelivery.values());
         m.scannability = Enums.random(Scannability.values());
         m.readability = Enums.random(Readability.values());
         m.address = Enums.random(Address.values());
         m.returnAddress = Enums.random(ReturnAddress.values());
-        m.regionAddress = Enums.random(RegionAddress.values());
+        m.forwardAddress = Enums.random(ForwardAddress.values());
         return m;
     }
 
-    public static Iterable<Mail> generator(final int count) {
-        return new Iterable<Mail>() {
+    public static Iterable<Mail2> generator(final int count) {
+        return new Iterable<Mail2>() {
             int n = count; // число писем на просмотр
 
             @Override
-            public Iterator<Mail> iterator() {
-                return new Iterator<Mail>() {
+            public Iterator<Mail2> iterator() {
+                return new Iterator<Mail2>() {
                     @Override
                     public boolean hasNext() {
                         return n-- > 0;
                     }
 
                     @Override
-                    public Mail next() {
+                    public Mail2 next() {
                         return randomMail();
                     }
                 };
