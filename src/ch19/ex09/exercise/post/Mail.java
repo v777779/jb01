@@ -1,4 +1,4 @@
-package ch19.ex08.codef.post;
+package ch19.ex09.exercise.post;
 
 import lib.utils.Enums;
 

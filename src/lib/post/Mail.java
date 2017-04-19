@@ -1,4 +1,4 @@
-package ch19.ex08.codef.post;
+package lib.post;
 
 import lib.utils.Enums;
 
@@ -70,6 +70,6 @@ public class Mail {  // обычный класс
 
     @Override
     public String toString() {
-        return "Mail " + id;
+        return "Mail2 " + id;
     }
 }
