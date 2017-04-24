@@ -34,6 +34,10 @@ public class OSExecute {
         if (err) {  // была ошибка
             throw new OSExecuteException("Errors executing " + command);
         }
+    }
 
+
+    public static void check() {
+        OSExecute.command("javap -version");
     }
 }

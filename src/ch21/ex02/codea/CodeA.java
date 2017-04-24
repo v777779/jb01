@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch21.ex02.codea;
 
 /**
  * Copyright (c) 2017 Vadim Voronov
@@ -10,11 +10,6 @@ public class CodeA {
         System.out.println("\n====CODE_A===");
         System.out.println("\n Check\n");
         //BFileParser.check("./src/ch18/ex24/Ex24.java"); // прокачать целую главу
-
-
-
-//        Map<String, Integer> genMap = GenMap.get(new GenRnd.GenStr(),new GenRnd.GenInt(),10);
-//        System.out.println(genMap);
 
 
     }

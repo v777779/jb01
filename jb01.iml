@@ -22,6 +22,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch17" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch18" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch19" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch21" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />
