@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch20.ex02.codea.annotate;
 
 
 import java.lang.annotation.ElementType;

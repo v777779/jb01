@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch20.ex02.codea.annotate;
 
 /**
  * Copyright (c) 2017 Vadim Voronov

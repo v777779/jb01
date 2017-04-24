@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch20.ex02.codea.annotate;
 
 
 import com.sun.mirror.apt.*;
@@ -25,7 +25,7 @@ public class InterfaceExtractorProcessor implements AnnotationProcessor {  // р
     public void process() {
 
         for (TypeDeclaration type : env.getSpecifiedTypeDeclarations()) {
-            System.out.println("class:"+type.getSimpleName());
+
             ExtractInterface annotation = type.getAnnotation(ExtractInterface.class);
             if (annotation == null) {
                 break;  // выскочить наружу  из for
@@ -38,6 +38,7 @@ public class InterfaceExtractorProcessor implements AnnotationProcessor {  // р
             }
 
             if (listInterfaceMethods.size() > 0) {
+                System.out.println("annotation processing started");
                 try {
                     PrintWriter pw = env.getFiler().createSourceFile(annotation.value()); // открыть файл по имени аннотации
 // строим файл

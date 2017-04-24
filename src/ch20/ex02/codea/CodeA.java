@@ -1,5 +1,6 @@
 package ch20.ex02.codea;
 
+import ch20.ex02.codea.annotate.message;
 import lib.system.OSExecute;
 
 /**

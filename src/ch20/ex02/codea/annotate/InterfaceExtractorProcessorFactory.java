@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch20.ex02.codea.annotate;
 
 import com.sun.mirror.apt.*;
 import com.sun.mirror.declaration.*;
@@ -20,7 +20,7 @@ public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFa
 
     @Override
     public Collection<String> supportedAnnotationTypes() {
-        return Collections.singleton("ch20.ex02.codea.ExtractInterface"); // путь до класса аннотации
+        return Collections.singleton("ch20.ex02.codea.annotate.ExtractInterface"); // путь до класса аннотации
     }
 
     @Override
