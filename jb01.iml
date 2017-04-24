@@ -33,5 +33,6 @@
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex7" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="apt-mirror-api-0.1" level="project" />
   </component>
 </module>

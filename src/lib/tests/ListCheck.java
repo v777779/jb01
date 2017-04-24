@@ -89,7 +89,7 @@ public class ListCheck {
                           int size = tp.size;
                           for (int i = 0; i < loops; i++) {
                               list.clear();
-                              list.addAll(new GenList<>(size));
+                              list.addAll(new GenList<Integer>(size));
                               while (list.size() > 5) {
                                   list.remove(5); // удалять 5й индекс до упора
                               }

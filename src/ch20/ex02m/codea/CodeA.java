@@ -1,4 +1,4 @@
-package ch20.ex02.codea;
+package ch20.ex02m.codea;
 
 import lib.system.OSExecute;
 
@@ -10,8 +10,8 @@ import lib.system.OSExecute;
 public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
-        System.out.println("\napt Annotation Processing Check\n");
-        message.show();
-        OSExecute.command("cmd /c cd .\\src\\ch20\\ex02\\codea & j.cmd");
+        System.out.println("\njavac  Annotation Processing Check\n");
+        OSExecute.command("cmd /c cd src\\ch20\\ex02m\\codea & j4.cmd");
+
     }
 }

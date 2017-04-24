@@ -51,7 +51,7 @@ public class QueueCheck {
                           int size = tp.size;
                           for (int i = 0; i < loops; i++) {
                               list.clear();
-                              list.addAll(new GenList<>(size));
+                              list.addAll(new GenList<Integer>(size));
                               while (list.size() > 0) {
                                   list.removeFirst(); // удалять до упора
                               }
@@ -68,7 +68,7 @@ public class QueueCheck {
                           int size = tp.size;
                           for (int i = 0; i < loops; i++) {
                               list.clear();
-                              list.addAll(new GenList<>(size));
+                              list.addAll(new GenList<Integer>(size));
                               while (list.size() > 0) {
                                   list.removeLast(); // удалять до упора
                               }
