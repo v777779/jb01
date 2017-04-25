@@ -3,7 +3,7 @@ package ch18.ex26.exercise;
 import ch18.ex26.exercise.office.JGrepFCOffice;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 13-Apr-17.
  */

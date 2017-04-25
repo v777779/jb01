@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 17-Apr-17.
  */

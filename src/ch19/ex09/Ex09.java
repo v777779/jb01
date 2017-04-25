@@ -3,7 +3,7 @@ package ch19.ex09;
 import ch19.ex09.exercise.Exercise;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

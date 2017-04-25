@@ -3,7 +3,7 @@ package ch19.ex03.exercise;
 import ch19.ex03.exercise.food.Meal3;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */

@@ -3,7 +3,7 @@ package ch18.ex27.codec;
 import java.io.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 16-Apr-17.
  */

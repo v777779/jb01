@@ -9,7 +9,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 15-Apr-17.
  */

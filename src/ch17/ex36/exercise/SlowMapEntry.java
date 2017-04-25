@@ -3,7 +3,7 @@ package ch17.ex36.exercise;
 import java.util.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 30-Mar-17.
  */

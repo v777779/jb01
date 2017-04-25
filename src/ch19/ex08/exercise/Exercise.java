@@ -4,7 +4,7 @@ import ch19.ex08.exercise.office.PostOffice2;
 import ch19.ex08.exercise.post.PostOffice;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

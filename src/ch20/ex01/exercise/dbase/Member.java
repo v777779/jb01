@@ -5,7 +5,7 @@ import lib.shapes.Cube;
 import lib.shapes.Point;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 21-Apr-17.
  */

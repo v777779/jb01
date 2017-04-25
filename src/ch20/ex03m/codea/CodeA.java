@@ -6,7 +6,7 @@ import lib.system.OSExecute;
 import java.io.File;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 20-Feb-17.
  */

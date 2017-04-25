@@ -3,7 +3,7 @@ package ch18.ex25.exercise.tests;
 import java.nio.ByteBuffer;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 12-Apr-17.
  */

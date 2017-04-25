@@ -1,7 +1,7 @@
 package ch18.ex24.codeb;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 11-Apr-17.
  */

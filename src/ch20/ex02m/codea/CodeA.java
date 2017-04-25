@@ -3,7 +3,7 @@ package ch20.ex02m.codea;
 import lib.system.OSExecute;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */

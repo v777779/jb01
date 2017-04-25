@@ -4,7 +4,7 @@ import lib.utils.Enums;
 import lib.utils.ICompetitor;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

@@ -3,7 +3,7 @@ package ch18.ex22.codeb;
 import java.io.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 10-Apr-17.
  */

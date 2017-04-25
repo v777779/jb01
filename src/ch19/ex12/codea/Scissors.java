@@ -3,7 +3,7 @@ package ch19.ex12.codea;
 import static ch19.ex12.codea.Outcome.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

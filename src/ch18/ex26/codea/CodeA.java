@@ -1,7 +1,7 @@
 package ch18.ex26.codea;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 13-Apr-17.
  */

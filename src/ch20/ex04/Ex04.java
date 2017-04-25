@@ -4,7 +4,7 @@ import ch20.ex04.codea.CodeA;
 import ch20.ex04.exercise.Exercise;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 25-Apr-17.
  */

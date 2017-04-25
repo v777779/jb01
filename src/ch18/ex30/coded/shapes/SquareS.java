@@ -1,7 +1,7 @@
 package ch18.ex30.coded.shapes;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 17-Apr-17.
  */

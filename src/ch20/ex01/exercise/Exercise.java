@@ -3,7 +3,7 @@ package ch20.ex01.exercise;
 import ch20.ex01.exercise.dbase.TableCreator;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

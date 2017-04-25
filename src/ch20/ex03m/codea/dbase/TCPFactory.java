@@ -10,7 +10,7 @@ import javax.lang.model.util.SimpleElementVisitor8;
 import java.util.Set;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */

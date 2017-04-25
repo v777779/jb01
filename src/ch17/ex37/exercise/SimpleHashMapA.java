@@ -5,7 +5,7 @@ import lib.maps.MapEntry;
 import java.util.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 31-Mar-17.
  */

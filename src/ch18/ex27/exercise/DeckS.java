@@ -7,7 +7,7 @@ import lib.utils.Range;
 import java.io.Serializable;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 16-Apr-17.
  */

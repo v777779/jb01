@@ -7,7 +7,7 @@ import lib.utils.Outcome;
 import static lib.utils.Outcome.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

@@ -3,7 +3,7 @@ package ch20.ex01.codea;
 import java.lang.reflect.Method;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

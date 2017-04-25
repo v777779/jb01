@@ -5,7 +5,7 @@ import ch19.ex10.codea.vm.Input;
 import ch19.ex10.codea.vm.VendingMachine;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

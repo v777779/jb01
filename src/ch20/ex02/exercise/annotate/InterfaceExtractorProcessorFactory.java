@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Set;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 22-Apr-17.
  */

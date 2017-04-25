@@ -11,7 +11,7 @@ import java.nio.channels.FileLock;
 
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 13-Apr-17.
  */

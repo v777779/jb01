@@ -5,7 +5,7 @@ import java.util.EnumMap;
 import static ch19.ex11.exercise.vm.VendingMachine.State.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

@@ -1,7 +1,7 @@
 package ch20.ex03.exercise.dbase;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 21-Apr-17.
  */

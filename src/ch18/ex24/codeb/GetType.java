@@ -3,7 +3,7 @@ package ch18.ex24.codeb;
 import java.nio.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 12-Apr-17.
  */

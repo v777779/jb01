@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.prefs.Preferences;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 17-Apr-17.
  */

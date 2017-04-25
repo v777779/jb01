@@ -1,7 +1,7 @@
 package ch19.ex04.exercise;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */

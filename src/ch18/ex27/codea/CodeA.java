@@ -4,7 +4,7 @@ import lib.files.BFileClear;
 import lib.utils.Time;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 13-Apr-17.
  */

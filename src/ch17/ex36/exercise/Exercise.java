@@ -7,7 +7,7 @@ import lib.tests.Tester;
 import java.util.TreeMap;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 03-Apr-17.
  */

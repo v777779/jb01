@@ -8,7 +8,7 @@ import java.nio.CharBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 11-Apr-17.
  */

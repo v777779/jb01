@@ -5,7 +5,7 @@ import lib.files.JComp;
 import java.io.File;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 18-Feb-17.
  */

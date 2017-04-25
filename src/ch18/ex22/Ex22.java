@@ -6,7 +6,7 @@ import ch18.ex22.codec.CodeC;
 import ch18.ex22.exercise.Exercise;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 10-Apr-17.
  */

@@ -3,7 +3,7 @@ package ch19.ex08.codef;
 import ch19.ex08.codef.post.PostOffice;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

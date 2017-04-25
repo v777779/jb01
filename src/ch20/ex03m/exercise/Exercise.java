@@ -3,7 +3,7 @@ package ch20.ex03m.exercise;
 import lib.files.JComp;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 20-Feb-17.
  */

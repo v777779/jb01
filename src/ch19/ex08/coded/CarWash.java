@@ -5,7 +5,7 @@ import lib.utils.ICommand;
 import java.util.EnumSet;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

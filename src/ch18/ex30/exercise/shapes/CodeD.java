@@ -4,7 +4,7 @@ import ch18.ex30.exercise.RestoreCadState;
 import ch18.ex30.exercise.StoreCADState;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 16-Apr-17.
  */

@@ -4,7 +4,7 @@ import ch20.ex02.codea.annotate.message;
 import lib.system.OSExecute;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 20-Apr-17.
  */

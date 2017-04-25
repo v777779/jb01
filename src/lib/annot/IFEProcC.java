@@ -15,7 +15,7 @@ import java.util.Set;
 
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 21-Apr-17.
  */

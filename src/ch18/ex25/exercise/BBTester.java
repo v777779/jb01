@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 13-Apr-17.
  */

@@ -4,7 +4,7 @@ package ch19.ex01.exercise;
 import static ch19.ex01.exercise.Signal.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */

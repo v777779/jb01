@@ -4,7 +4,7 @@ import java.util.EnumSet;
 import static ch19.ex07.codea.AlarmPoints.*;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

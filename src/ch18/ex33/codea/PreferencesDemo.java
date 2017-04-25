@@ -3,7 +3,7 @@ package ch18.ex33.codea;
 import java.util.prefs.Preferences;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 17-Apr-17.
  */

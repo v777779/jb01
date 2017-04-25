@@ -5,7 +5,7 @@ import ch20.ex02m.codeb.CodeB;
 import ch20.ex02m.exercise.Exercise;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */

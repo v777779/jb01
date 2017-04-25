@@ -3,7 +3,7 @@ package ch19.ex05.exercise;
 import java.util.Random;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */

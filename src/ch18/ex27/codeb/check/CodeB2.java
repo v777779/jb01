@@ -1,7 +1,7 @@
 package ch18.ex27.codeb.check;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
  * Created: 18-Feb-17.
  */

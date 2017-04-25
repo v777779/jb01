@@ -5,7 +5,7 @@ import lib.utils.IGenerator;
 import static ch19.ex10.codea.vm.VendingMachine.State.TERMINAL;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

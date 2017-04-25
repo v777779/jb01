@@ -3,7 +3,7 @@ package ch19.ex08.codeb;
 import ch19.ex08.codea.ICommand;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 19-Apr-17.
  */

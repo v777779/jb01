@@ -1,7 +1,7 @@
 package ch18.ex22.codec;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 18-Apr-17.
  */

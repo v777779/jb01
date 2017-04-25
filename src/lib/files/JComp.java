@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Copyright (c) 2017 Vadim Voronov
+ * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */
