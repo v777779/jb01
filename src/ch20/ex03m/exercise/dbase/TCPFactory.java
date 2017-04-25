@@ -18,10 +18,10 @@ import java.util.Set;
  * Created: 24-Apr-17.
  */
 @SupportedAnnotationTypes({
-        "ch20.ex03m.codea.dbase.DBTable",
-        "ch20.ex03m.codea.dbase.Constraints",
-        "ch20.ex03m.codea.dbase.SQLString",
-        "ch20.ex03m.codea.dbase.SQLInteger"
+        "ch20.ex03m.exercise.dbase.DBTable",
+        "ch20.ex03m.exercise.dbase.Constraints",
+        "ch20.ex03m.exercise.dbase.SQLString",
+        "ch20.ex03m.exercise.dbase.SQLInteger"
 })
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class TCPFactory extends AbstractProcessor {
@@ -34,6 +34,9 @@ public class TCPFactory extends AbstractProcessor {
             element.accept(new V1(), null);
             for (Element element1 : element.getEnclosedElements()) {
                 element1.accept(new V1(), null);
+            }
+            if (sql.length() < 1) {
+                continue;
             }
             sql = sql.substring(0, sql.length() - 1) + ");";
             System.out.println("Creation SQL is :");
@@ -66,6 +69,26 @@ public class TCPFactory extends AbstractProcessor {
                 }
                 sql += "\n    " + columnName + " VARCHAR(" + sVal.value() + ")" +
                         getConstraints(sVal.constraints()) + ",";
+            }
+            if (e.getAnnotation(SQLShape.class)!= null) {  // считаем что только одна аннотация на поле
+                SQLShape sVal = e.getAnnotation(SQLShape.class);
+                if (sVal.name().length() < 1) {
+                    columnName = e.getSimpleName().toString().toUpperCase(); // берем имя аннотации с имени поля
+                } else {
+                    columnName = sVal.name();
+                }
+
+                sql += "\n    "+ columnName + " SHAPE." + sVal.eshape().toString() +
+                        getConstraints(sVal.constraints());
+            }
+            if (e.getAnnotation(SQLDouble.class)!= null) {  // считаем что только одна аннотация на поле
+                SQLDouble sVal = e.getAnnotation(SQLDouble.class);
+                if (sVal.name().length() < 1) {
+                    columnName = e.getSimpleName().toString().toUpperCase(); // берем имя аннотации с имени поля
+                } else {
+                    columnName = sVal.name();
+                }
+                sql+= "\n    "+ columnName + " DOUBLE " + getConstraints(sVal.constraints());
             }
 
             return super.visitVariable(e, aVoid);
