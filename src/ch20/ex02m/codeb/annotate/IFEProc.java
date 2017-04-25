@@ -1,12 +1,17 @@
-package ch20.ex02m.codea.annotate;
+package ch20.ex02m.codeb.annotate;
 
-import javax.annotation.processing.*;
+import javax.annotation.processing.AbstractProcessor;
+import javax.annotation.processing.RoundEnvironment;
+import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.*;
 import javax.lang.model.util.ElementFilter;
 import javax.tools.JavaFileObject;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Copyright (c) 2017 Vadim Voronov
@@ -15,16 +20,16 @@ import java.util.*;
  */
 @SupportedAnnotationTypes("*")  // или вписать String[]={"ch20.ex02m.codea.EIFace72","ch20.ex02m.codea.EIVace75"}
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-public class IFEProcC extends AbstractProcessor {  // расширение абстрактного класса с одним методом
+public class IFEProc extends AbstractProcessor {  // расширение абстрактного класса с одним методом
     private List<ExecutableElement> list = new ArrayList<>();
 
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment env) {
         for (Element element : env.getRootElements()) { //.getElementsAnnotatedWith(EIFace72.class)) { // сортировка по аннотации
             ExtractInterface annotate = element.getAnnotation(ExtractInterface.class);
-//          EIFace72 dbase = element.getAnnotation(EIFace72.class); // можно несколько открутить
+            list.clear();  // очистка списка
             if (annotate == null) {
-                break; // выходим если нет связи
+                continue; // выходим если нет связи
             }
             for (ExecutableElement method : ElementFilter.methodsIn(element.getEnclosedElements())) {  // вытащить только методы
                 Set<Modifier> set = method.getModifiers();
@@ -34,21 +39,21 @@ public class IFEProcC extends AbstractProcessor {  // расширение аб�
             }
 
             if (list.size() > 0) {  // набрали методов
-                System.out.println("javac processing started");
+                System.out.println("***javac processing started***");
                 try {
                     JavaFileObject jfo = processingEnv.getFiler().createSourceFile(annotate.value());
                     PrintWriter pw = new PrintWriter(jfo.openWriter());
-                    PackageElement pkg = (PackageElement)element.getEnclosingElement();
-                    pw.println("package "+ pkg.getQualifiedName()+";\n");
-                    pw.println("public interface "+annotate.value()+" {");
+                    PackageElement pkg = (PackageElement) element.getEnclosingElement();
+                    pw.println("package " + pkg.getQualifiedName() + ";\n");
+                    pw.println("public interface " + annotate.value() + " {");
 
                     for (ExecutableElement method : list) {
                         pw.print("    public ");
-                        pw.print(method.getReturnType()+" ");
-                        pw.print(method.getSimpleName()+" (");
+                        pw.print(method.getReturnType() + " ");
+                        pw.print(method.getSimpleName() + " (");
                         int i = 0;
                         for (VariableElement param : method.getParameters()) {
-                            pw.print(param.asType()+" "+param.getSimpleName());
+                            pw.print(param.asType() + " " + param.getSimpleName());
                             if (++i < method.getParameters().size()) {
                                 pw.print(", ");
                             }
@@ -58,6 +63,7 @@ public class IFEProcC extends AbstractProcessor {  // расширение аб�
                     pw.println("}\n");
 
                     pw.close();
+                    jfo.delete();
 
                 } catch (Exception e) {
                     throw new RuntimeException(e);

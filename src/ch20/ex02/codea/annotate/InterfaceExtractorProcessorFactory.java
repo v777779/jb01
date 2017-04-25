@@ -20,12 +20,12 @@ public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFa
 
     @Override
     public Collection<String> supportedAnnotationTypes() {
-        return Collections.singleton("ch20.ex02.codea.annotate.ExtractInterface"); // путь до класса аннотации
+        return Collections.singleton("ch20.ex02.codea.dbase.ExtractInterface"); // путь до класса аннотации
     }
 
     @Override
-    public AnnotationProcessor getProcessorFor(             // метод вызывается apt
-                                                            Set<AnnotationTypeDeclaration> set, AnnotationProcessorEnvironment env) {
-       return new InterfaceExtractorProcessor(env);
+    public AnnotationProcessor getProcessorFor(Set<AnnotationTypeDeclaration> set,         // метод вызывается apt
+                                               AnnotationProcessorEnvironment env) {
+        return new InterfaceExtractorProcessor(env);
     }
 }

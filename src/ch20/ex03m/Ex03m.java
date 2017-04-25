@@ -1,18 +1,16 @@
-package ch20.ex02m;
+package ch20.ex03m;
 
-import ch20.ex02m.codea.CodeA;
-import ch20.ex02m.codeb.CodeB;
-import ch20.ex02m.exercise.Exercise;
+import ch20.ex03m.codea.CodeA;
+import ch20.ex03m.exercise.Exercise;
 
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */
-public class Ex02m {
+public class Ex03m {
     public static void main(String[] args) {
         CodeA.app();
-        CodeB.app();
         Exercise.app();
 
     }

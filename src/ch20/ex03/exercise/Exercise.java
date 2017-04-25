@@ -1,5 +1,7 @@
 package ch20.ex03.exercise;
 
+import lib.system.OSExecute;
+
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
@@ -8,6 +10,8 @@ package ch20.ex03.exercise;
 public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise Check\n");
+        System.out.println("\nExercise 03 apt Annotation with Visitor Pattern Check\n");
+        OSExecute.command("cmd /c .\\src\\ch20\\ex03\\exercise\\j.cmd");
+
     }
 }
