@@ -1,6 +1,7 @@
 package ch20.ex04.codea;
 
-import org.junit.Test;
+
+import lib.units.atunit.Test;
 
 /**
  * Vadim Voronov
@@ -16,7 +17,8 @@ public class AtUnitExample1 {
         return 2;
     }
 
-    @Test boolean methodOneTest() {
+    @Test
+    boolean methodOneTest() {
         return methodOne().equals("This is methodOne");
     }
 
@@ -35,4 +37,6 @@ public class AtUnitExample1 {
     @Test boolean anotherDissappointment() {
         return false;
     }
+
+
 }
