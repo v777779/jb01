@@ -8,12 +8,13 @@ import java.io.File;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 24-Apr-17.
  */
 public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
         System.out.println("\njavac Annotation Processor Check\n");
+        Message.show();
 //javac call Imultiplier
         System.out.println("Javac Call IMultiplier");
         System.out.println("-------------------------------------------");
