@@ -11,6 +11,7 @@ public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
         System.out.println("\nExercise 01 apt Annotation Processing Check\n");
+        Message.show();
         OSExecute.command("cmd /c cd .\\src\\ch20\\ex02\\exercise & j.cmd");
 
     }

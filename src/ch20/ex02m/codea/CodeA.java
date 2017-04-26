@@ -11,6 +11,7 @@ public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
         System.out.println("\njavac  Annotation Processing Check\n");
+        Message.show();
         OSExecute.command("cmd /c cd src\\ch20\\ex02m\\codea & j4.cmd");
 
     }

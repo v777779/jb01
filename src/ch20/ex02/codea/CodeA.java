@@ -1,6 +1,5 @@
 package ch20.ex02.codea;
 
-import ch20.ex02.codea.annotate.message;
 import lib.system.OSExecute;
 
 /**
@@ -12,7 +11,7 @@ public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
         System.out.println("\napt Annotation Processing Check\n");
-        message.show();
+        Message.show();
         OSExecute.command("cmd /c cd .\\src\\ch20\\ex02\\codea & j.cmd");
     }
 }

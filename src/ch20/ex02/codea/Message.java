@@ -1,11 +1,11 @@
-package ch20.ex02.codea.annotate;
+package ch20.ex02.codea;
 
 /**
  * Vadim Voronov
  * email: vadim.v.voronov@gmail.com
  * Created: 24-Apr-17.
  */
-public class message {
+public class Message {
     public static void show() {
         System.out.println("ATTENTION: ");
         System.out.println("This is deprecated and obsoleted code");

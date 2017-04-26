@@ -11,6 +11,7 @@ public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
         System.out.println("\nExercise 03 apt Annotation with Visitor Pattern Check\n");
+        Message.show();
         OSExecute.command("cmd /c .\\src\\ch20\\ex03\\exercise\\j.cmd");
 
     }

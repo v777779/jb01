@@ -13,8 +13,9 @@ public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
         System.out.println("\nExercise 02m Check\n");
-        OSExecute.command("cmd /c cd src\\ch20\\ex02m\\exercise & j6.cmd");
+        Message.show();
 
+        OSExecute.command("cmd /c cd src\\ch20\\ex02m\\exercise & j6.cmd");
         System.out.println(new Mult().multiply(4,3));
         System.out.println(new Divide().divide(7,2));
 
