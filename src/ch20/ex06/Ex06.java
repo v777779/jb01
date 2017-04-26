@@ -10,6 +10,5 @@ import ch20.ex06.exercise.Exercise;
 public class Ex06 {
     public static void main(String[] args) {
         Exercise.app();
-
     }
 }
