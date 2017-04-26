@@ -22,7 +22,7 @@ public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFa
 
     @Override
     public Collection<String> supportedAnnotationTypes() {
-        return Collections.singleton("ch20.ex02.exercise.dbase.ExtractInterface"); // путь до класса аннотации
+        return Collections.singleton("ch20.ex02.exercise.annotate.ExtractInterface"); // путь до класса аннотации
     }
 
     @Override

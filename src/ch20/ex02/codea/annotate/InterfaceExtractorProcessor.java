@@ -23,7 +23,6 @@ public class InterfaceExtractorProcessor implements AnnotationProcessor {  // р
 
     @Override
     public void process() {
-
         for (TypeDeclaration type : env.getSpecifiedTypeDeclarations()) {
 
             ExtractInterface annotation = type.getAnnotation(ExtractInterface.class);
