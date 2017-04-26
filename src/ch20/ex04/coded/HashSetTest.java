@@ -11,7 +11,7 @@ import java.util.HashSet;
 public class HashSetTest {
     HashSet<String> testObject = new HashSet<>();
 
-    @Test void initialization() {
+    @Test void _initialization() {
         assert testObject.isEmpty():"object is not empty";              // проверка объекта assert
     }
     @Test void _contains() {
