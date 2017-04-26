@@ -1,4 +1,4 @@
-package ch20.ex04.codea;
+package lib.annot;
 
 /**
  * Vadim Voronov
