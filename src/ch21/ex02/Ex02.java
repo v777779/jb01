@@ -1,6 +1,5 @@
 package ch21.ex02;
 
-import ch21.ex02.codea.CodeA;
 import ch21.ex02.exercise.Exercise;
 
 /**
@@ -10,7 +9,6 @@ import ch21.ex02.exercise.Exercise;
  */
 public class Ex02 {
     public static void main(String[] args) {
-        CodeA.app();
         Exercise.app();
 
     }

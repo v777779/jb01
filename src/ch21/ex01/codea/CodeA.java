@@ -5,7 +5,7 @@ import lib.utils.Time;
 /**
  * Copyright (c) 2017 Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 21-Apr-17.
  */
 public class CodeA {
     public static void app() {
