@@ -21,7 +21,7 @@ public class Proc {
         }
 
 
-        System.out.println("\nFields:");
+        System.out.println("Fields:");
         for (Field f : className.getDeclaredFields()) {
 
             TestNote tNoteField = f.getAnnotation(TestNote.class);
@@ -29,7 +29,7 @@ public class Proc {
                 System.out.printf("%-25s %-40s \n", f.getName(), tNoteField.value());
             }
         }
-        System.out.println("\nMethods:");
+        System.out.println("Methods:");
         for (Method m : className.getDeclaredMethods()) {
 
             TestNote tNoteField = m.getAnnotation(TestNote.class);

@@ -28,6 +28,7 @@ public class AtNote {
     public String basicStringPublicValue = "StringPublicValue";
 
     @Test
+    @TestNote( "Parent Method basicCheckField()")
     public void basicCheckField() {
 
     }
