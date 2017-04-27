@@ -8,6 +8,7 @@ package ch21.ex01.exercise;
 public class Exercise {
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise Check\n");
+        System.out.println("\nExercise 01 Runnable Check\n");
+        BallRunThreads.check();
     }
 }

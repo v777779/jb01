@@ -3,7 +3,6 @@
 // {RunByHand}
 package lib.units.atunit;
 
-import ch20.ex11.exercise.Proc;
 import lib.units.util.BinaryFile;
 import lib.units.util.ProcessFiles;
 
