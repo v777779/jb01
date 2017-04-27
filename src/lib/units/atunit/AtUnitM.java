@@ -3,6 +3,7 @@
 // {RunByHand}
 package lib.units.atunit;
 
+import ch20.ex11.exercise.Proc;
 import lib.units.util.BinaryFile;
 import lib.units.util.ProcessFiles;
 
@@ -16,7 +17,7 @@ import java.util.List;
 import static lib.units.util.Print.print;
 import static lib.units.util.Print.printnb;
 
-public class AtUnit implements ProcessFiles.Strategy {
+public class AtUnitM implements ProcessFiles.Strategy {
   static Class<?> testClass;
   static List<String> failedTests= new ArrayList<String>();
   static long testsRun = 0;
@@ -24,7 +25,7 @@ public class AtUnit implements ProcessFiles.Strategy {
   public static void main(String[] args) throws Exception {
     ClassLoader.getSystemClassLoader()
       .setDefaultAssertionStatus(true); // Enable asserts
-    new ProcessFiles(new AtUnit(), "class").start(args);
+    new ProcessFiles(new AtUnitM(), "class").start(args);
     if(failures == 0)
       print("OK (" + testsRun + " tests)");
     else {
@@ -68,13 +69,16 @@ public class AtUnit implements ProcessFiles.Strategy {
           // Synthesized default constructor; OK
         }
       print(testClass.getName());
-//check class and fields
-
-
-
+      Proc.classCheck(testClass);
+      Proc.fieldCheck(testClass);
     }
     for(Method m : testMethods) {
       printnb("  . " + m.getName() + " ");
+      if (m.getAnnotation(TestNote.class) != null) {
+        System.out.println(m.getAnnotation(TestNote.class).value());
+      }
+
+
       try {
         Object testObject = createTestObject(creator);
         boolean success = false;

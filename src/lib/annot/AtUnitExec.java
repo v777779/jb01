@@ -1,6 +1,7 @@
 package lib.annot;
 
 import lib.units.atunit.AtUnit;
+import lib.units.atunit.AtUnitM;
 
 /**
  * Vadim Voronov
@@ -12,6 +13,14 @@ public class AtUnitExec {
         try {
 
             AtUnit.main(new String[]{pathFile});
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void checkM(String pathFile) {
+        try {
+
+            AtUnitM.main(new String[]{pathFile});
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
