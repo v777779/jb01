@@ -37,7 +37,7 @@ public class FbRunThreads {
         resetCount();
         ExecutorService exec = Executors.newCachedThreadPool();
         for (int i = 0; i < 5 ; i++) {
-            exec.execute(new FbRun(next()));
+            exec.execute(new FbRun());
         }
         exec.shutdown();// запрет отправку новых задач объекту ExecutorService
 
@@ -45,7 +45,7 @@ public class FbRunThreads {
         resetCount();
         exec = Executors.newFixedThreadPool(5);
         for (int i = 0; i < 5 ; i++) {
-            exec.execute(new FbRun(next()));
+            exec.execute(new FbRun());
         }
         exec.shutdown();// запрет отправку новых задач объекту ExecutorService
 
@@ -55,7 +55,7 @@ public class FbRunThreads {
         resetCount();
         exec = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 5 ; i++) {
-            exec.execute(new FbRun(next()));
+            exec.execute(new FbRun());
         }
         exec.shutdown();
         Time.sleep(100);

@@ -1,15 +1,16 @@
-package lib.threads;
+package ch21.ex05.exercise;
 
 import lib.utils.Fibonacci;
 
 import java.util.Random;
+import java.util.concurrent.Callable;
 
 /**
  * Vadim Voronov
  * Created: 27-Apr-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class FbRun implements Runnable {
+public class FbCall implements Callable<Integer> {
     private static int counter = 0;
     private final int id = counter++;
     private int n;
@@ -17,22 +18,23 @@ public class FbRun implements Runnable {
     private static final int LIMIT = 5;
     private static Random rnd = new Random();
 
-    public FbRun() {
+    public FbCall() {
         n = rnd.nextInt(RANGE)+LIMIT;
     }
 
-    public FbRun(int n) {
+    public FbCall(int n) {
         this.n = n;
     }
 
-
     @Override
-    public void run() {
+    public Integer call() throws Exception {
+        int sum = 0;
         Fibonacci f = new Fibonacci();
         for (int i = 0; i < n; i++) {
-            System.out.print("#" + id + "." + f.next() + " ");
+           sum += f.next();
         }
-        System.out.println();
+        System.out.println("#" + id + "." + f.next());
         Thread.yield(); // освобождаем ресурсы
+        return sum;
     }
 }
