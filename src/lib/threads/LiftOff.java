@@ -8,7 +8,8 @@ package lib.threads;
 public class LiftOff implements Runnable {
     protected int countDown = 10;
     private static int taskCount = 0;   // число потоков данного класса
-    private final int id = taskCount++; // id данного потока
+    protected final int id = taskCount++; // id данного потока
+
 
     public LiftOff() {
     }
