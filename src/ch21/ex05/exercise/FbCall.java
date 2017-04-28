@@ -33,7 +33,7 @@ public class FbCall implements Callable<Integer> {
         for (int i = 0; i < n; i++) {
            sum += f.next();
         }
-        System.out.println("#" + id + "." + f.next());
+        System.out.println("#" + id + "." + sum);
         Thread.yield(); // освобождаем ресурсы
         return sum;
     }
