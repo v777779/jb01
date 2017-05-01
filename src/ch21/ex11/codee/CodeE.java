@@ -13,7 +13,7 @@ public class CodeE {
         EventGenerator.check();
 
         System.out.println("\nSynchronized IntGenerator:");
-        SynchronizedEventGenerator.check();
+        SynchronizedEvenGenerator.check();
 
     }
 }

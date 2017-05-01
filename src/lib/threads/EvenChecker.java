@@ -19,13 +19,18 @@ public class EvenChecker implements Runnable {
 
     @Override
     public void run() {
+        int count = 0;
         while (!g.isCanceled()) {
             int val = g.next();  // генерит числа до первого нечетного
             if (val % 2 != 0) {
                 System.out.println("#" + id + " " + val + " not even!");
                 g.cancel();
             }
+            if (count++ > 1e6) {
+                break;
+            }
         }
+        System.out.print(".");
     }
 
     public static void test(IntGenerator gp, int count) {

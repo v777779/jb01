@@ -5,7 +5,7 @@ package ch21.ex11.codee;
  * Created: 01-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class SynchronizedEventGenerator extends IntGenerator {
+public class SynchronizedEvenGenerator extends IntGenerator {
     private volatile int  currentEvenValue = 0;
 
     @Override
@@ -16,6 +16,6 @@ public class SynchronizedEventGenerator extends IntGenerator {
     }
 
     public static void check() {
-        EvenChecker.test(new SynchronizedEventGenerator());  // генератор просто добавляет по 2, число потоков 10
+        EvenChecker.test(new SynchronizedEvenGenerator());  // генератор просто добавляет по 2, число потоков 10
     }
 }
