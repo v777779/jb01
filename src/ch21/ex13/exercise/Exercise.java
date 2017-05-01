@@ -1,4 +1,4 @@
-package ch21.ex12.exercise;
+package ch21.ex13.exercise;
 
 import lib.utils.Time;
 
@@ -13,9 +13,10 @@ public class Exercise {
     }
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise 12 Atomicity Check\n");
-        System.out.println("Atomicity Test:");
-        AtomicityTest2.check();
-        Time.sleep(1500);
+        System.out.println("\nExercise 13 Volatile Check\n");
+
+        System.out.println("\nVolatile Test:");
+        SeralNumberChecker2.check();
+        Time.sleep(150);
     }
 }

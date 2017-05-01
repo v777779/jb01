@@ -13,8 +13,9 @@ public class CodeB {
         System.out.println("\nAtomic and Volatile Check\n");
         System.out.println("Atomicity Test:");
         AtomicityTest.check();
+        Time.sleep(1500);
 
-        System.out.println("Volatile Test:");
+        System.out.println("\nVolatile Test:");
         SeralNumberChecker.check();
         Time.sleep(150);
     }

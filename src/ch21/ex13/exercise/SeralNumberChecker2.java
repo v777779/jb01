@@ -1,4 +1,4 @@
-package ch21.ex12.exercise;
+package ch21.ex13.exercise;
 
 
 import lib.threads.CircularTest;
@@ -22,13 +22,17 @@ public class SeralNumberChecker2 {
     static class SerialChecker implements Runnable {
         @Override
         public void run() {
+            int count = 0;
             while (true) {
-                int serial = SerialNumberGenerator.nextSerialNumber();
+                int serial = SerialNumberGenerator.nextSerialNumber2();
                 if (serials.conatins(serial)) {
                     System.out.println("Duplicate: "+serial);
                     break;
                 }
                 serials.add(serial);
+                if (count++ > 1e6) {
+                    break;
+                }
             }
         }
     }
