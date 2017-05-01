@@ -34,6 +34,7 @@ public class SeralNumberChecker2 {
                     break;
                 }
             }
+            System.out.print(".");
         }
     }
 
