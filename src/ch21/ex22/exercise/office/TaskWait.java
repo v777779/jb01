@@ -61,5 +61,10 @@ public class TaskWait {
             throw new RuntimeException(e);
         }
         exec.shutdownNow();
+        try {
+            TimeUnit.MILLISECONDS.sleep(100);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -22,7 +22,6 @@ public class Exercise {
         System.out.println("\nOfficial solution");
         System.out.println("\nWhile Active official:");
         TaskActive.check();
-        Time.sleep(100);
         System.out.println("\nWhile Wait official:");
         TaskWait.check();
 
