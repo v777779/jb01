@@ -1,4 +1,4 @@
-package ch21.ex21.codec;
+package ch21.ex23.exercise.waxomatic;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,8 +18,9 @@ private Car car;
     public void run() {
         try {
             while (!Thread.interrupted()) {
-                System.out.println("Wax On! ");
+                System.out.println("T1>>Wax On! ");
                 TimeUnit.MILLISECONDS.sleep(200);
+                System.out.println("T1<200ms>");
                 car.waxed();
                 car.waitForBuffing();  // войти в Buffing
             }

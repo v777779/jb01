@@ -19,9 +19,8 @@ private Car car;
         try {
             while (!Thread.interrupted()) {
                 car.waitForWaxing();            // зацепиться в Waxing пока не сменится флаг
-                System.out.println("T2>>Wax Off! ");
+                System.out.println("Wax Off! ");
                 TimeUnit.MILLISECONDS.sleep(200);
-                System.out.println("T2<200ms>");
                 car.buffed();
             }
         } catch (InterruptedException e) {
