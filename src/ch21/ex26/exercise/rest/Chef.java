@@ -1,4 +1,4 @@
-package ch21.ex26.exercise;
+package ch21.ex26.exercise.rest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,21 +19,22 @@ public class Chef implements Runnable{
     public void run() {
         try {
             while (!Thread.interrupted()) {
-                synchronized (this) {                // постоянно заходит проверить готовность
-                    while (restaurant.meal != null) {  // блюдо готово захватить объект this и ждать
-                        wait();                      // отпустить объект this и сидеть в wait() по this
+                synchronized (restaurant.mealPack) {                          // захватить объект mealPack
+                    while (restaurant.mealPack.stat != MealStatus.EMPTY) {    // попадаем сюда всегда, кроме EMPTY
+                        restaurant.mealPack.wait();                           // и его же, mealPack подвесить
                     }
                 }
 
                 if (++count >= 10) {
                     System.out.println("Out of food, closing");
                     restaurant.exec.shutdownNow(); // interrupt() >> all  отрубить все службы
-                    return;
+
                 }
                 System.out.print("Order up! ");
-                synchronized (restaurant.waitPerson) { // захватить waitPerson
-                    restaurant.meal = new Meal(count); // подготовить блюдо
-                    restaurant.waitPerson.notifyAll(); // оповестить всех кто сидит в wait() по waitPerrson
+                synchronized (restaurant.mealPack) {            // захватить того кому будем посылать уведомление
+                    restaurant.mealPack.meal = new Meal(count); // подготовить блюдо
+                    restaurant.mealPack.stat = MealStatus.READY;// готово блюдо
+                    restaurant.mealPack.notifyAll();            // вскрываем все объекты mealPack.wait()
                 }
 
 

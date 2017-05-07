@@ -1,4 +1,4 @@
-package ch21.ex26.exercise;
+package ch21.ex26.exercise.rest2;
 
 /**
  * Vadim Voronov

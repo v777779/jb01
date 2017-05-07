@@ -1,4 +1,4 @@
-package ch21.ex26.exercise;
+package ch21.ex26.exercise.rest;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,14 +9,16 @@ import java.util.concurrent.Executors;
  * email: vadim.v.voronov@gmail.com
  */
 public class Restaurant {
-    Meal meal;
+    public final MealPack mealPack = new MealPack();;
     Chef chef = new Chef(this);
     WaitPerson waitPerson = new WaitPerson(this);
+    BusBoy busBoy = new BusBoy(this);
     ExecutorService exec = Executors.newCachedThreadPool();
 
     public Restaurant() {
         exec.execute(chef);             // запустить в работу chef
         exec.execute(waitPerson);       // запустить в работу waitPerson
+        exec.execute(busBoy);
     }
 
     public static void check() {
