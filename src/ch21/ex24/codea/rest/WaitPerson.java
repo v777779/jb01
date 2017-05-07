@@ -1,4 +1,4 @@
-package ch21.ex24.codea;
+package ch21.ex24.codea.rest;
 
 /**
  * Vadim Voronov

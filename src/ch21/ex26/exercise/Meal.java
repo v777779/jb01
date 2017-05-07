@@ -1,4 +1,4 @@
-package ch21.ex24.codea;
+package ch21.ex26.exercise;
 
 /**
  * Vadim Voronov

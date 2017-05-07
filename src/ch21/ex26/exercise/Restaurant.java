@@ -1,4 +1,4 @@
-package ch21.ex24.codea;
+package ch21.ex26.exercise;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

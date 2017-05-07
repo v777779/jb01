@@ -1,4 +1,4 @@
-package ch21.ex24.codea;
+package ch21.ex26.exercise;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +28,7 @@ public class Chef implements Runnable{
                 if (++count >= 10) {
                     System.out.println("Out of food, closing");
                     restaurant.exec.shutdownNow(); // interrupt() >> all  отрубить все службы
+                    return;
                 }
                 System.out.print("Order up! ");
                 synchronized (restaurant.waitPerson) { // захватить waitPerson
