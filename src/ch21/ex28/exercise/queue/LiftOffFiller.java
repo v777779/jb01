@@ -3,6 +3,7 @@ package ch21.ex28.exercise.queue;
 import lib.threads.LiftOff;
 
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Vadim Voronov
@@ -26,6 +27,7 @@ public class LiftOffFiller implements Runnable {
             for (int i = 0; i < 5; i++) {
                 add(new LiftOff());
             }
+            TimeUnit.MILLISECONDS.sleep(100);
         } catch (InterruptedException e) {
             System.out.println("Waking from take()");
         }

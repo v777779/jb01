@@ -5,7 +5,7 @@ import ch21.ex28.codea.queue.TestBlockingQueues;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 07-May-17.
  */
 public class CodeA {
     public static void app() {

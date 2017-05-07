@@ -27,7 +27,7 @@ public class TestBlockingQueues {
     }
 
     static void test(String msg, BlockingQueue<LiftOff> queue) {
-        System.out.println(msg);
+        System.out.println("\n"+msg);
         ExecutorService exec = Executors.newCachedThreadPool();
 
         exec.execute(new LiftOffRunner(queue));
@@ -37,6 +37,7 @@ public class TestBlockingQueues {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         getkey("\nPress 'Enter' (" + msg + ")");
         exec.shutdownNow(); // остановить задачу
         System.out.println("Finished " + msg + " test");
