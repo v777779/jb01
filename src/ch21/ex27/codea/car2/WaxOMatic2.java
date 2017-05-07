@@ -19,7 +19,7 @@ public class WaxOMatic2 {
         exec.execute(new WaxOff(car));
         exec.execute(new WaxOn(car));
         try {
-            TimeUnit.MILLISECONDS.sleep(200000);
+            TimeUnit.MILLISECONDS.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

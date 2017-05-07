@@ -3,7 +3,7 @@ package ch21.ex27.codea.car;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 04-May-17.
+ * Created: 07-May-17.
  */
 public class CodeC {
 
