@@ -20,7 +20,7 @@ public class ToastOMatic {
         exec.execute(new Toaster(dryQueue,counter));
         exec.execute(new Toaster(dryQueue2,counter)); // второй конвейер
         exec.execute(new Butterer(dryQueue, finishedQueue));
-        exec.execute(new JellyMaker(dryQueue2, finishedQueue));
+        exec.execute(new Jammer(dryQueue2, finishedQueue));
         exec.execute(new Eater(finishedQueue, Thread.currentThread()));  // вырубает головной поток
 
         try {  // 5 секунд задержки на конвейер

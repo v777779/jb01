@@ -24,7 +24,7 @@ public class Eater implements Runnable {
             while (!Thread.interrupted()) {
                 Toast t = finishedQueue.take(); // взять готовый бутерброд из очереди
                 if(
-                  ((t.getStatus() != Toast.Status.BUTTERED)  && (t.getStatus() != Toast.Status.JELLIED))) {
+                  ((t.getStatus() != Toast.Status.BUTTERED)  && (t.getStatus() != Toast.Status.JAMMED))) {
                     System.out.println(">>>> Error :"+t);
                     headThread.interrupt(); //  System.exit(1); // выдать закрытие всего конвейера
                 }else {

@@ -6,7 +6,7 @@ package ch21.ex29.exercise.toster;
  * email: vadim.v.voronov@gmail.com
  */
 public class Toast {
-    public enum Status{DRY, BUTTERED,JAMMED, JELLIED}
+    public enum Status{DRY, BUTTERED,JAMMED}
     private Status status = Status.DRY; // просто пустой хлеб
     private final int id;
 
@@ -16,9 +16,6 @@ public class Toast {
 
     public void butter() {
         status = Status.BUTTERED;
-    }
-    public void jelly() {
-        status = Status.JELLIED;
     }
 
     public void jam() {
