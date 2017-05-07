@@ -5,7 +5,7 @@ import ch21.ex26.exercise.rest.Restaurant;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 07-May-17.
  */
 public class Exercise {
     public static void main(String[] args) {

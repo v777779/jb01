@@ -9,6 +9,6 @@ import lib.files.BFileParser;
  */
 public class Renumber {
     public static void main(String[] args) {
-        BFileParser.check("./src/ch21/ex25/Ex25.java");
+        BFileParser.check("./src/ch21/ex26/Ex26.java");
     }
 }
