@@ -10,8 +10,6 @@ public class Eater implements Runnable {
     private int counter = 0;
     Thread headThread;
 
-
-
     public Eater(ToastQueue finishedQueue, Thread headThread) {
         this.finishedQueue = finishedQueue;
         this.headThread = headThread;
