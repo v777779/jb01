@@ -55,14 +55,18 @@ public class DelayedTask implements Delayed {
         return 0;
     }
 
-    public void run() throws InterruptedException{  // запустить задачу через время задержки
+    public void run() {  // запустить задачу через время задержки
+        try {
             if (queue == null) {
                 runner.run();
             } else {
                 TimeUnit.MILLISECONDS.sleep(initDelay); // начальная задержка}
                 runner.run();
-                queue.put(new DelayedTask(runner,initDelay,delta,queue)); // поставить заново в очередь
+                queue.put(new DelayedTask(runner, initDelay, delta, queue)); // поставить заново в очередь
             }
+        } catch (InterruptedException e) {
+            System.out.println("interrupted");
+        }
     }
 
 }
