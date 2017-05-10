@@ -9,17 +9,17 @@ import java.util.Random;
  * Created by V1 on 10-Mar-17.
  */
 public class Ball implements Iterable<Ball>, IComparator<Ball>, IGenerator<Ball> {
-   private final String[] COLORS = "green red yellow brown blue magenta black white".split(" ");
+    private final String[] COLORS = "green red yellow brown blue magenta black white".split(" ");
     private static long counter = 1;
-private final long id;
-private String color;
-private Random rnd = new Random();
+    private final long id;
+    private String color;
+    private Random rnd = new Random();
 
 
-public BallSmall bs = new BallSmall();
+    public BallSmall bs = new BallSmall();
 
     public Ball() {
-        this.id =  counter++;
+        this.id = counter++;
         this.color = COLORS[rnd.nextInt(COLORS.length)];
     }
 
@@ -49,8 +49,8 @@ public BallSmall bs = new BallSmall();
     @Override
     public int compare(Ball o1, Ball o2) {
 
-        if(o1.getId() < o2.getId()) return -1;
-        if(o1.getId() > o2.getId()) return 1;
+        if (o1.getId() < o2.getId()) return -1;
+        if (o1.getId() > o2.getId()) return 1;
         return 0;
     }
 
@@ -70,6 +70,7 @@ public BallSmall bs = new BallSmall();
     public Iterator<Ball> iterator() {
         return new Iterator<Ball>() {
             int count = 10;
+
             @Override
             public boolean hasNext() {
                 return count > 0;
@@ -83,8 +84,15 @@ public BallSmall bs = new BallSmall();
         };
     }
 
+    public static class Factory implements IGenerator<Ball> {
+        @Override
+        public Ball next() {
+            return new Ball();
+        }
+    }
+
     @Override
     public String toString() {
-        return "Ball("+id+")";
+        return "Ball(" + id + ")";
     }
 }
