@@ -52,7 +52,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car " + id + "[ engine: " + engine +
+        return "Building " + id + "[ engine: " + engine +
                 " driveTran:" + driveTran +
                 " wheels:" + wheels + "]";
     }
