@@ -49,7 +49,7 @@ public class Catalog {
 //              return pattern.matcher(name).matches(); // работает точно также ???
             }
         });
-    } // codea()
+    } // robot()
 
     public static File[] local(String path, final String regex) {// перегрузка
         return local(new File(path), regex);

@@ -19,7 +19,7 @@ import java.util.Set;
  * email: vadim.v.voronov@gmail.com
  * Created: 21-Apr-17.
  */
-@SupportedAnnotationTypes("*")  // или вписать String[]={"ch20.ex02m.codea.EIFace72","ch20.ex02m.codea.EIVace75"}
+@SupportedAnnotationTypes("*")  // или вписать String[]={"ch20.ex02m.robot.EIFace72","ch20.ex02m.robot.EIVace75"}
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class IFEProcC extends AbstractProcessor {  // расширение абстрактного класса с одним методом
     @Override
