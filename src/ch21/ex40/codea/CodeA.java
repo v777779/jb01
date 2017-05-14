@@ -1,9 +1,11 @@
 package ch21.ex40.codea;
 
+import lib.utils.Time;
+
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 14-May-17.
  */
 public class CodeA {
     public static void main(String[] args) {
@@ -14,5 +16,6 @@ public class CodeA {
         System.out.println("\nReaderWriterLock Check\n");
 
         ReaderWriterListTest.check();
+        Time.sleep(2500);
     }
 }
