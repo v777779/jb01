@@ -3,7 +3,7 @@ package ch21.ex39.codef;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 12-May-17.
  */
 public class CodeF {
     public static void main(String[] args) {
