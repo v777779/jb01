@@ -1,9 +1,9 @@
-package ch21.ex37.exercise.robot;
+package ch21.ex40.codea;
 
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 11-May-17.
+ * Created: 20-Feb-17.
  */
 public class CodeA {
     public static void main(String[] args) {
@@ -11,7 +11,8 @@ public class CodeA {
     }
     public static void app() {
         System.out.println("\n====CODE_A===");
-        System.out.println("\nCarBuider Model Check\n");
-        CarBuilder.check();
+        System.out.println("\nReaderWriterLock Check\n");
+
+        ReaderWriterListTest.check();
     }
 }
