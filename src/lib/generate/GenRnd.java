@@ -9,6 +9,7 @@ import java.util.Random;
  */
 public class GenRnd {
     private static Random rnd = new Random();
+
     public static class GenBool implements IGenerator<Boolean> {
         @Override
         public Boolean next() {
@@ -19,7 +20,7 @@ public class GenRnd {
     public static class GenByte implements IGenerator<Byte> {
         @Override
         public Byte next() {
-            return (byte)rnd.nextInt();
+            return (byte) rnd.nextInt();
         }
     }
 
@@ -36,31 +37,34 @@ public class GenRnd {
     public static class GenStr implements IGenerator<String> {
         private int length = 7;  // длина строки
         IGenerator<Character> cg = new GenChar();  // один экземпляр Character на один String
+
         public GenStr() {
         }
 
         public GenStr(int length) {  // задать длину строки если что
             this.length = length;
         }
+
         @Override
         public String next() {
-           char[]chs = new char[length];
+            char[] chs = new char[length];
             for (int i = 0; i < chs.length; i++) {
                 chs[i] = cg.next();
             }
             return new String(chs);
         }
     }
+
     public static class GenShort implements IGenerator<Short> {
-         @Override
+        @Override
         public Short next() {
-            return (short)rnd.nextInt();
+            return (short) rnd.nextInt();
         }
     }
 
 
     public static class GenInt implements IGenerator<Integer> {
-        private int mod = 10000;
+        private int mod = 0;
 
         public GenInt() {
         }
@@ -71,7 +75,10 @@ public class GenRnd {
 
         @Override
         public Integer next() {
-            return rnd.nextInt(mod);  // диапазон
+            if (mod > 0) {
+                return rnd.nextInt(mod);  // диапазон
+            }
+            return rnd.nextInt();
         }
     }
 
@@ -88,16 +95,17 @@ public class GenRnd {
     public static class GenFloat implements IGenerator<Float> {
         @Override
         public Float next() {
-            int  res = Math.round(rnd.nextFloat()*100); // до двух знаков
-            return ((float)res/100); // сначала обратно во float затем деление
+            int res = Math.round(rnd.nextFloat() * 100); // до двух знаков
+            return ((float) res / 100); // сначала обратно во float затем деление
         }
     }
+
     public static class GenDouble implements IGenerator<Double> {
         @Override
         public Double next() {
-            int  res = Math.round(rnd.nextFloat()*100); // до двух знаков
+            int res = Math.round(rnd.nextFloat() * 100); // до двух знаков
 
-            return ((double)res)/100; // сначала обратно в Double затем деление
+            return ((double) res) / 100; // сначала обратно в Double затем деление
         }
     }
 

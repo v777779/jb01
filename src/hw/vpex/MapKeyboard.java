@@ -11,7 +11,7 @@ import java.util.Map;
  * Created: 12-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class MainKey {
+public class MapKeyboard {
     public static KeyCode keys;
     public static KeyEvent event;
     public static void main(String[] args) {

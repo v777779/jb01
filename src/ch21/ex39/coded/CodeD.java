@@ -7,10 +7,12 @@ package ch21.ex39.coded;
  */
 public class CodeD {
     public static void main(String[] args) {
-        app();
+        app(args);
     }
-    public static void app() {
+
+    public static void app(String[] args) {
         System.out.println("\n====CODE_D===");
-        System.out.println("\n Check\n");
+        System.out.println("\nSyncronized Containers Performance Check\n");
+        ListComparisons.check(args);
     }
 }

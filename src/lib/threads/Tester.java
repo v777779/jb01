@@ -1,4 +1,4 @@
-package ch21.ex39.coded;
+package lib.threads;
 
 import lib.generate.Gen;
 import lib.generate.GenRnd;
@@ -13,13 +13,12 @@ import java.util.concurrent.Executors;
  * email: vadim.v.voronov@gmail.com
  */
 public abstract class Tester<C> {
-    static int testReps = 1;  //10
-    static int testCycles = 10;  //1000
-    static int containerSize = 10;  //1000
+    protected static int testReps = 1;  //10
+    protected static int testCycles = 10;  //1000
+    protected static int containerSize = 10;  //1000
 
-    abstract C containerInitializer();
-
-    abstract void startReadersAndWriters();
+    protected abstract C containerInitializer();
+    protected abstract void startReadersAndWriters();
 
     protected C testContainer;
     protected String testId;
@@ -31,7 +30,7 @@ public abstract class Tester<C> {
 
     protected CountDownLatch endLatch;
     public static ExecutorService exec = Executors.newCachedThreadPool();
-    Integer[] writeData;
+    protected Integer[] writeData;
 
     public Tester(String testId, int nReaders, int nWriters) {
         this.testId = testId + " " + nReaders + "r " + nWriters + "w";
@@ -63,11 +62,10 @@ public abstract class Tester<C> {
     }
 
     public abstract class TestTask implements Runnable {  // внутренний класс
-        long duration;                  //*** sync access for read and write TestTask
+        protected long duration;                  //*** sync access for read and write TestTask
 
-        abstract void test();           // abstract
-
-        abstract void putResults();     // abstract
+        protected abstract void test();           // abstract
+        protected abstract void putResults();     // abstract
 
         @Override
         public void run() {

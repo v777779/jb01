@@ -1,4 +1,4 @@
-package hw.vpex;
+package hw.vpex.arrays;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Created: 12-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class Main {
+public class ArrayInt {
 
     public static void main(String[] args) {
         // Scanner num = new Scanner(System.in);
@@ -20,7 +20,6 @@ public class Main {
             a = ((int) (Math.random() * 100 + 100));
             nums[i-1] = a;
             System.out.println("Рандомное число равно " + a + " , ");
-
             i--;
         }
         Arrays.sort(nums);

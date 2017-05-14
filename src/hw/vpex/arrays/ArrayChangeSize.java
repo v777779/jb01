@@ -1,11 +1,11 @@
-package hw.vpex;
+package hw.vpex.arrays;
 
 /**
  * Vadim Voronov
  * Created: 12-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class Array {
+public class ArrayChangeSize {
     static double[] arr = new double[5]; // начальный размер массива
     static int size = 5; // начальный размер данных
 
