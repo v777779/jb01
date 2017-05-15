@@ -12,7 +12,7 @@ public class Exercise {
 
     public static void app() {
         System.out.println("\n====EXERCISE===");
-        System.out.println("\nExercise 05 Check\n");
+        System.out.println("\nExercise 05 JButton, ActionListener JTextField Check\n");
         Button3.check();
     }
 }
