@@ -50,10 +50,9 @@ public class WaxOMatic {
                             }
                         }
                     }
-                    System.out.println(list.size());
                 }
                 wm.shutdown();
-                System.out.println("t interrupted");
+                System.out.println("WaxOMatic interrupted");
             }
         });
         t.start();
