@@ -17,7 +17,7 @@ public class Car2 {
     public void waxed() {
         lock.lock();        // замена synchronized
         try {
-            waxOn = true;
+            waxOn = true;  // сообщение можно передать по объекту
             condition.signalAll(); //замена  notifyAll();
         } finally {
             lock.unlock();
