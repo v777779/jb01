@@ -3,7 +3,7 @@ package ch22.ex09.codea;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 16-May-17.
  */
 public class CodeA {
     public static void main(String[] args) {
