@@ -4,8 +4,7 @@ import lib.swing.SwingConsole;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
+import java.awt.event.*;
 
 /**
  * Vadim Voronov
@@ -15,28 +14,33 @@ import java.awt.event.FocusListener;
 public class ButtonFocus extends JFrame {
     JButton button = new JButton("Click and Type");
     JTextField textField = new JTextField();
-    JLabel label = new JLabel("<Please Click on Button and Type the Text>",JLabel.LEFT);
-    JLabel label2 = new JLabel("Input text:",JLabel.LEFT);
+    JLabel label = new JLabel("<Please click on button and type the text>", JLabel.LEFT);
+    JLabel label2 = new JLabel("Input text(click on button to erase):", JLabel.LEFT);
 
-    class BFListener implements FocusListener {
 
+
+    class BMListener extends MouseAdapter {
         @Override
-        public void focusGained(FocusEvent e) {
-
+        public void mouseClicked(MouseEvent e) {
+            textField.setText("");
         }
 
-        @Override
-        public void focusLost(FocusEvent e) {
+    }
 
+    class BKListener extends KeyAdapter {
+        @Override
+        public void keyTyped(KeyEvent e) {
+            textField.setText(textField.getText()+e.getKeyChar());
         }
     }
 
-
-
     public ButtonFocus() {
-        button.addFocusListener(new BFListener()); // FocusListener
-        setLayout(new FlowLayout()); // целая туча событий
+        setLayout(new GridLayout(5, 1)); // целая туча событий
 
+        button.addMouseListener(new BMListener()); // FocusListener
+        button.addKeyListener(new BKListener());
+        button.setBackground(Color.CYAN);
+        textField.setEditable(true);
         add(label);
         add(button);
         add(label2);
@@ -44,7 +48,7 @@ public class ButtonFocus extends JFrame {
     }
 
     public static void check() {
-        SwingConsole.run(new ButtonFocus(),400,200); // размещение по сетке
+        SwingConsole.run(new ButtonFocus(), 400, 200); // размещение по сетке
     }
 }
 
