@@ -55,7 +55,7 @@ public class ShowAddListeners extends JFrame {
         JPanel top = new JPanel();
         top.add(new JLabel("Swing class name (press Enter):"));
         top.add(nameField);
-        add(BorderLayout.NORTH, top);
+        add(top,BorderLayout.NORTH);
         add(new JScrollPane(results)); // textArea в панель по центру
 
         nameField.setText("JLabel");
