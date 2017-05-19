@@ -3,7 +3,7 @@ package ch22.ex18.exercise;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 19-May-17.
  */
 public class Exercise {
     public static void main(String[] args) {
