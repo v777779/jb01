@@ -34,6 +34,11 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex08" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex09" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex10" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex11" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex12" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex13" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex14" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex15" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />

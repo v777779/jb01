@@ -1,4 +1,4 @@
-package ch22.ex17.codeb;
+package ch22.ex18.exercise;
 
 import lib.swing.SwingConsole;
 
@@ -12,27 +12,37 @@ import java.awt.event.ActionListener;
  * Created: 19-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class MessageBoxes extends JFrame {
+public class MessageBoxes2 extends JFrame {
     private JButton[] buttons = {
             new JButton("Alert"), new JButton("Yes/No"),
             new JButton("Color"), new JButton("Input"),
             new JButton("3 Vals")
     };
     private JTextField textField = new JTextField(15);
-    private ActionListener actionListener = new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            String id = ((JButton) e.getSource()).getText();
+    private ActionListener[] aListeners = new ActionListener[5];
 
-            if (id.equals("Alert")) {
+
+
+    public MessageBoxes2() {
+        aListeners[0] = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null,
                         "There's a bug on you!", "Hey!",
                         JOptionPane.ERROR_MESSAGE);
-            } else if (id.equals("Yes/No")) {
+            }
+        };
+        aListeners[1]   = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 JOptionPane.showConfirmDialog(null,
-                        "or no", "choose yes",
+                        "Yes or No", "choose yes",
                         JOptionPane.YES_NO_OPTION);
-            } else if (id.equals("Color")) {
+            }
+        };
+        aListeners[2] = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 Object[] options = {"Red", "Green"};
                 int sel = JOptionPane.showOptionDialog(null,
                         "Choose a Color!", "Warning",
@@ -42,11 +52,19 @@ public class MessageBoxes extends JFrame {
                 if (sel != JOptionPane.CLOSED_OPTION) { // если был сделан выбор
                     textField.setText("Color selected:" + options[sel]);
                 }
-            } else if (id.equals("Input")) {
+            }
+        };
+        aListeners[3]  = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 String val = JOptionPane.showInputDialog("How many lists do you see?");
                 textField.setText(val);
-            } else if (id.equals("3 Vals")) {
-                Object[] selections = {"First", "Second","Third"};
+            }
+        };
+        aListeners[4]  = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Object[] selections = {"First", "Second", "Third"};
                 Object val = JOptionPane.showInputDialog(null,
                         "Choose one", "Input",
                         JOptionPane.INFORMATION_MESSAGE,
@@ -55,20 +73,20 @@ public class MessageBoxes extends JFrame {
                     textField.setText(val.toString());
                 }
             }
-        }
-    };
+        };
 
-    public MessageBoxes() {
+
+
         setLayout(new FlowLayout());
         for (int i = 0; i < buttons.length; i++) {
-            buttons[i].addActionListener(actionListener); // на каждую кнопку тот же ActionListener
+            buttons[i].addActionListener(aListeners[i]); // на каждую кнопку тот же ActionListener
             add(buttons[i]);
         }
         add(textField);
     }
 
     public static void check() {
-        SwingConsole.run(new MessageBoxes(),200 ,200 );
+        SwingConsole.run(new MessageBoxes2(), 400, 200);
     }
 
 }
