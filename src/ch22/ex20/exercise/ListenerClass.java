@@ -96,7 +96,9 @@ public class ListenerClass extends JFrame {
                             item = "Empty" + (j + 1);
                         }
                         JMenu jMenu = listMenus.get(i);
-                        jMenu.add(new JMenuItem(item)); // добавили пункт меню
+                        JMenuItem jMenuItem = new JMenuItem(item);
+                        jMenuItem.addActionListener(new MListener());
+                        jMenu.add(jMenuItem); // добавили пункт меню
                     }
                 }
                 jMenuBar2 = new JMenuBar();
@@ -126,6 +128,12 @@ public class ListenerClass extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             jFrame.dispose(); // закрыть
+        }
+    }
+    class MListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            textField.setText(((JMenuItem)e.getSource()).getText());
         }
     }
 
