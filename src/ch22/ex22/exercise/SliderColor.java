@@ -16,11 +16,20 @@ public class SliderColor extends JFrame {
     private JSlider jsRed = new JSlider(0, 255, 255);
     private JSlider jsGreen = new JSlider(0, 255, 255);
     private JSlider jsBlue = new JSlider(0, 255, 255);
+    private JTextField jtRed = new JTextField("255",4);
+    private JTextField jtGreen = new JTextField("255",4);
+    private JTextField jtBlue = new JTextField("255",4);
+
+
+
     private Color color = new Color(255, 255, 255); // исходный цвет
     private ChangeListener changeListener = new ChangeListener() {
         @Override
         public void stateChanged(ChangeEvent e) {         // отрабатывает JSlider
             color = new Color(jsRed.getValue(), jsGreen.getValue(), jsBlue.getValue());
+            jtRed.setText(""+jsRed.getValue());
+            jtGreen.setText(""+jsGreen.getValue());
+            jtBlue.setText(""+jsBlue.getValue());
             repaint();
         }
     };
@@ -44,23 +53,33 @@ public class SliderColor extends JFrame {
         jsGreen.addChangeListener(changeListener);
         jsBlue.addChangeListener(changeListener);
 
+        jtRed.setEditable(false);
+        jtRed.setHorizontalAlignment(SwingConstants.CENTER);
+        jtGreen.setEditable(false);
+        jtGreen.setHorizontalAlignment(SwingConstants.CENTER);
+        jtBlue.setEditable(false);
+        jtBlue.setHorizontalAlignment(SwingConstants.CENTER);
+
         add(new JLabel("Color JPanel with Sliders"));
         add(jPanel);
 //        add(jsRed);
         JPanel jpRed = new JPanel();
-        jpRed.add(new JLabel("Red  :"));
+        jpRed.add(new JLabel("Red   :"));
         jpRed.add(jsRed);
+        jpRed.add(jtRed);
         add(jpRed);
 
 //        add(jsGreen);
         JPanel jpGreen = new JPanel();
         jpGreen.add(new JLabel("Green:"));
         jpGreen.add(jsGreen);
+        jpGreen.add(jtGreen);
         add(jpGreen);
 //        add(jsBlue);
         JPanel jpBlue = new JPanel();
-        jpBlue.add(new JLabel("Blue :"));
+        jpBlue.add(new JLabel("Blue  :"));
         jpBlue.add(jsBlue);
+        jpBlue.add(jtBlue);
         add(jpBlue);
     }
 
