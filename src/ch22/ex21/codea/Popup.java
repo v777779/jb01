@@ -18,6 +18,12 @@ public class Popup extends JFrame {
     private JPopupMenu jPopupMenu = new JPopupMenu();
     private JTextField textField = new JTextField(10);
 
+    private void maybeShowPopup(MouseEvent e) {
+        if (e.isPopupTrigger()) {  // сработает по RMB
+            jPopupMenu.show(e.getComponent(),e.getX(),e.getY());
+        }
+    }
+
     class PopupListener extends MouseAdapter {
         @Override
         public void mousePressed(MouseEvent e) {
@@ -42,22 +48,25 @@ public class Popup extends JFrame {
 
         JMenuItem jMenuItem = new JMenuItem("Hinter");
         jMenuItem.addActionListener(al);
+        jPopupMenu.add(jMenuItem);
+
         jMenuItem = new JMenuItem("Yon");
         jMenuItem.addActionListener(al);
+        jPopupMenu.add(jMenuItem);
+
         jMenuItem = new JMenuItem("Afar");
         jMenuItem.addActionListener(al);
+        jPopupMenu.add(jMenuItem);
+
         jMenuItem = new JMenuItem("Stay here");
         jMenuItem.addActionListener(al);
+        jPopupMenu.add(jMenuItem);
+
         PopupListener pl = new PopupListener();
-        this.addMouseListener(pl);  // к JFrame
-        textField.addMouseListener(pl);
+        this.addMouseListener(pl);          // сработать на всем поле JFrame
+        textField.addMouseListener(pl);     //сработать в пределах textField
     }
 
-    private void maybeShowPopup(MouseEvent e) {
-        if (e.isPopupTrigger()) {
-            jPopupMenu.show(e.getComponent(),e.getX(),e.getY());
-        }
-    }
 
     public static void check() {
         SwingConsole.run(new Popup(),300 ,200 );
