@@ -1,6 +1,6 @@
 package ch22.ex20.exercise;
 
-import ch22.ex03.codea.SwingConsole;
+import lib.swing.SwingConsole;
 
 import javax.swing.*;
 import java.awt.*;
