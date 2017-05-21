@@ -51,7 +51,8 @@ public class SineDrawBean extends JPanel {
         }
         repaint();                      // перерисовать окно
     }
-// This is the only change for JavaBean Component Compatibility
+
+    // This is the only change for JavaBean Component Compatibility
     public int getCycles() {
         return cycles;
     }
