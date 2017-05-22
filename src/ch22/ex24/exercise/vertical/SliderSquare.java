@@ -1,4 +1,4 @@
-package ch22.ex23.exercise.vertical;
+package ch22.ex24.exercise.vertical;
 
 import lib.swing.SwingConsole;
 
