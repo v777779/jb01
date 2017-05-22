@@ -101,14 +101,14 @@ public class SliderSquare extends JFrame {
         add(jPanel);
 //        add(jsSpeed);
         JPanel jpRed = new JPanel();
-        jpRed.add(new JLabel("Red  :"));
+        jpRed.add(new JLabel("Speed:"));
         jpRed.add(jsSpeed);
         jpRed.add(jtSpeed);
         add(jpRed,BorderLayout.EAST);
 
 //        add(jsSize);
         JPanel jpGreen = new JPanel();
-        jpGreen.add(new JLabel("Green:"));
+        jpGreen.add(new JLabel("Size :"));
         jpGreen.add(jsSize);
         jpGreen.add(jtSize);
         add(jpGreen,BorderLayout.WEST);
