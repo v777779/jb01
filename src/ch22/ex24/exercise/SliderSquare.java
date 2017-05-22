@@ -1,4 +1,4 @@
-package ch22.ex24.exercise.vertical;
+package ch22.ex24.exercise;
 
 import lib.swing.SwingConsole;
 
@@ -78,14 +78,14 @@ public class SliderSquare extends JFrame {
 
         jPanel.setPreferredSize(new Dimension(600, 400));
 
-        jsSpeed.setPreferredSize(new Dimension(20, 400));
+        jsSpeed.setPreferredSize(new Dimension(20, 350));
         jsSpeed.addChangeListener(new CLSpeed());
         jsSpeed.setOrientation(SwingConstants.VERTICAL);
 
         jtSpeed.setHorizontalAlignment(SwingConstants.CENTER);
         jtSpeed.setEditable(false);
 
-        jsSize.setPreferredSize(new Dimension(20, 400));
+        jsSize.setPreferredSize(new Dimension(20, 350));
         jsSize.addChangeListener(new CLSize());
         jsSize.setOrientation(SwingConstants.VERTICAL);
 
