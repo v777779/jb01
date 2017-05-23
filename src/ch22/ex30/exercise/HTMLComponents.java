@@ -52,9 +52,7 @@ public class HTMLComponents extends JFrame {
         }
     };
 
-
     //  JRadioButton, JCheckBox
-
     private class AL implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -93,8 +91,6 @@ public class HTMLComponents extends JFrame {
         jButton2.setToolTipText("<html><b><center> Description for: <i>JButton2");
         jButtonT.setToolTipText(""); // отрабатывает внутренняя функция
         jButtonT2.setToolTipText("");// отрабатывает внутренняя функция
-
-
         setLayout(new FlowLayout());
         JMenuBar jMenuBar = new JMenuBar();
         jMenuBar.setName("MTab");
@@ -124,7 +120,6 @@ public class HTMLComponents extends JFrame {
         JPanel jPanel3 = new JPanel();
         jPanel3.setName("CTab");
 
-
         ButtonGroup buttonGroup2 = new ButtonGroup();
         for (int i = 0; i < jCheckBoxes.length; i++) {
             jCheckBoxes[i] = new JCheckBox("<html><b><center>CB:" + i);
@@ -132,21 +127,12 @@ public class HTMLComponents extends JFrame {
             jPanel3.add(jCheckBoxes[i]);
         }
         jCheckBoxes[0].setSelected(true);
-
         jTabbedPane.add(jMenuBar);
         jTabbedPane.add(jPanel);
         jTabbedPane.add(jPanel2);
         jTabbedPane.add(jPanel3);
 
     add(jTabbedPane);
-
-
-    //       add(jMenuBar);
-
-    //      add(jButton);
-
-    //    add(jButton3);
-
 
 }
 
