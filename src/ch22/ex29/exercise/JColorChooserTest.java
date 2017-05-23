@@ -45,7 +45,7 @@ public class JColorChooserTest extends JFrame {
             if (rColor != null) {
                 jtSave.setText(rColor.toString());
             }else {
-                jtOpen.setText("You  pressed cancel");
+                jtOpen.setText("You pressed cancel");
                 jtSave.setText("");
             }
 
