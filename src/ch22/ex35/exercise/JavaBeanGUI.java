@@ -1,6 +1,8 @@
 package ch22.ex35.exercise;
 
 
+import lib.swing.SwingConsole;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -27,7 +29,10 @@ public class JavaBeanGUI extends JFrame {
         });
 
         add(rootPanel);
+    }
 
+    public static void check() {
+        SwingConsole.run(new JavaBeanGUI(), 500, 500);
     }
 
 }
