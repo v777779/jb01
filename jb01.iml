@@ -43,6 +43,22 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex17" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex18" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex19" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/annotation" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/arraycpp" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/arrays" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/codeb" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/combo" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/common" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/coord" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/dbase" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/decode" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/email" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/except" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/game" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/php" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/regex" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/swing" />
+      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/thread" />
     </content>
     <content url="file://$MODULE_DIR$/src/ch03/ex1a" />
     <content url="file://$MODULE_DIR$/src/ch03/ex1a/ex2" />
