@@ -20,6 +20,7 @@ public class CBox extends JPanel implements Runnable {  // панель со с�
 
     @Override
     protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
         g.setColor(color);
         Dimension dim = getSize(); // свои размеры
         g.fillRect(0, 0, dim.width, dim.height);

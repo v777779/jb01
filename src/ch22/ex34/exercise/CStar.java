@@ -50,6 +50,7 @@ public class CStar extends JPanel implements Runnable {  // панель со с
 
     @Override
     protected void paintComponent(Graphics g) {
+        super.paintComponent(g);  // вызывать обязательно чтобы не было искажений
         color = new Color(rnd.nextInt(0xFFFFFF));
         if (pX == null) {
             makePolygon(); // обновить полигон
@@ -64,7 +65,8 @@ public class CStar extends JPanel implements Runnable {  // панель со с
         try {
             while (!Thread.interrupted()) {
                 color = new Color(rnd.nextInt(0xFFFFFF));
-                getParent().repaint();                    // надо делать repaint общего окна иначе наложение
+                // getParent().repaint();      // если не используется super.paintComponent(g)
+                repaint();                      // super.paintComponent(g) ОБЯЗАТЕЛЬНО
                 TimeUnit.MILLISECONDS.sleep(pause);
             }
         } catch (InterruptedException e) {
