@@ -43,9 +43,16 @@
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex17" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex18" />
       <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex19" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex20" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex21" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex22" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex23" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex24" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex25" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex26" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ch22/ex27" />
       <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/annotation" />
       <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/arraycpp" />
-      <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/arrays" />
       <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/codeb" />
       <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/combo" />
       <excludeFolder url="file://$MODULE_DIR$/src/hw/vpex/common" />
