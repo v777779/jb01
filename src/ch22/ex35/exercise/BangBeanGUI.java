@@ -11,13 +11,13 @@ import java.util.TooManyListenersException;
  * Created: 25-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class BangBean extends JPanel implements Serializable {
+public class BangBeanGUI extends JPanel implements Serializable {
     private int xm = 100;
     private int ym = 100;
     private int cSize = 20;
     private String text = "Bang!";
     private int fontSize = 48;
-    private Color tColor = Color.RED;
+    private Color tColor = Color.BLUE;
     private ActionListener actionListener;
 
     class ML extends MouseAdapter {
@@ -31,7 +31,7 @@ public class BangBean extends JPanel implements Serializable {
             g.dispose();
             if (actionListener != null) {  // если объект существует то вызвать автоматическую сработку
                 actionListener.actionPerformed(new ActionEvent(
-                        BangBean.this, ActionEvent.ACTION_PERFORMED, null)
+                        BangBeanGUI.this, ActionEvent.ACTION_PERFORMED, null)
                 );
             }
         }
@@ -46,7 +46,7 @@ public class BangBean extends JPanel implements Serializable {
         }
     }
 
-    public BangBean() {
+    public BangBeanGUI() {
         addMouseListener(new ML());
         addMouseMotionListener(new MML());
     }

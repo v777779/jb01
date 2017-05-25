@@ -18,7 +18,6 @@ public class JavaBeanGUI extends JFrame {
     private JCheckBox checkBox2;
     private JCheckBox checkBox3;
     private JPanel rootPanel;
-    private BangBean bangBean;
 
     public JavaBeanGUI() {
         checkBox2.addActionListener(new ActionListener() {
