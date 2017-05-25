@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.Serializable;
-import java.util.TooManyListenersException;
+import java.util.ArrayList;
 
 /**
  * Vadim Voronov
@@ -18,7 +18,7 @@ public class BangBean2 extends JPanel implements Serializable {
     private String text = "Bang!";
     private int fontSize = 48;
     private Color tColor = Color.RED;
-    private ActionListener actionListener;
+    private ArrayList<ActionListener> actionListener = new ArrayList<>();  // многоадресный слушатель
 
     class ML extends MouseAdapter {
         @Override
@@ -29,11 +29,9 @@ public class BangBean2 extends JPanel implements Serializable {
             int width = g.getFontMetrics().stringWidth(text);  // ширина шрифта
             g.drawString(text, (getSize().width - width) / 2, getSize().height / 2); // в центре кадра
             g.dispose();
-            if (actionListener != null) {  // если объект существует то вызвать автоматическую сработку
-                actionListener.actionPerformed(new ActionEvent(
-                        BangBean2.this, ActionEvent.ACTION_PERFORMED, null)
-                );
-            }
+//                actionListener.actionPerformed(new ActionEvent(
+//                        BangBean2.this, ActionEvent.ACTION_PERFORMED, null) );
+            notifyListeners(); // вместо одного рассылаем событие всем
         }
     }
 
@@ -51,21 +49,20 @@ public class BangBean2 extends JPanel implements Serializable {
         addMouseMotionListener(new MML());
     }
 
-
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(400, 400);  // если в форме не задано, то это работает
+        return new Dimension(200, 200);
     }
 
     @Override
     protected void paintComponent(Graphics g) {  // перерисовка окружности на новом месте
         super.paintComponent(g);  // чтобы использовать локальный repaint()
         g.setColor(Color.BLACK);
-        g.drawOval(xm-cSize/2,ym-cSize/2,cSize,cSize); // окружность вокруг центра
+        g.drawOval(xm - cSize / 2, ym - cSize / 2, cSize, cSize); // окружность вокруг центра
 
     }
 
-//JavaBeans support
+    //JavaBeans support
     public int getcSize() {
         return cSize;
     }
@@ -98,17 +95,44 @@ public class BangBean2 extends JPanel implements Serializable {
         this.tColor = tColor;
     }
 
-// JavaBean Listeners
-    public void addActionListener(ActionListener al) throws TooManyListenersException{
-        if (actionListener != null) {
-            throw new TooManyListenersException();  // обработчик может быть только один
+    // JavaBean Listeners
+// ВНИМАНИЕ  многоадресный слушатель
+    public synchronized void addActionListener(ActionListener al) {
+        actionListener.add(al);  // получить свой обработчик
+    }
+
+    public synchronized void removeActionListener(ActionListener al) {
+        actionListener.remove(al);  // отключить обработчик
+    }
+
+    public void notifyListeners() {
+        ActionEvent action = new ActionEvent(BangBean2.this, ActionEvent.ACTION_PERFORMED, null);
+        ArrayList<ActionListener> clone = null;
+        synchronized (this) {  // блок синхронизации
+            clone = actionListener;  // для работы с клоном но он копия только по ссылке
         }
-        actionListener = al;  // получить свой обработчик
+        for (ActionListener listener : clone) { // по сути рассылка события
+            listener.actionPerformed(action);  // перебрать все Listener и все оповестить
+        }
     }
 
-    public void removeActionListener(ActionListener al){
-        actionListener = null;  // отключить обработчик
-    }
+    public static void check() {
+        BangBean2 bangBean2 = new BangBean2();
+        bangBean2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Action Event "+e);
+            }
+        });
 
+        bangBean2.addActionListener(new ActionListener() {  // второй Listener
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("BangBean2 action ");
+            }
+        });
+
+
+    }
 
 }

@@ -14,7 +14,7 @@ public class CodeB {
         System.out.println("\n====CODE_B===");
         System.out.println("\nComplex Bean Component Check\n");
         BangBeanTest.check();
-
+        BangBeanTest2.check();  // больше чем один Listener проверка
 
     }
 }

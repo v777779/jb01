@@ -13,7 +13,7 @@ import java.util.TooManyListenersException;
  * Created: 25-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class BangBeanTest extends JFrame {
+public class BangBeanTest2 extends JFrame {
     private JTextField jTextField = new JTextField(20);
 
     class BBL implements ActionListener {
@@ -25,11 +25,11 @@ public class BangBeanTest extends JFrame {
         }
     }
 
-    public BangBeanTest() throws HeadlessException {
+    public BangBeanTest2() throws HeadlessException {
         BangBean bangBean = new BangBean();
         try {
             bangBean.addActionListener(new BBL());
-        //    bangBean.addActionListener(new BBL());  проверка на большее число Listeners
+            bangBean.addActionListener(new BBL()); // проверка на большее число Listeners
 
         } catch (TooManyListenersException e) {
             jTextField.setText("Too many Listeners");
@@ -40,7 +40,7 @@ public class BangBeanTest extends JFrame {
     }
 
     public static void check() {
-        SwingConsole.run(new BangBeanTest(), 400, 500);
+        SwingConsole.run(new BangBeanTest2(), 400, 500);
     }
 
 }
