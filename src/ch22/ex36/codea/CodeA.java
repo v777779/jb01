@@ -3,7 +3,7 @@ package ch22.ex36.codea;
 /**
  * Vadim Voronov
  * email: vaidim.v.voronov@gmail.com
- * Created: 20-Feb-17.
+ * Created: 25-May-17.
  */
 public class CodeA {
     public static void main(String[] args) {
@@ -13,6 +13,6 @@ public class CodeA {
     public static void app() {
         System.out.println("\n====CODE_A===");
         System.out.println("\nJavaBean and Threads Check\n");
-
+        BangBean2.check();
     }
 }

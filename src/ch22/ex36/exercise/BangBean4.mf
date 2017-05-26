@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Name: ch22/ex36/exercise/jbean/BangBean4.class
+Java-Bean: True
+
+Name: ch22/ex36/exercise/jbean/Frog.class
+Java-Bean: True
+
+Name: ch22/ex36/exercise/jbean/Spot.class

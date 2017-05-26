@@ -1,4 +1,4 @@
-package ch22.ex36.codea;
+package ch22.ex36.exercise.jbean;
 
 import lib.swing.SwingConsole;
 
@@ -13,13 +13,13 @@ import java.util.ArrayList;
  * Created: 25-May-17.
  * email: vadim.v.voronov@gmail.com
  */
-public class BangBean2 extends JPanel implements Serializable {
+public class BangBean4 extends JPanel implements Serializable {
     private int xm;
     private int ym;
     private int cSize = 20;
     private String text = "Bang!";
     private int fontSize = 48;
-    private Color tColor = Color.RED;
+    private Color tColor = Color.BLUE;
     private ArrayList<ActionListener> actionListener = new ArrayList<>();  // многоадресный слушатель
 
     class ML extends MouseAdapter {
@@ -46,9 +46,31 @@ public class BangBean2 extends JPanel implements Serializable {
         }
     }
 
-    public BangBean2() {
+    public BangBean4() {
         addMouseListener(new ML());
         addMouseMotionListener(new MML());
+
+        addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Action Event " + e);
+            }
+        });
+
+        addActionListener(new ActionListener() {  // второй Listener
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("BangBean2 action ");
+            }
+        });
+
+        addActionListener(new ActionListener() {  // третий Listener
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("More action ");
+            }
+        });
+
     }
 
     @Override
@@ -108,7 +130,7 @@ public class BangBean2 extends JPanel implements Serializable {
     }
 
     public void notifyListeners() {
-        ActionEvent action = new ActionEvent(BangBean2.this, ActionEvent.ACTION_PERFORMED, null);
+        ActionEvent action = new ActionEvent(BangBean4.this, ActionEvent.ACTION_PERFORMED, null);
         ArrayList<ActionListener> clone = null;
         synchronized (this) {  // блок синхронизации
             clone = actionListener;  // для работы с клоном но он копия только по ссылке
@@ -119,7 +141,7 @@ public class BangBean2 extends JPanel implements Serializable {
     }
 
     public static void check() {
-        BangBean2 bangBean2 = new BangBean2();
+        BangBean4 bangBean2 = new BangBean4();
         bangBean2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -142,7 +164,7 @@ public class BangBean2 extends JPanel implements Serializable {
         });
         JFrame jFrame = new JFrame();  // запуск JFrame снаружи
         jFrame.add(bangBean2);
-        SwingConsole.run(jFrame,300,300);
+        SwingConsole.run(jFrame, 300, 300);
     }
 
 }

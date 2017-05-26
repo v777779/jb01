@@ -18,4 +18,14 @@ public class CmdExec {
             e.printStackTrace();
         }
     }
+
+    public static void run(String cmd) {
+        try {
+            Process p = new ProcessBuilder(("cmd /c "+cmd).split(" ")).inheritIO().start(); // создать новый процесс
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }
